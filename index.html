@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milin's Library</title>
+  <meta name="description" content="Fan-made site for Namneung Milin — Actress · Artist" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="logo">Milin's Library</a>
+    <div class="nav-center">
+      <a href="#upcoming" data-th="Upcoming"  data-en="Upcoming"  class="nav-link i18n">Upcoming</a>
+      <a href="#works"    data-th="ผลงาน"    data-en="Works"    class="nav-link i18n">ผลงาน</a>
+      <a href="#about"    data-th="ประวัติ"   data-en="About"    class="nav-link i18n">ประวัติ</a>
+      <a href="#social"   data-th="โซเชียล"   data-en="Social"   class="nav-link i18n">โซเชียล</a>
+      <a href="#vlog"     data-th="คอนเทนต์"   data-en="Content"  class="nav-link i18n">คอนเทนต์</a>
+      <a href="#bnk48"    data-th="BNK48 Era"  data-en="BNK48 Era" class="nav-link i18n">BNK48 Era</a>
+      <a href="#contact"  data-th="ติดต่อ"    data-en="Contact"  class="nav-link i18n">ติดต่อ</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="menu-btn" id="menuBtn" onclick="toggleMenu()"><i class="ti ti-menu-2"></i></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#upcoming" class="i18n" data-th="Upcoming"   data-en="Upcoming"   onclick="toggleMenu()">Upcoming</a>
+    <a href="#works"    class="i18n" data-th="ผลงาน"     data-en="Works"      onclick="toggleMenu()">ผลงาน</a>
+    <a href="#about"    class="i18n" data-th="ประวัติ"    data-en="About"      onclick="toggleMenu()">ประวัติ</a>
+    <a href="#social"   class="i18n" data-th="โซเชียล"    data-en="Social"     onclick="toggleMenu()">โซเชียล</a>
+    <a href="#vlog"     class="i18n" data-th="คอนเทนต์"   data-en="Content"    onclick="toggleMenu()">คอนเทนต์</a>
+    <a href="#bnk48"    class="i18n" data-th="BNK48 Era"  data-en="BNK48 Era"  onclick="toggleMenu()">BNK48 Era</a>
+    <a href="#contact"  class="i18n" data-th="ติดต่อ"     data-en="Contact"    onclick="toggleMenu()">ติดต่อ</a>
+  </div>
+
+  <section class="hero">
+    <img class="hero-bg-img hero-bg-desktop" src="images/NAMNAUENG-horizontal.png" alt="Namneung" onerror="this.style.display='none'">
+    <img class="hero-bg-img hero-bg-mobile" src="images/NAMNAUENG-vertical.png" alt="Namneung" onerror="this.style.display='none'">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-lines"><i class="ti ti-user" aria-hidden="true"></i></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap"></div>
+      <div class="hero-text">
+        <div class="hero-tag" id="heroTag"></div>
+        <h1 class="hero-name" id="heroName"></h1>
+        <p class="hero-agency" id="heroAgency"></p>
+        <div class="hero-chips" id="heroChips"></div>
+      </div>
+    </div>
+    <a href="#upcoming" class="hero-scroll"><i class="ti ti-chevron-down"></i></a>
+  </section>
+
+  <section class="section section-alt" id="upcoming">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title" id="upcomingTitle">Upcoming</h2>
+        <span class="upcoming-badge i18n" data-th="เร็วๆ นี้" data-en="Coming Soon">เร็วๆ นี้</span>
+      </div>
+      <div class="upcoming-filter" id="upcomingFilter"></div>
+      <div id="upcomingGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title i18n" data-th="ประวัติ" data-en="About">ประวัติ</h2>
+      </div>
+      <div class="about-grid" id="aboutGrid"></div>
+      <p class="bio-text" id="bioText"></p>
+      <div class="facts-head">
+        <div class="sec-line"></div>
+        <h3 class="sec-title" id="timelineTitle">Timeline</h3>
+      </div>
+      <div class="timeline-wrap" id="timelineContent"></div>
+      <div class="facts-head" style="margin-top:24px;">
+        <div class="sec-line"></div>
+        <h3 class="sec-title" id="factsTitle">Facts เกี่ยวกับน้ำหนึ่ง</h3>
+      </div>
+      <div class="facts-grid" id="factsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="works">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title i18n" data-th="ผลงาน" data-en="Works">ผลงาน</h2>
+      </div>
+      <div class="work-tabs" id="workTabs"></div>
+      <div class="work-grid" id="workGrid"></div>
+      <div class="work-pagination" id="workPagination"></div>
+    </div>
+  </section>
+
+  <section class="section" id="social">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title i18n" data-th="ช่องทางโซเชียล" data-en="Social Media">ช่องทางโซเชียล</h2>
+      </div>
+      <div class="social-grid" id="socialGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="vlog">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title">Milin Vlog! Vlog!</h2>
+      </div>
+      <div id="vlogContent"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="sertist">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title">SERTIST</h2>
+      </div>
+      <div id="sertistContent"></div>
+    </div>
+  </section>
+
+  <section class="section" id="bnk48">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title">Namneung BNK48</h2>
+      </div>
+      <div id="bnk48Content"></div>
+    </div>
+  </section>
+
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title i18n" data-th="ช่องทางติดต่องาน" data-en="Contact">ช่องทางติดต่องาน</h2>
+      </div>
+      <div id="contactContent"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-left i18n" data-th="Fan-made site by supporters · Not an official account" data-en="Fan-made site by supporters · Not an official account">Fan-made site by supporters · Not an official account</span>
+      <span class="footer-right">© 2026 Milin's Library</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
