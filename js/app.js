@@ -1,16 +1,11 @@
-// ============================================================
-//  SU WORLD — app.js
-//  อ่านข้อมูลจาก data.js แล้ว render ทุก section อัตโนมัติ
-// ============================================================
-
 let lang = 'th';
 
-// ── utils ───────────────────────────────────────────────────
+// utils 
 const t = (th, en) => lang === 'th' ? th : en;
 const el = id => document.getElementById(id);
 const icon = (name, size = 15) => `<i class="ti ${name}" style="font-size:${size}px;"></i>`;
 
-// ── LANG TOGGLE ─────────────────────────────────────────────
+// LANG TOGGLE 
 function toggleLang() {
   lang = lang === 'th' ? 'en' : 'th';
   el('langBtn').textContent = lang === 'th' ? 'EN' : 'TH';
@@ -35,17 +30,17 @@ function toggleLang() {
   renderBNK48();
 }
 
-// ── MOBILE MENU ─────────────────────────────────────────────
+// MOBILE MENU
 function toggleMenu() {
   el('mobileMenu').classList.toggle('open');
 }
 
-// ── NAV SCROLL ──────────────────────────────────────────────
+// NAV SCROLL 
 window.addEventListener('scroll', () => {
   el('nav').classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// ── HERO ────────────────────────────────────────────────────
+// HERO 
 function renderHero() {
   el('heroTag').textContent  = t(SU.role_th, SU.role_en);
   el('heroName').textContent = t(SU.name_th, SU.name_en);
@@ -58,7 +53,7 @@ function renderHero() {
   el('heroChips').innerHTML = tagChips;
 }
 
-// ── ABOUT ────────────────────────────────────────────────────
+// ABOUT 
 function renderAbout() {
   // name_info grid
   const nameItems = (SU.name_info || []).map(n => `
@@ -86,7 +81,7 @@ function renderAbout() {
   initFadeIn();
 }
 
-// ── FACTS ────────────────────────────────────────────────────
+// FACTS 
 function renderFacts() {
   el('factsGrid').innerHTML = SU.facts.map(f => `
     <div class="fact-card fade-in">
@@ -97,7 +92,7 @@ function renderFacts() {
   initFadeIn();
 }
 
-// ── WORKS ────────────────────────────────────────────────────
+// WORKS 
 let currentTab = 'all';
 let currentPage = 1;
 const WORKS_PER_PAGE = 6;
@@ -219,7 +214,7 @@ function renderWorks(tab) {
   initFadeIn();
 }
 
-// ── SOCIAL ────────────────────────────────────────────────────
+// SOCIAL
 function renderSocial() {
   const s = SU.social;
 
@@ -303,7 +298,7 @@ function renderSocial() {
   `;
 }
 
-// ── CONTACT ──────────────────────────────────────────────────
+// CONTACT 
 function renderContact() {
   const b = SU.booking;
   const c = SU.collab;
@@ -347,7 +342,7 @@ function renderContact() {
   `;
 }
 
-// ── FADE IN OBSERVER ─────────────────────────────────────────
+// FADE IN OBSERVER
 function initFadeIn() {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
@@ -355,7 +350,7 @@ function initFadeIn() {
   document.querySelectorAll('.fade-in:not(.visible)').forEach(el => obs.observe(el));
 }
 
-// ── INIT ─────────────────────────────────────────────────────
+// INIT
 function init() {
   renderUpcoming();
   renderVlog();
@@ -373,7 +368,7 @@ function init() {
 
 document.addEventListener('DOMContentLoaded', init);
 
-// ── UPCOMING ──────────────────────────────────────────────────
+// UPCOMING 
 const upcomingCategories = [
   { key: 'all',    th: 'ทั้งหมด',   en: 'All' },
   { key: 'series', th: 'ซีรีส์ / ละคร', en: 'Series' },
@@ -460,10 +455,18 @@ function renderUpcoming() {
             <span class="ucard-meta-dot">·</span>
             <span>${t(u.premiere_th, u.premiere_en)}</span>
           </div>
-          <a class="ucard-btn" href="${u.youtube_url}" target="_blank" rel="noopener">
-            <i class="ti ti-brand-youtube"></i>
-            ${t('ดูบน YouTube', 'Watch on YouTube')}
-          </a>
+          ${u.desc_th ? `<p class="ucard-desc">${t(u.desc_th, u.desc_en)}</p>` : ''}
+          <div class="ucard-btn-row">
+            ${u.youtube_url ? `<a class="ucard-btn" href="${u.youtube_url}" target="_blank" rel="noopener">
+              <i class="ti ti-brand-youtube"></i>
+              ${t('ดูบน YouTube', 'Watch on YouTube')}
+            </a>` : ''}
+            ${isOnAir && u.watch_platforms
+              ? u.watch_platforms.filter(p => p.url).map(p =>
+                  `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
+                ).join('')
+              : ''}
+          </div>
         </div>
       </div>
     `;
@@ -471,7 +474,7 @@ function renderUpcoming() {
   initFadeIn();
 }
 
-// ── VLOG ─────────────────────────────────────────────────────
+// VLOG
 function renderVlog() {
   const v = SU.vlog;
   if (!v) return;
@@ -503,7 +506,7 @@ function renderVlog() {
 }
 
 
-// ── SERTIST ───────────────────────────────────────────────────
+// SERTIST 
 function renderSertist() {
   const s = SU.sertist;
   if (!s) return;
@@ -547,7 +550,7 @@ function renderSertist() {
 }
 
 
-// ── BNK48 ─────────────────────────────────────────────────────
+// BNK48 
 let currentMV = 0;
 function renderBNK48() {
   const b = SU.bnk48;
@@ -578,7 +581,7 @@ function renderMVPlayer(idx) {
       ${img.src
         ? `<img src="${img.src}" alt="${img.alt}">`
         : `<div class="iam-photo-placeholder"><i class="ti ti-photo" style="font-size:28px;color:rgba(255,255,255,0.1);"></i></div>`}
-    </div>`).join('');
+    </div>`);
 
   const iamVideo = iam.video_id
     ? `<iframe src="https://www.youtube.com/embed/${iam.video_id}?rel=0&modestbranding=1&disablekb=0&fs=0" allowfullscreen loading="lazy"></iframe>`

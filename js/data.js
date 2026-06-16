@@ -1,11 +1,8 @@
-// ============================================================
-//  Milin's Library — data.js
-//  แก้ไขข้อมูลที่ไฟล์นี้ไฟล์เดียว เว็บอัปเดตทั้งหมดเลย
-// ============================================================
+
 
 const SU = {
 
-  // ── ข้อมูลพื้นฐาน ──────────────────────────────────────
+  // Info
   name_th: "น้ำหนึ่ง",
   name_en: "Namneung",
   fullname_th: "มิลิญ วาทินธนะกิจ",
@@ -21,7 +18,7 @@ const SU = {
   status_en: "Available",
   tags: ["Actress", "Content Creator", "Idol", "Singer"],
 
-  // ── Basic Info ────────────────────────────────────────
+  // Basic Info
   name_info: [
     { label_th: "ชื่อจริง", label_en: "Full Name", value_th: "มิลิญ วาทินธนะกิจ", value_en: "Milin Watinthanakit" },
     { label_th: "วันเกิด",  label_en: "Birthday",  value_th: "11 พ.ย. 1996",       value_en: "11 Nov 1996" },
@@ -29,9 +26,9 @@ const SU = {
   ],
 
   bio_th: "น้ำหนึ่ง มิลิญ วาทินธนะกิจ อดีตสมาชิก BNK48 ปัจจุบันเป็นนักแสดงและศิลปินที่มีผลงานครอบคลุมทั้งด้านเพลง มิวสิกวิดีโอ และการแสดง",
-  bio_en: "Namneung Milin Watinthanakit is a Thai actress and artist, best known as a former member of BNK48, with works spanning music, music videos, and acting.",
+  bio_en: "Namneung Milin Watinthanakit is a former member of BNK48 and is currently a Thai actress and artist, with her work spanning music, music videos and acting.",
 
-  // ── Timeline ──────────────────────────────────────────
+  // Timeline
   timeline: [
     { year: 2017, th: "เดบิวต์ในฐานะสมาชิก BNK48",                    en: "Debuted as a member of BNK48" },
     { year: 2020, th: "ได้รับตำแหน่งเซ็นเตอร์ในซิงเกิลที่ 8",          en: "Selected as the center for the 8th single" },
@@ -40,7 +37,7 @@ const SU = {
     { year: 2025, th: "ร่วมแสดงในโปรเจกต์ 4 Elements",                 en: "Joined the 4 Elements project" },
   ],
 
-  // ── Fun Facts ──────────────────────────────────────────
+  // Fun Facts 
   facts: [
     { icon: "ti-book",         th: "สำเร็จการศึกษาด้านวิทยาศาสตร์สิ่งแวดล้อมจากมหาวิทยาลัยธรรมศาสตร์", en: "Graduated in Environmental Science from Thammasat University" },
     { icon: "ti-mood-smile",   th: "เป็นคนค่อนข้างอินโทรเวิร์ตและชอบใช้เวลาเงียบ ๆ กับตัวเอง",         en: "An introvert who enjoys quiet time and personal space" },
@@ -50,10 +47,10 @@ const SU = {
     { icon: "ti-heart",        th: "คำว่า \"รัก\" ของน้ำหนึ่ง พิมพ์โดยกด Shift = ณํฏ",               en: "Namneung types the word \"love\" using Shift = ณํฏ" },
   ],
 
-  // ── ผลงาน ─────────────────────────────────────────────
+  // ผลงาน
   works: [
 
-    // ── Series ──
+    // Series
     {
       category: "series", title_th: "เสน่หาวาโย", title_en: "The Air", year: 2026,
       image: "https://img.youtube.com/vi/2w3RL-3WxVM/maxresdefault.jpg",
@@ -81,7 +78,7 @@ const SU = {
       ],
     },
 
-    // ── Movie ──
+    // Movie
     {
       category: "movie", title_th: "The Cheese Sisters", title_en: "The Cheese Sisters", year: 2022,
       image: "https://img.youtube.com/vi/mFj0tS30IyE/maxresdefault.jpg",
@@ -114,7 +111,7 @@ const SU = {
       platforms: [{ name: "Netflix", url: "https://www.netflix.com/th/title/81151163?source=35&fromWatch=true" }],
     },
   
-    // ── MV ──
+    // MV
     {
       category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025,
       image: "https://img.youtube.com/vi/KljbGGdfc_s/maxresdefault.jpg",
@@ -155,13 +152,13 @@ const SU = {
       role: "actress",
     },
 
-    // ── BNK48 Song ──
+    // BNK48 Song
     { category: "bnk48", title_th: "ดั่งซากุระ ตลอดไป", title_en: "Sakura no Ki ni Narou", year: 2022, image: "https://img.youtube.com/vi/OOxFBnPrRKU/maxresdefault.jpg", youtube_url: "https://youtu.be/OOxFBnPrRKU?si=JLiTrg1BsHVNBH3y" },
     { category: "bnk48", title_th: "Pioneer", title_en: "Pioneer", year: 2022, image: "https://img.youtube.com/vi/rUmPtU3mBWY/maxresdefault.jpg", youtube_url: "https://youtu.be/rUmPtU3mBWY?si=iW007ocOTsBnInW_" },
     { category: "bnk48", title_th: "Jiwaru DAYS", title_en: "Jiwaru DAYS", year: 2022, image: "https://img.youtube.com/vi/TXFZtepXlzk/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=TXFZtepXlzk" },
     { category: "bnk48", title_th: "Believers", title_en: "Believers", year: 2022, image: "https://img.youtube.com/vi/6mZagYSymB4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=6mZagYSymB4" },
     { category: "bnk48", title_th: "หมกกบ (OST. ผ้าผีบอก)", title_en: "Mok Kob (OST. The Fabric)", year: 2022, image: "https://img.youtube.com/vi/3basTFl8WFw/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=3basTFl8WFw" },
-    {category: "bnk48", title_th: "Sayonara Crawl", title_en: "Sayonara Crawl", year: 2022, image: "https://img.youtube.com/vi/FppYrZtcAO0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=FppYrZtcAO0" },
+    { category: "bnk48", title_th: "Sayonara Crawl", title_en: "Sayonara Crawl", year: 2022, image: "https://img.youtube.com/vi/FppYrZtcAO0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=FppYrZtcAO0" },
     { category: "bnk48", title_th: "สวัสดีปีใหม่", title_en: "Happy New Year", year: 2021, image: "https://img.youtube.com/vi/om8vJGrrRvs/maxresdefault.jpg", youtube_url: "https://youtu.be/om8vJGrrRvs?si=l9zvMtRAdfw81LrN" },
     { category: "bnk48", title_th: "High Tension (Namneung's Ver.)", title_en: "High Tension (Namneung's Ver.)", year: 2021, image: "https://img.youtube.com/vi/HA_Zg_SCfpQ/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=HA_Zg_SCfpQ" },
     { category: "bnk48", title_th: "ชอบเธอนะ", title_en: "Sukida Sukida Sukida", year: 2021, image: "https://img.youtube.com/vi/NzAqV54soaA/maxresdefault.jpg", youtube_url: "https://youtu.be/NzAqV54soaA?si=Rrlf3ankOZK9sug1" },
@@ -190,7 +187,7 @@ const SU = {
     { category: "bnk48", title_th: "อยากจะได้พบเธอ", title_en: "Aitakatta", year: 2017, image: "https://img.youtube.com/vi/zdgemowocu8/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=zdgemowocu8" },
   ],
 
-    // ── รางวัล ────────────────────────────────────────────
+    // รางวัล
   awards: [
     {
       year: 2022,
@@ -218,7 +215,7 @@ const SU = {
     },
   ],
 
-  // ── ช่องทางโซเชียล ─────────────────────────────────────
+  // ช่องทางโซเชียล 
   social: {
     instagram_main:  { handle: "@milinnn.d",       url: "https://www.instagram.com/milinnn.d/" },
     instagram_daily: { handle: "@with.namneung",   url: "https://www.instagram.com/with.namneung/" },
@@ -231,10 +228,10 @@ const SU = {
   hashtags_x:      ["NamneungMilinD"],
   hashtags_tiktok: ["NamneungMilinD"],
 
-  // ── ติดต่อจ้างงาน ──────────────────────────────────────
+  // ติดต่อจ้างงาน 
   booking: {
     desc_th: "สนใจร่วมงานกับน้ำหนึ่ง ไม่ว่าจะเป็นงานพรีเซนเตอร์ ถ่ายโฆษณา อีเวนต์ หรือโปรเจกต์ต่าง ๆ \nสามารถติดต่อผ่านทีมงานต้นสังกัดได้โดยตรง",
-    desc_en: "Interested in working with Namneung?\nFor commercials, presenter bookings, events, or collaborations, please contact her management team directly",
+    desc_en: "Interested in working with Namneung?\nFor commercials, presenter bookings, events or collaborations, please contact her management team directly",
     email: "Milindt.work@gmail.com",
     line:  "@inkpr",
     tel:   "0806699146 (K.Ink)",
@@ -242,7 +239,7 @@ const SU = {
     agency_x:  { handle: "@incent2015",    url: "https://x.com/incent2015" },
   },
 
-  // ── Upcoming ───────────────────────────────────────────
+  // Upcoming
   upcoming: [
     {
       category:    "series",
@@ -255,18 +252,37 @@ const SU = {
       role_th:     "ไฟ อัจจิมา วาทินวณิช",
       role_en:     "Fai Atchima Watinwanit",
       platform:    "Ch7HD / iQIYI",
-      youtube_id:  "erOZdx3WALk",
-      youtube_url: "https://www.youtube.com/watch?v=erOZdx3WALk",
+      youtube_id:  "7pqOPlfEjXo",
+      youtube_url: "https://youtu.be/7pqOPlfEjXo?si=QU5TtHcIMrXBF0ys",
       air_date: "2026-07-11",
+      desc_th: "รับชมสดทางช่อง 7HD กด 35 ผ่านเว็บไซต์ Ch7HD หรือ TrueID และรับชมย้อนหลังได้ทาง BUGABOO.TV และ iQIYI",
+      desc_en: "Tune in live on Channel 7HD (Channel 35) via the official website or TrueID. Catch up on previous episodes on BUGABOO.TV and iQIYI.",
       watch_platforms: [
-        { name: "Ch7HD ดูสด 20.30", url: "https://www.ch7.com/live.html" },   // ← ใส่ลิงก์ Ch7HD
+        { name: "Ch7HD ดูสด 20.30", url: "https://www.ch7.com/live.html" },
+        { name: "TrueID",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},   // ← ใส่ลิงก์ TrueID
         { name: "iQIYI ย้อนหลัง",  url: "" },   // ← ใส่ลิงก์ iQIYI
-        { name: "BUGABOOTV",        url: "" },   // ← ใส่ลิงก์ BUGABOOTV
+        { name: "BUGABOO.TV",       url: "" },   // ← ใส่ลิงก์ BUGABOOTV
       ],
+    },
+    {
+      category:    "mv",
+      title_th:    "เร็วๆ นี้",
+      title_en:    "Coming Soon",
+      badge_th:    "New MV",
+      badge_en:    "New MV",
+      premiere_th: "TBC",
+      premiere_en: "TBC",
+      air_date:    "",
+      youtube_id:  "",
+      youtube_url: "",
+      image:       "",
+      platform:    "YouTube",
+      role_th:     "น้ำหนึ่ง มิลิญ",
+      role_en:     "Namneung Milin",
     },
   ],
 
-  // ── Collab (SERTIST) ───────────────────────────────────
+  //  Collab (SERTIST) 
   collab: {
     friend_name_th: "แก้ว ปูเป้ โมบาย",
     friend_name_en: "Kaew Pupe Mobye",
@@ -282,7 +298,7 @@ const SU = {
     },
   },
 
-  // ── Milin Vlog! Vlog! ─────────────────────────────────
+  // Milin Vlog! Vlog! 
   vlog: {
     channel_name: "Milin D. Channel",
     channel_url: "https://www.youtube.com/@Milind.channel",
@@ -293,12 +309,12 @@ const SU = {
     ],
   },
 
-  // ── SERTIST ───────────────────────────────────────────
+  // SERTIST
   sertist: {
     channel_name: "SERTIST",
     channel_url: "https://www.youtube.com/@sertistchannel",
     desc_th: "ช่อง YouTube ที่น้ำหนึ่งทำร่วมกับเพื่อนๆ แก้ว ปูเป้ และโมบาย",
-    desc_en: "A YouTube channel created together with friends Kaew, Pupe, and Mobye",
+    desc_en: "A YouTube channel created together with friends Kaew, Pupe and Mobye",
     videos: [
       { youtube_id: "h8mcNILmtgM", title_th: "[REACTION] Overture 4 Elements", title_en: "[REACTION] Overture 4 Elements", thumb: "https://img.youtube.com/vi/h8mcNILmtgM/hqdefault.jpg", playlist_url: "" },
       { youtube_id: "38axki2otzI", title_th: "SERTIST Talk x Wee (vmoho)", title_en: "SERTIST Talk x Wee (vmoho)", thumb: "https://img.youtube.com/vi/38axki2otzI/hqdefault.jpg", playlist_url: "https://www.youtube.com/playlist?list=PL-ZdboqjeU5L1MaT0v0A8YsbT3AjlCe5m" },
@@ -306,7 +322,7 @@ const SU = {
     ],
   },
 
-  // ── Namneung BNK48 (Idol Part) ────────────────────────
+  // Namneung BNK48 (Idol Part)
   bnk48: {
     desc_th: "เรื่องราวและช่วงเวลาของน้ำหนึ่งในฐานะสมาชิก BNK48 ก่อนประกาศจบการศึกษาและเริ่มต้นบทใหม่ในเส้นทางนักแสดงและศิลปิน",
     desc_en: "Stories and memories from Namneung's journey as a member of BNK48 before graduating and beginning a new chapter as an actress and artist",

@@ -516,6 +516,10 @@ img { max-width: 100%; display: block; }
   font-size: 12px; color: var(--gray-400); margin-bottom: 14px;
 }
 .ucard-meta-dot { color: var(--gray-200); }
+.ucard-desc {
+  font-size: 13px; color: var(--gray-500); line-height: 1.6; margin-bottom: 14px;
+}
+.ucard-btn-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .ucard-btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 20px; background: var(--red); color: white;
@@ -524,6 +528,13 @@ img { max-width: 100%; display: block; }
 }
 .ucard-btn:hover { background: var(--red-d); }
 .ucard-btn i { font-size: 16px; }
+.ucard-btn-outline {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 16px; border: 1px solid var(--gray-200); color: var(--gray-700);
+  border-radius: var(--radius-sm); font-size: 13px; font-weight: 500;
+  text-decoration: none; transition: border-color 0.2s, color 0.2s; background: white;
+}
+.ucard-btn-outline:hover { border-color: var(--red); color: var(--red); }
 
 .upcoming-empty {
   text-align: center; padding: 32px; color: var(--gray-400); font-size: 14px;
