@@ -244,9 +244,9 @@ const SU = {
     {
       category:    "series",
       title_th:    "โซ่รักอัคนี",
-      title_en:    "The Fire - Flaming Chains of Love",
-      badge_th:    "Official Overture",
-      badge_en:    "Official Overture",
+      title_en:    "The Fire",
+      badge_th:    "Official Teaser",
+      badge_en:    "Official Teaser",
       premiere_th: "ตอนแรก 11 ก.ค. 2569",
       premiere_en: "First Episode 11 July 2026",
       role_th:     "ไฟ อัจจิมา วาทินวณิช",
@@ -258,10 +258,10 @@ const SU = {
       desc_th: "รับชมสดทางช่อง 7HD กด 35 ผ่านเว็บไซต์ Ch7HD หรือ TrueID และรับชมย้อนหลังได้ทาง BUGABOO.TV และ iQIYI",
       desc_en: "Tune in live on Channel 7HD (Channel 35) via the official website or TrueID. Catch up on previous episodes on BUGABOO.TV and iQIYI.",
       watch_platforms: [
-        { name: "Ch7HD ดูสด 20.30", url: "https://www.ch7.com/live.html" },
-        { name: "TrueID",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},   // ← ใส่ลิงก์ TrueID
-        { name: "iQIYI ย้อนหลัง",  url: "" },   // ← ใส่ลิงก์ iQIYI
-        { name: "BUGABOO.TV",       url: "" },   // ← ใส่ลิงก์ BUGABOOTV
+        { name: "Ch7HD Live", url: "https://www.ch7.com/live.html" },
+        { name: "TrueID Live",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},  
+        { name: "iQIYI Uncut",  url: "" }, 
+        { name: "BUGABOO.TV",       url: "" },
       ],
     },
     {
