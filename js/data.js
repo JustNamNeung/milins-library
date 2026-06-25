@@ -26,7 +26,7 @@ const SU = {
   ],
 
   bio_th: "น้ำหนึ่ง มิลิญ วาทินธนะกิจ อดีตสมาชิก BNK48 ปัจจุบันเป็นนักแสดงและศิลปินที่มีผลงานครอบคลุมทั้งด้านเพลง มิวสิกวิดีโอ และการแสดง",
-  bio_en: "Namneung Milin Watinthanakit is a former member of BNK48 and is currently a Thai actress and artist, with her work spanning music, music videos and acting.",
+  bio_en: "Namneung Milin Watinthanakit is a former member of BNK48. She is currently a Thai actress and artist, with her work spanning music, music videos and acting.",
 
   // Timeline
   timeline: [
@@ -39,11 +39,11 @@ const SU = {
 
   // Fun Facts 
   facts: [
-    { icon: "ti-book",         th: "สำเร็จการศึกษาด้านวิทยาศาสตร์สิ่งแวดล้อมจากมหาวิทยาลัยธรรมศาสตร์", en: "Graduated in Environmental Science from Thammasat University" },
+    { icon: "ti-book",         th: "สำเร็จการศึกษาด้านวิทยาศาสตร์สิ่งแวดล้อมจากมหาวิทยาลัยธรรมศาสตร์", en: "Bachelor of Science in Environmental Science, Thammasat University" },
     { icon: "ti-mood-smile",   th: "เป็นคนค่อนข้างอินโทรเวิร์ตและชอบใช้เวลาเงียบ ๆ กับตัวเอง",         en: "An introvert who enjoys quiet time and personal space" },
-    { icon: "ti-library",      th: "ชอบการเข้าวัด ทำบุญ ชอบอ่านหนังสือ",                                en: "Enjoys visiting temples, making merit, and reading books" },
-    { icon: "ti-leaf",         th: "ไม่กินเนื้อสัตว์ขนาดใหญ่ตั้งแต่หมูขึ้นไป",                        en: "Avoids eating large meats such as pork and beef" },
-    { icon: "ti-paw",          th: "มีสุนัขชื่อ \"ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล วาทินธนะกิจ\"", en: "Owns a dog named \"Chawee AkkharaSingburiDechoChotechuangchatchawan Watinthanakit\"" },
+    { icon: "ti-library",      th: "รักธรรมชาติ ชอบเข้าวัดทำบุญ และใช้เวลาว่างไปกับการอ่านหนังสือ",                                en: "Loves nature, making merit, and reading books." },
+    { icon: "ti-leaf",         th: "ไม่ทานเนื้อสัตว์ใหญ่ เช่น หมูและเนื้อวัว",                        en: "Avoids eating red meat, such as pork and beef." },
+    { icon: "ti-paw",          th: "มีสุนัขชื่อ \"ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล วาทินธนะกิจ\"", en: "Owns a dog named \"Chawee Akkhara Singburi Decho Chotechuangchatchawan Watinthanakit."" },
     { icon: "ti-heart",        th: "คำว่า \"รัก\" ของน้ำหนึ่ง พิมพ์โดยกด Shift = ณํฏ",               en: "Namneung types the word \"love\" using Shift = ณํฏ" },
   ],
 
@@ -231,7 +231,7 @@ const SU = {
   // ติดต่อจ้างงาน 
   booking: {
     desc_th: "สนใจร่วมงานกับน้ำหนึ่ง ไม่ว่าจะเป็นงานพรีเซนเตอร์ ถ่ายโฆษณา อีเวนต์ หรือโปรเจกต์ต่าง ๆ \nสามารถติดต่อผ่านทีมงานต้นสังกัดได้โดยตรง",
-    desc_en: "Interested in working with Namneung?\nFor commercials, presenter bookings, events or collaborations, please contact her management team directly",
+    desc_en: "Interested in working with Namneung?\nFor commercials, presenter bookings, events or collaborations, please contact her management team directly.",
     email: "Milindt.work@gmail.com",
     line:  "@inkpr",
     tel:   "0806699146 (K.Ink)",
@@ -256,7 +256,7 @@ const SU = {
       youtube_url: "https://youtu.be/7pqOPlfEjXo?si=QU5TtHcIMrXBF0ys",
       air_date: "2026-07-11",
       desc_th: "รับชมสดทางช่อง 7HD กด 35 ผ่านเว็บไซต์ Ch7HD หรือ TrueID และรับชมย้อนหลังได้ทาง BUGABOO.TV และ iQIYI",
-      desc_en: "Tune in live on Channel 7HD (Channel 35) via the official website or TrueID. Catch up on previous episodes on BUGABOO.TV and iQIYI.",
+      desc_en: "Watch live on Channel 7HD (Channel 35) via their official website or TrueID, and catch up on previous episodes on BUGABOO.TV and iQIYI.",
       watch_platforms: [
         { name: "Ch7HD Live", url: "https://www.ch7.com/live.html" },
         { name: "TrueID Live",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},  
@@ -286,7 +286,7 @@ const SU = {
   collab: {
     friend_name_th: "แก้ว ปูเป้ โมบาย",
     friend_name_en: "Kaew Pupe Mobye",
-    desc_th: "Sertist - YouTube / Content ร่วมกับเพื่อน · ติดต่อแยกจากต้นสังกัด",
+    desc_th: "Sertist - YouTube / คอนเทนต์ร่วมกับเพื่อน · ติดต่อแยกจากต้นสังกัด",
     desc_en: "Sertist - YouTube / Content with friend · Separate from main agency",
     email: "sertist.office@gmail.com",
     tel:   "0661014622 (k.ploy)",

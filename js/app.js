@@ -609,7 +609,7 @@ function renderMVPlayer(idx) {
         ${iamPhotos[1] || ''}
       </div>
       <p class="iam-app-desc">${t(
-        'คุณสามารถโหลดแอปเพื่อย้อนดูความน่ารักเพิ่มเติมได้ โดยไปที่ช่องค้นหาและพิมพ์ Namneung จะสามารถย้อนดูไลฟ์เก่าๆ รูป วิดีโอ ข้อความน่ารักๆ ได้',
+        'สามารถดาวน์โหลดแอปเพื่อย้อนดูโมเมนต์ความน่ารักเพิ่มเติมได้ เพียงไปที่ช่องค้นหาแล้วพิมพ์ "Namneung" ก็จะพบกับไลฟ์เก่า ๆ รูปภาพ วิดีโอ และข้อความสุดพิเศษได้ทันที',
         'Download the app to revisit more adorable moments. Search for Namneung to find old lives, photos, videos, and sweet messages.'
       )}</p>
       <div class="app-btns">
