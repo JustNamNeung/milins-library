@@ -43,7 +43,7 @@ const SU = {
     { icon: "ti-mood-smile",   th: "เป็นคนค่อนข้างอินโทรเวิร์ตและชอบใช้เวลาเงียบ ๆ กับตัวเอง",         en: "An introvert who enjoys quiet time and personal space" },
     { icon: "ti-library",      th: "รักธรรมชาติ ชอบเข้าวัดทำบุญ และใช้เวลาว่างไปกับการอ่านหนังสือ",                                en: "Loves nature, making merit, and reading books." },
     { icon: "ti-leaf",         th: "ไม่ทานเนื้อสัตว์ใหญ่ เช่น หมูและเนื้อวัว",                        en: "Avoids eating red meat, such as pork and beef." },
-    { icon: "ti-paw",          th: "มีสุนัขชื่อ \"ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล วาทินธนะกิจ\"", en: "Owns a dog named \"Chawee Akkhara Singburi Decho Chotechuangchatchawan Watinthanakit."" },
+    { icon: "ti-paw",          th: "มีสุนัขชื่อ \"ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล วาทินธนะกิจ\"", en: "Owns a dog named \"Chawee Akkhara Singburi Decho Chotechuangchatchawan Watinthanakit." },
     { icon: "ti-heart",        th: "คำว่า \"รัก\" ของน้ำหนึ่ง พิมพ์โดยกด Shift = ณํฏ",               en: "Namneung types the word \"love\" using Shift = ณํฏ" },
   ],
 
