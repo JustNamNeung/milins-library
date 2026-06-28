@@ -123,7 +123,13 @@ function switchTab(key) {
 
 function renderWorks(tab) {
   renderWorkTabs();
-  const filtered = tab === 'all' ? SU.works : SU.works.filter(w => w.category === tab);
+  const filtered = tab === 'all'
+    ? SU.works.slice().sort((a, b) => {
+        const dateA = a.date ? new Date(a.date).getTime() : (parseInt(a.year) || 0);
+        const dateB = b.date ? new Date(b.date).getTime() : (parseInt(b.year) || 0);
+        return dateB - dateA;
+      })
+    : SU.works.filter(w => w.category === tab);
   // awards tab
   if (tab === 'awards') {
     const paginationEl = el('workPagination');
@@ -449,7 +455,7 @@ function renderUpcoming() {
         <div class="ucard-info">
           <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
           <div class="ucard-meta">
-            <span>${u.category === 'mv' ? t('ศิลปิน : ', 'Artist: ') : t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
+            <span>${t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
             <span class="ucard-meta-dot">·</span>
             <span>${u.platform}</span>
             <span class="ucard-meta-dot">·</span>
@@ -463,11 +469,6 @@ function renderUpcoming() {
             </a>` : ''}
             ${isOnAir && u.watch_platforms
               ? u.watch_platforms.filter(p => p.url).map(p =>
-                  `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
-                ).join('')
-              : ''}
-            ${u.listen_platforms
-              ? u.listen_platforms.filter(p => p.url).map(p =>
                   `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
                 ).join('')
               : ''}
