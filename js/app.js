@@ -466,6 +466,11 @@ function renderUpcoming() {
                   `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
                 ).join('')
               : ''}
+            ${u.listen_platforms
+              ? u.listen_platforms.filter(p => p.url).map(p =>
+                  `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
+                ).join('')
+              : ''}
           </div>
         </div>
       </div>
