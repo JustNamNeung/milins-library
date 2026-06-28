@@ -449,7 +449,7 @@ function renderUpcoming() {
         <div class="ucard-info">
           <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
           <div class="ucard-meta">
-            <span>${t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
+            <span>${u.category === 'mv' ? t('ศิลปิน : ', 'Artist: ') : t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
             <span class="ucard-meta-dot">·</span>
             <span>${u.platform}</span>
             <span class="ucard-meta-dot">·</span>

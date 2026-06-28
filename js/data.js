@@ -113,6 +113,12 @@ const SU = {
   
     // MV
     {
+      category: "mv", title_th: "คือเธอ", title_en: "It's You", year: 2026,
+      image: "https://img.youtube.com/vi/zaBXaI3aqSA/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/zaBXaI3aqSA?si=fxQ0M3fMls1zPL9L",
+      role: "singer",
+    },
+    {
       category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025,
       image: "https://img.youtube.com/vi/KljbGGdfc_s/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=KljbGGdfc_s",
@@ -247,7 +253,7 @@ const SU = {
       title_en:    "The Fire",
       badge_th:    "Official Trailer",
       badge_en:    "Official Trailer",
-      premiere_th: "ตอนแรก 11 ก.ค. 2569",
+      premiere_th: "ตอนแรก 11 July 2026",
       premiere_en: "First Episode 11 July 2026",
       role_th:     "ไฟ อัจจิมา วาทินวณิช",
       role_en:     "Fai Atchima Watinwanit",
@@ -266,20 +272,26 @@ const SU = {
     },
     {
       category:    "mv",
-      title_th:    "เร็วๆ นี้",
-      title_en:    "Coming Soon",
+      title_th:    "คือเธอ",
+      title_en:    "It’s you",
       badge_th:    "New MV",
       badge_en:    "New MV",
-      premiere_th: "TBC",
-      premiere_en: "TBC",
-      air_date:    "",
-      youtube_id:  "",
-      youtube_url: "",
+      premiere_th: "11 July 2026",
+      premiere_en: "11 July 2026",
+      air_date:    "2026-07-11",
+      youtube_id:  "zaBXaI3aqSA",
+      youtube_url: "https://youtu.be/zaBXaI3aqSA?si=NSV2KLPCZP_vbFYP",
       image:       "",
       platform:    "YouTube",
       role_th:     "น้ำหนึ่ง มิลิญ",
       role_en:     "Namneung Milin",
-    },
+      listen_platforms: [
+      { name: "Spotify",      url: "https://open.spotify.com/track/6JbVIzHIdrCGuWFkn3YmDp?si=_Y0zdsaZTB-PP1z-wDfNiw&nd=1&dlsi=c4c58b5096634345" },
+      { name: "Apple Music",  url: "https://music.apple.com/th/album/ค-อเธอ-its-you-from-โซ-ร-กอ-คน-the-fire-4elements-บ/6783669451?l=th" },
+      { name: "JOOX",         url: "https://www.joox.com/th/single/hVo2TY51MpyZ6W258mWrCA==" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_kaXSPwNRYs50EP-eyMiT8AeS-djr-VbEM&si=4_-amMaf3LmONsCb" },
+  ],
+}
   ],
 
   //  Collab (SERTIST) 
