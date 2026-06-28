@@ -455,7 +455,7 @@ function renderUpcoming() {
         <div class="ucard-info">
           <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
           <div class="ucard-meta">
-            <span>${t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
+            <span>${u.category === 'mv' ? t('ศิลปิน : ', 'Artist: ') : t('บทบาท : ', 'Role: ')}${t(u.role_th, u.role_en)}</span>
             <span class="ucard-meta-dot">·</span>
             <span>${u.platform}</span>
             <span class="ucard-meta-dot">·</span>
@@ -469,6 +469,11 @@ function renderUpcoming() {
             </a>` : ''}
             ${isOnAir && u.watch_platforms
               ? u.watch_platforms.filter(p => p.url).map(p =>
+                  `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
+                ).join('')
+              : ''}
+            ${u.listen_platforms
+              ? u.listen_platforms.filter(p => p.url).map(p =>
                   `<a class="ucard-btn-outline" href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
                 ).join('')
               : ''}
