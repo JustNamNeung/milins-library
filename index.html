@@ -7,18 +7,9 @@
   <meta name="description" content="Fan-made site for Namneung Milin — Actress · Artist" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Taviraj:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-82JFF5WFXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-82JFF5WFXX');
-  </script>
 </head>
 <body>
 
@@ -26,9 +17,9 @@
     <a href="#" class="logo">Milin's Library</a>
     <div class="nav-center">
       <a href="#upcoming" data-th="Upcoming"  data-en="Upcoming"  class="nav-link i18n">Upcoming</a>
-      <a href="#works"    data-th="ผลงาน"    data-en="Works"    class="nav-link i18n">ผลงาน</a>
       <a href="#about"    data-th="ประวัติ"   data-en="About"    class="nav-link i18n">ประวัติ</a>
       <a href="#social"   data-th="โซเชียล"   data-en="Social"   class="nav-link i18n">โซเชียล</a>
+      <a href="#works"    data-th="ผลงาน"    data-en="Works"    class="nav-link i18n">ผลงาน</a>
       <a href="#vlog"     data-th="คอนเทนต์"   data-en="Content"  class="nav-link i18n">คอนเทนต์</a>
       <a href="#bnk48"    data-th="BNK48 Era"  data-en="BNK48 Era" class="nav-link i18n">BNK48 Era</a>
       <a href="#contact"  data-th="ติดต่อ"    data-en="Contact"  class="nav-link i18n">ติดต่อ</a>
@@ -41,9 +32,9 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="#upcoming" class="i18n" data-th="Upcoming"   data-en="Upcoming"   onclick="toggleMenu()">Upcoming</a>
-    <a href="#works"    class="i18n" data-th="ผลงาน"     data-en="Works"      onclick="toggleMenu()">ผลงาน</a>
     <a href="#about"    class="i18n" data-th="ประวัติ"    data-en="About"      onclick="toggleMenu()">ประวัติ</a>
     <a href="#social"   class="i18n" data-th="โซเชียล"    data-en="Social"     onclick="toggleMenu()">โซเชียล</a>
+    <a href="#works"    class="i18n" data-th="ผลงาน"     data-en="Works"      onclick="toggleMenu()">ผลงาน</a>
     <a href="#vlog"     class="i18n" data-th="คอนเทนต์"   data-en="Content"    onclick="toggleMenu()">คอนเทนต์</a>
     <a href="#bnk48"    class="i18n" data-th="BNK48 Era"  data-en="BNK48 Era"  onclick="toggleMenu()">BNK48 Era</a>
     <a href="#contact"  class="i18n" data-th="ติดต่อ"     data-en="Contact"    onclick="toggleMenu()">ติดต่อ</a>
@@ -108,6 +99,9 @@
       <div class="work-tabs" id="workTabs"></div>
       <div class="work-grid" id="workGrid"></div>
       <div class="work-pagination" id="workPagination"></div>
+
+      <div class="thefire-hub-divider"></div>
+      <div class="thefire-hub" id="thefireHub"></div>
     </div>
   </section>
 

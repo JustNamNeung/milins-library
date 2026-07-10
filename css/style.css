@@ -15,7 +15,7 @@
   --gray-400: #A1A1AA;
   --gray-600: #52525B;
   --gray-800: #27272A;
-  --font-display: 'Domine', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Taviraj', sans-serif;
   --radius:   10px;
   --radius-sm: 6px;
@@ -883,3 +883,90 @@ img { max-width: 100%; display: block; }
 }
 .page-btn:hover:not(:disabled) { border-color: var(--red); color: var(--red); }
 .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* ── UPCOMING → HUB LINK ──────────────────────────────────── */
+.ucard-hub-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 600; color: var(--red);
+  margin-top: 10px; cursor: pointer;
+}
+.ucard-hub-link i { font-size: 14px; }
+.ucard-hub-link:hover { text-decoration: underline; }
+
+/* ── THE FIRE — CONTENT HUB ───────────────────────────────── */
+.thefire-hub-divider {
+  height: 2px; background: var(--red); opacity: 0.15;
+  border-radius: 2px; margin: 28px 0 20px;
+}
+.hub-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+.hub-title { font-size: 18px; font-weight: 600; color: var(--gray-800); font-family: var(--font-display); }
+.hub-sub { font-size: 11px; color: var(--gray-400); }
+.hub-desc { font-size: 13px; color: var(--gray-500); line-height: 1.6; margin-bottom: 16px; }
+
+.hub-tabs { display: flex; gap: 6px; margin-bottom: 18px; flex-wrap: wrap; }
+.hub-tab {
+  font-size: 11px; padding: 5px 13px; border-radius: 99px;
+  border: 1px solid var(--gray-200); background: white; color: var(--gray-500);
+  cursor: pointer; transition: all 0.2s; font-family: var(--font-body);
+}
+.hub-tab:hover { border-color: var(--red-m); color: var(--red); background: var(--red-l); }
+.hub-tab.active { background: var(--red); color: white; border-color: var(--red); font-weight: 500; }
+
+.hub-label {
+  font-size: 11px; font-weight: 600; color: var(--gray-500);
+  margin: 20px 0 10px; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.hub-label:first-of-type { margin-top: 0; }
+
+.hub-grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.hub-card {
+  display: block; border: 1px solid var(--gray-200); border-radius: var(--radius-sm);
+  overflow: hidden; background: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hub-card:not(.hub-card-empty):hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.hub-thumb-link { display: block; text-decoration: none; }
+.hub-thumb {
+  aspect-ratio: 16/9; background: var(--red-l); position: relative; overflow: hidden;
+}
+.hub-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hub-card-info { padding: 8px 10px; }
+.hub-card-title {
+  font-size: 11px; font-weight: 500; color: var(--gray-800); line-height: 1.35;
+}
+.hub-card-empty {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 16/9; background: var(--gray-50); border-style: dashed;
+}
+.hub-card-empty .hub-card-title { font-size: 11px; color: var(--gray-400); font-weight: 600; letter-spacing: 0.05em; }
+
+.work-play.work-play-show { opacity: 1; }
+.hub-card:hover .work-play { opacity: 1; }
+
+.hub-pagination {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 8px; flex-wrap: wrap; gap: 8px;
+}
+
+/* OST spotify chip inside hub card */
+.hub-card-info .work-extra-btn {
+  margin-top: 6px; display: inline-flex;
+}
+
+/* ── POSTER ROTATION ──────────────────────────────────────── */
+.poster-row { display: flex; align-items: center; gap: 8px; }
+.poster-card-item .hub-thumb { aspect-ratio: 3/4; }
+.arrow-btn {
+  width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+  border: 1px solid var(--gray-200); background: white;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.2s; color: var(--gray-600);
+}
+.arrow-btn:hover { border-color: var(--red); color: var(--red); }
+.arrow-btn i { font-size: 15px; }
+
+@media (max-width: 640px) {
+  .hub-grid3 { grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+  .hub-card-title { font-size: 9.5px; }
+  .hub-title { font-size: 16px; }
+}

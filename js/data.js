@@ -52,25 +52,31 @@ const SU = {
 
     // Series
     {
-      category: "series", title_th: "เสน่หาวาโย", title_en: "The Air", year: 2026,date: "2026-05-16",
+      category: "series", title_th: "โซ่รักอัคนี", title_en: "The Fire", year: 2026,
+      image: "https://img.youtube.com/vi/U2ozG4r_HZw/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/U2ozG4r_HZw?si=bFq3PftqnWdBkQdP",
+      platforms: [{ name: "iQIYI", url: "https://www.iq.com/album/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A-2026-28ki6pjn81t?lang=th_th" }],
+    },
+    {
+      category: "series", title_th: "เสน่หาวาโย", title_en: "The Air", year: 2026,
       image: "https://img.youtube.com/vi/2w3RL-3WxVM/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=2w3RL-3WxVM",
       platforms: [{ name: "iQIYI", url: "https://www.iq.com/album/the-air-4-elements-2026-z2cvnrjpt9?lang=en_us" }],
     },
     {
-      category: "series", title_th: "นทีร้อยเล่ห์", title_en: "The Water", year: 2026,date: "2026-03-21",
+      category: "series", title_th: "นทีร้อยเล่ห์", title_en: "The Water", year: 2026,
       image: "https://img.youtube.com/vi/rDNsXiN9S74/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=rDNsXiN9S74",
       platforms: [{ name: "iQIYI", url: "https://www.iq.com/album/the-water-4-elements-2026-2fxxh4am0kx?lang=en_us" }],
     },
     {
-      category: "series", title_th: "วิวาห์ปฐพี", title_en: "The Earth", year: 2026,date: "2026-01-24",
+      category: "series", title_th: "วิวาห์ปฐพี", title_en: "The Earth", year: 2026,
       image: "https://img.youtube.com/vi/8ZEzEJQ3yqU/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=8ZEzEJQ3yqU",
       platforms: [{ name: "iQIYI", url: "https://www.iq.com/album/the-earth-4-elements-2026-16vh6ho38tl?lang=en_us" }],
     },
     {
-      category: "series", title_th: "รักปากแข็ง", title_en: "Somewhere Somehow", year: 2025,date: "2025-08-08",
+      category: "series", title_th: "รักปากแข็ง", title_en: "Somewhere Somehow", year: 2025,
       image: "https://img.youtube.com/vi/ZUotNR6SSsM/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=ZUotNR6SSsM",
       spinoffs: [
@@ -80,7 +86,7 @@ const SU = {
 
     // Movie
     {
-      category: "movie", title_th: "The Cheese Sisters", title_en: "The Cheese Sisters", year: 2022,date: "2022-11-23",
+      category: "movie", title_th: "The Cheese Sisters", title_en: "The Cheese Sisters", year: 2022,
       image: "https://img.youtube.com/vi/mFj0tS30IyE/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=mFj0tS30IyE",
       spinoffs: [
@@ -90,18 +96,18 @@ const SU = {
       platforms: [{ name: "Netflix", url: "https://www.netflix.com/th/title/81663409?source=35&fromWatch=true" }],
     },
     {
-      category: "movie", title_th: "ผ้าผีบอก (The Fabric)", title_en: "ผ้าผีบอก (The Fabric)", year: 2022,date: "2022-06-22",
+      category: "movie", title_th: "ผ้าผีบอก (The Fabric)", title_en: "ผ้าผีบอก (The Fabric)", year: 2022,
       image: "https://img.youtube.com/vi/qPz4aHaIJWo/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=qPz4aHaIJWo",
       platforms: [{ name: "Netflix", url: "https://www.netflix.com/th/title/81597478" }],
     },
     {
-      category: "movie", title_th: "ไทบ้าน x BNK48 จากใจผู้สาวคนนี้", title_en: "ไทบ้าน x BNK48 จากใจผู้สาวคนนี้", year: 2020,date: "2020-01-20",
+      category: "movie", title_th: "ไทบ้าน x BNK48 จากใจผู้สาวคนนี้", title_en: "ไทบ้าน x BNK48 จากใจผู้สาวคนนี้", year: 2020,
       image: "https://img.youtube.com/vi/fOqdaqINocg/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=fOqdaqINocg",
     },
     {
-      category: "movie", title_th: "ที่ตรงนั้น มีฉันหรือเปล่า", title_en: "Where We Belong", year: 2019,date: "2019-06-17",
+      category: "movie", title_th: "ที่ตรงนั้น มีฉันหรือเปล่า", title_en: "Where We Belong", year: 2019,
       image: "https://img.youtube.com/vi/oN4k4cNlmdw/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=oN4k4cNlmdw",
       spinoffs: [
@@ -113,6 +119,17 @@ const SU = {
   
     // MV
     {
+      category: "mv", title_th: "กลับมาพบกัน", title_en: "Back Again", year: 2026, date: "2026-07-11",
+      image: "https://img.youtube.com/vi/Rp4G6THuFyw/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/Rp4G6THuFyw?si=GeHxZXcXQzeW_6Mh",
+      role: "singer",
+      platforms: [
+        { name: "Spotify", url: "https://open.spotify.com/track/656BjclLs8iqnaf4VWDcTL?si=45d4eaef70f846f7" },
+        { name: "Apple Music", url: "https://music.apple.com/th/song/%E0%B8%81%E0%B8%A5-%E0%B8%9A%E0%B8%A1%E0%B8%B2%E0%B8%9E%E0%B8%9A%E0%B8%81-%E0%B8%99-back-again-from-%E0%B9%82%E0%B8%8B-%E0%B8%A3-%E0%B8%81%E0%B8%AD-%E0%B8%84%E0%B8%99-the-fire/6782025937?l=th" },
+        { name: "Joox", url: "https://www.joox.com/th/single/mtnhgvYueKB+kTgkESJArA==" },
+      ],
+    },
+    { 
       category: "mv", title_th: "คือเธอ", title_en: "It's You", year: 2026, date: "2026-06-28",
       image: "https://img.youtube.com/vi/zaBXaI3aqSA/maxresdefault.jpg",
       youtube_url: "https://youtu.be/zaBXaI3aqSA?si=fxQ0M3fMls1zPL9L",
@@ -124,19 +141,19 @@ const SU = {
       ],
     },
     {
-      category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025,date: "2025-11-11",
+      category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025,
       image: "https://img.youtube.com/vi/KljbGGdfc_s/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=KljbGGdfc_s",
       role: "singer",
     },
     {
-      category: "mv", title_th: "สายตาของผมจะมองแค่คุณคนเดียว", title_en: "สายตาของผมจะมองแค่คุณคนเดียว", year: 2025,date: "2025-01-23",
+      category: "mv", title_th: "สายตาของผมจะมองแค่คุณคนเดียว", title_en: "สายตาของผมจะมองแค่คุณคนเดียว", year: 2025,
       image: "https://img.youtube.com/vi/IHgmEpr6GXE/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=IHgmEpr6GXE",
       role: "singer",
     },
     {
-      category: "mv", title_th: "with us, without - PUPÉ Jiradapa", title_en: "with us, without - PUPÉ Jiradapa", year: 2024,date: "2024-08-12",
+      category: "mv", title_th: "with us, without - PUPÉ Jiradapa", title_en: "with us, without - PUPÉ Jiradapa", year: 2024,
       image: "https://img.youtube.com/vi/0YzQ0pHSSO4/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=0YzQ0pHSSO4",
       role: "actress",
@@ -145,57 +162,57 @@ const SU = {
       ],
     },
     {
-      category: "mv", title_th: "Under the Sun", title_en: "Under the Sun", year: 2024, date: "2024-02-24",
+      category: "mv", title_th: "Under the Sun", title_en: "Under the Sun", year: 2024,
       image: "https://img.youtube.com/vi/q4OzmUFYXjI/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=q4OzmUFYXjI",
       role: "singer",
     },
     {
-      category: "mv", title_th: "แฟนเทสดี", title_en: "แฟนเทสดี", year: 2023, date: "2023-11-17",
+      category: "mv", title_th: "แฟนเทสดี", title_en: "แฟนเทสดี", year: 2023,
       image: "https://img.youtube.com/vi/RHrgLUgTY6o/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=RHrgLUgTY6o&list=RDRHrgLUgTY6o&start_radio=1",
       role: "singer",
     },
     {
-      category: "mv", title_th: "ซ้อมรอ - HAVE A NICE DAY", title_en: "ซ้อมรอ - HAVE A NICE DAY", year: 2023, date: "2023-11-09",
+      category: "mv", title_th: "ซ้อมรอ - HAVE A NICE DAY", title_en: "ซ้อมรอ - HAVE A NICE DAY", year: 2023,
       image: "https://img.youtube.com/vi/uRxOLkq2S74/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=uRxOLkq2S74",
       role: "actress",
     },
 
     // BNK48 Song
-    { category: "bnk48", title_th: "ดั่งซากุระ ตลอดไป", title_en: "Sakura no Ki ni Narou", year: 2022, date: "2022-11-22", image: "https://img.youtube.com/vi/OOxFBnPrRKU/maxresdefault.jpg", youtube_url: "https://youtu.be/OOxFBnPrRKU?si=JLiTrg1BsHVNBH3y" },
-    { category: "bnk48", title_th: "Pioneer", title_en: "Pioneer", year: 2022, date: "2022-11-21", image: "https://img.youtube.com/vi/rUmPtU3mBWY/maxresdefault.jpg", youtube_url: "https://youtu.be/rUmPtU3mBWY?si=iW007ocOTsBnInW_" },
-    { category: "bnk48", title_th: "Jiwaru DAYS", title_en: "Jiwaru DAYS", year: 2022, date: "2022-11-20", image: "https://img.youtube.com/vi/TXFZtepXlzk/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=TXFZtepXlzk" },
-    { category: "bnk48", title_th: "Believers", title_en: "Believers", year: 2022, date: "2022-08-28", image: "https://img.youtube.com/vi/6mZagYSymB4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=6mZagYSymB4" },
-    { category: "bnk48", title_th: "หมกกบ (OST. ผ้าผีบอก)", title_en: "Mok Kob (OST. The Fabric)", year: 2022, date: "2022-06-04", image: "https://img.youtube.com/vi/3basTFl8WFw/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=3basTFl8WFw" },
-    { category: "bnk48", title_th: "Sayonara Crawl", title_en: "Sayonara Crawl", year: 2022, date: "2022-03-20", image: "https://img.youtube.com/vi/FppYrZtcAO0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=FppYrZtcAO0" },
-    { category: "bnk48", title_th: "High Tension (Namneung's Ver.)", title_en: "High Tension (Namneung's Ver.)", year: 2021, date: "2021-12-13", image: "https://img.youtube.com/vi/HA_Zg_SCfpQ/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=HA_Zg_SCfpQ" },
-    { category: "bnk48", title_th: "สวัสดีปีใหม่", title_en: "Happy New Year", year: 2021, date: "2021-12-12", image: "https://img.youtube.com/vi/om8vJGrrRvs/maxresdefault.jpg", youtube_url: "https://youtu.be/om8vJGrrRvs?si=l9zvMtRAdfw81LrN" },
-    { category: "bnk48", title_th: "ชอบเธอนะ", title_en: "Sukida Sukida Sukida", year: 2021, date: "2021-06-03", image: "https://img.youtube.com/vi/NzAqV54soaA/maxresdefault.jpg", youtube_url: "https://youtu.be/NzAqV54soaA?si=Rrlf3ankOZK9sug1" },
-    { category: "bnk48", title_th: "ดีอะ", title_en: "D.AAA", year: 2021, date: "2021-06-02", image: "https://img.youtube.com/vi/I64YL2424eU/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=I64YL2424eU" },
-    { category: "bnk48", title_th: "Heavy Rotation", title_en: "Heavy Rotation", year: 2020, date: "2020-07-26", image: "https://img.youtube.com/vi/d1lgOyQvkug/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=d1lgOyQvkug" },
-    { category: "bnk48", title_th: "หัวใจใกล้กัน (อีสาน เวอร์ชั่น)", title_en: "Touch by Heart (Isan Ver.)", year: 2020, date: "2020-04-13", image: "https://img.youtube.com/vi/CYpWLjYKyE0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=CYpWLjYKyE0" },
-    { category: "bnk48", title_th: "หัวใจใกล้กัน (English Ver.)", title_en: "Touch by Heart (English Ver.)", year: 2020, date: "2020-04-12", image: "https://img.youtube.com/vi/5ZOzZPzZ-zg/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=5ZOzZPzZ-zg" },
-    { category: "bnk48", title_th: "หัวใจใกล้กัน [Special Ver.] ", title_en: "Touch by Heart [Special Ver.]", year: 2020, date: "2020-04-11", image: "https://img.youtube.com/vi/T5ZkqCbbI2c/maxresdefault.jpg", youtube_url: "https://youtu.be/T5ZkqCbbI2c?si=9EIknsuF8mP3Hsnh" },
-    { category: "bnk48", title_th: "High Tension (Dance Practice)", title_en: "High Tension (Dance Practice)", year: 2020, date: "2020-02-24", image: "https://img.youtube.com/vi/QG5VNQuZGLQ/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=QG5VNQuZGLQ" },
-    { category: "bnk48", title_th: "High Tension", title_en: "High Tension", year: 2020, date: "2020-02-23", image: "https://img.youtube.com/vi/_jmHOW6X4V0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=_jmHOW6X4V0" },
-    { category: "bnk48", title_th: "โดดดิด่ง (Dance Practice)", title_en: "Dode di dong (Dance Practice)", year: 2020, date: "2020-01-16", image: "https://img.youtube.com/vi/lcPpC9CwLNk/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=lcPpC9CwLNk" },
-    { category: "bnk48", title_th: "โดดดิด่ง", title_en: "Dode di dong", year: 2020, date: "2020-01-15", image: "https://img.youtube.com/vi/Ek8itihPQgE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=Ek8itihPQgE" },
-    { category: "bnk48", title_th: "Jabaja", title_en: "Jabaja", year: 2019, date: "2019-07-05", image: "https://img.youtube.com/vi/WrRLfGZNu1E/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=WrRLfGZNu1E" },
-    { category: "bnk48", title_th: "บ๊ายบาย...นายพลาสติก ", title_en: "Bye Bye ... MR.Plastic", year: 2019, date: "2019-04-05", image: "https://img.youtube.com/vi/Gho7MGWbfAA/maxresdefault.jpg", youtube_url: "https://youtu.be/Gho7MGWbfAA?si=GX3ehKQHmMCPVfh6" },
-    { category: "bnk48", title_th: "Beginner", title_en: "Beginner", year: 2019, date: "2019-03-02", image: "https://img.youtube.com/vi/IptefJ9C4PY/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=IptefJ9C4PY" },
-    { category: "bnk48", title_th: "BNK Festival", title_en: "BNK Festival", year: 2018, date: "2018-11-22", image: "https://img.youtube.com/vi/mo4l8f_VZXo/hqdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=mo4l8f_VZXo" },
-    { category: "bnk48", title_th: "หมื่นเส้นทาง", title_en: "Yume e no Route", year: 2018, date: "2018-09-16", image: "https://img.youtube.com/vi/su_ZmVg0nw0/maxresdefault.jpg", youtube_url: "https://youtu.be/su_ZmVg0nw0?si=vDvYT65meh_8TFXK" },
-    { category: "bnk48", title_th: "เธอคือ…เมโลดี้", title_en: "Kimi wa Melody", year: 2018, date: "2018-09-15", image: "https://img.youtube.com/vi/iByxlVvWrww/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=iByxlVvWrww" },
-    { category: "bnk48", title_th: "RIVER", title_en: "RIVER", year: 2018, date: "2018-04-30", image: "https://img.youtube.com/vi/4TKCbe8jyRI/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=4TKCbe8jyRI" },
-    { category: "bnk48", title_th: "ความทรงจำและคำอำลา", title_en: "Sakura no Hanabiratachi", year: 2018, date: "2018-04-11", image: "https://img.youtube.com/vi/jMa88SrDlYU/maxresdefault.jpg", youtube_url: "https://youtu.be/jMa88SrDlYU?si=yLJD7ah81vwk9tgw" },
-    { category: "bnk48", title_th: "วันแรก", title_en: "Shonichi", year: 2018, date: "2018-04-10", image: "https://img.youtube.com/vi/IMx1ojx2fiE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=IMx1ojx2fiE" },
-    { category: "bnk48", title_th: "BNK48", title_en: "BNK48", year: 2017, date: "2017-11-19", image: "https://img.youtube.com/vi/1GFytjig8AE/maxresdefault.jpg", youtube_url: "https://youtu.be/1GFytjig8AE?si=hzwBU5xPX8df1C42" },
-    { category: "bnk48", title_th: "คุกกี้เสี่ยงทาย", title_en: "Koisuru Fortune Cookie", year: 2017, date: "2017-11-18", image: "https://img.youtube.com/vi/mfqJyKm20Z4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=mfqJyKm20Z4" },
-    { category: "bnk48", title_th: "365 วันกับเครื่องบินกระดาษ", title_en: "365-Nichi no Kamihikouki", year: 2017, date: "2017-07-13", image: "https://img.youtube.com/vi/b51XaJl28tU/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=b51XaJl28tU" },
-    { category: "bnk48", title_th: "ก็ชอบ ให้รู้ว่าชอบ", title_en: "Oogoe Diamond", year: 2017, date: "2017-07-12", image: "https://img.youtube.com/vi/TWZ-D0uliFQ/maxresdefault.jpg", youtube_url: "https://youtu.be/TWZ-D0uliFQ?si=y-CyTK0GyhcdywNL" },
-    { category: "bnk48", title_th: "อยากจะได้พบเธอ", title_en: "Aitakatta", year: 2017, date: "2017-07-11", image: "https://img.youtube.com/vi/zdgemowocu8/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=zdgemowocu8" },
+    { category: "bnk48", title_th: "ดั่งซากุระ ตลอดไป", title_en: "Sakura no Ki ni Narou", year: 2022, image: "https://img.youtube.com/vi/OOxFBnPrRKU/maxresdefault.jpg", youtube_url: "https://youtu.be/OOxFBnPrRKU?si=JLiTrg1BsHVNBH3y" },
+    { category: "bnk48", title_th: "Pioneer", title_en: "Pioneer", year: 2022, image: "https://img.youtube.com/vi/rUmPtU3mBWY/maxresdefault.jpg", youtube_url: "https://youtu.be/rUmPtU3mBWY?si=iW007ocOTsBnInW_" },
+    { category: "bnk48", title_th: "Jiwaru DAYS", title_en: "Jiwaru DAYS", year: 2022, image: "https://img.youtube.com/vi/TXFZtepXlzk/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=TXFZtepXlzk" },
+    { category: "bnk48", title_th: "Believers", title_en: "Believers", year: 2022, image: "https://img.youtube.com/vi/6mZagYSymB4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=6mZagYSymB4" },
+    { category: "bnk48", title_th: "หมกกบ (OST. ผ้าผีบอก)", title_en: "Mok Kob (OST. The Fabric)", year: 2022, image: "https://img.youtube.com/vi/3basTFl8WFw/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=3basTFl8WFw" },
+    { category: "bnk48", title_th: "Sayonara Crawl", title_en: "Sayonara Crawl", year: 2022, image: "https://img.youtube.com/vi/FppYrZtcAO0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=FppYrZtcAO0" },
+    { category: "bnk48", title_th: "สวัสดีปีใหม่", title_en: "Happy New Year", year: 2021, image: "https://img.youtube.com/vi/om8vJGrrRvs/maxresdefault.jpg", youtube_url: "https://youtu.be/om8vJGrrRvs?si=l9zvMtRAdfw81LrN" },
+    { category: "bnk48", title_th: "High Tension (Namneung's Ver.)", title_en: "High Tension (Namneung's Ver.)", year: 2021, image: "https://img.youtube.com/vi/HA_Zg_SCfpQ/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=HA_Zg_SCfpQ" },
+    { category: "bnk48", title_th: "ชอบเธอนะ", title_en: "Sukida Sukida Sukida", year: 2021, image: "https://img.youtube.com/vi/NzAqV54soaA/maxresdefault.jpg", youtube_url: "https://youtu.be/NzAqV54soaA?si=Rrlf3ankOZK9sug1" },
+    { category: "bnk48", title_th: "ดีอะ", title_en: "D.AAA", year: 2021, image: "https://img.youtube.com/vi/I64YL2424eU/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=I64YL2424eU" },
+    { category: "bnk48", title_th: "Heavy Rotation", title_en: "Heavy Rotation", year: 2020, image: "https://img.youtube.com/vi/d1lgOyQvkug/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=d1lgOyQvkug" },
+    { category: "bnk48", title_th: "หัวใจใกล้กัน (อีสาน เวอร์ชั่น)", title_en: "Touch by Heart (Isan Ver.)", year: 2020, image: "https://img.youtube.com/vi/CYpWLjYKyE0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=CYpWLjYKyE0" },
+    { category: "bnk48", title_th: "หัวใจใกล้กัน (English Ver.)", title_en: "Touch by Heart (English Ver.)", year: 2020, image: "https://img.youtube.com/vi/5ZOzZPzZ-zg/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=5ZOzZPzZ-zg" },
+    { category: "bnk48", title_th: "หัวใจใกล้กัน [Special Ver.] ", title_en: "Touch by Heart [Special Ver.]", year: 2020, image: "https://img.youtube.com/vi/T5ZkqCbbI2c/maxresdefault.jpg", youtube_url: "https://youtu.be/T5ZkqCbbI2c?si=9EIknsuF8mP3Hsnh" },
+    { category: "bnk48", title_th: "High Tension (Dance Practice)", title_en: "High Tension (Dance Practice)", year: 2020, image: "https://img.youtube.com/vi/QG5VNQuZGLQ/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=QG5VNQuZGLQ" },
+    { category: "bnk48", title_th: "High Tension", title_en: "High Tension", year: 2020, image: "https://img.youtube.com/vi/_jmHOW6X4V0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=_jmHOW6X4V0" },
+    { category: "bnk48", title_th: "โดดดิด่ง (Dance Practice)", title_en: "Dode di dong (Dance Practice)", year: 2020, image: "https://img.youtube.com/vi/lcPpC9CwLNk/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=lcPpC9CwLNk" },
+    { category: "bnk48", title_th: "โดดดิด่ง", title_en: "Dode di dong", year: 2020, image: "https://img.youtube.com/vi/Ek8itihPQgE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=Ek8itihPQgE" },
+    { category: "bnk48", title_th: "Jabaja", title_en: "Jabaja", year: 2019, image: "https://img.youtube.com/vi/WrRLfGZNu1E/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=WrRLfGZNu1E" },
+    { category: "bnk48", title_th: "บ๊ายบาย...นายพลาสติก ", title_en: "Bye Bye ... MR.Plastic", year: 2019, image: "https://img.youtube.com/vi/Gho7MGWbfAA/maxresdefault.jpg", youtube_url: "https://youtu.be/Gho7MGWbfAA?si=GX3ehKQHmMCPVfh6" },
+    { category: "bnk48", title_th: "Beginner", title_en: "Beginner", year: 2019, image: "https://img.youtube.com/vi/IptefJ9C4PY/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=IptefJ9C4PY" },
+    { category: "bnk48", title_th: "BNK Festival", title_en: "BNK Festival", year: 2018, image: "https://img.youtube.com/vi/mo4l8f_VZXo/hqdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=mo4l8f_VZXo" },
+    { category: "bnk48", title_th: "หมื่นเส้นทาง", title_en: "Yume e no Route", year: 2018, image: "https://img.youtube.com/vi/su_ZmVg0nw0/maxresdefault.jpg", youtube_url: "https://youtu.be/su_ZmVg0nw0?si=vDvYT65meh_8TFXK" },
+    { category: "bnk48", title_th: "เธอคือ…เมโลดี้", title_en: "Kimi wa Melody", year: 2018, image: "https://img.youtube.com/vi/iByxlVvWrww/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=iByxlVvWrww" },
+    { category: "bnk48", title_th: "RIVER", title_en: "RIVER", year: 2018, image: "https://img.youtube.com/vi/4TKCbe8jyRI/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=4TKCbe8jyRI" },
+    { category: "bnk48", title_th: "ความทรงจำและคำอำลา", title_en: "Sakura no Hanabiratachi", year: 2018, image: "https://img.youtube.com/vi/jMa88SrDlYU/maxresdefault.jpg", youtube_url: "https://youtu.be/jMa88SrDlYU?si=yLJD7ah81vwk9tgw" },
+    { category: "bnk48", title_th: "วันแรก", title_en: "Shonichi", year: 2018, image: "https://img.youtube.com/vi/IMx1ojx2fiE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=IMx1ojx2fiE" },
+    { category: "bnk48", title_th: "BNK48", title_en: "BNK48", year: 2017, image: "https://img.youtube.com/vi/1GFytjig8AE/maxresdefault.jpg", youtube_url: "https://youtu.be/1GFytjig8AE?si=hzwBU5xPX8df1C42" },
+    { category: "bnk48", title_th: "คุกกี้เสี่ยงทาย", title_en: "Koisuru Fortune Cookie", year: 2017, image: "https://img.youtube.com/vi/mfqJyKm20Z4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=mfqJyKm20Z4" },
+    { category: "bnk48", title_th: "365 วันกับเครื่องบินกระดาษ", title_en: "365-Nichi no Kamihikouki", year: 2017, image: "https://img.youtube.com/vi/b51XaJl28tU/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=b51XaJl28tU" },
+    { category: "bnk48", title_th: "ก็ชอบ ให้รู้ว่าชอบ", title_en: "Oogoe Diamond", year: 2017, image: "https://img.youtube.com/vi/TWZ-D0uliFQ/maxresdefault.jpg", youtube_url: "https://youtu.be/TWZ-D0uliFQ?si=y-CyTK0GyhcdywNL" },
+    { category: "bnk48", title_th: "อยากจะได้พบเธอ", title_en: "Aitakatta", year: 2017, image: "https://img.youtube.com/vi/zdgemowocu8/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=zdgemowocu8" },
   ],
 
     // รางวัล
@@ -256,23 +273,46 @@ const SU = {
       category:    "series",
       title_th:    "โซ่รักอัคนี",
       title_en:    "The Fire",
+      hub_link:    true,
       badge_th:    "Official Trailer",
       badge_en:    "Official Trailer",
-      premiere_th: "ตอนแรก 11 July 2026",
+      premiere_th: "ตอนแรก 11 ก.ค. 2569",
       premiere_en: "First Episode 11 July 2026",
       role_th:     "ไฟ อัจจิมา วาทินวณิช",
       role_en:     "Fai Atchima Watinwanit",
       platform:    "Ch7HD / iQIYI",
       youtube_id:  "U2ozG4r_HZw",
-      youtube_url: "https://youtu.be/U2ozG4r_HZw?si=mD4k3nySapiMbgwZ",
+      youtube_url: "https://youtu.be/U2ozG4r_HZw?si=DcPWKygK4E_lOuTF",
       air_date: "2026-07-11",
       desc_th: "รับชมสดทางช่อง 7HD กด 35 ผ่านเว็บไซต์ Ch7HD หรือ TrueID และรับชมย้อนหลังได้ทาง BUGABOO.TV และ iQIYI",
       desc_en: "Watch live on Channel 7HD (Channel 35) via their official website or TrueID, and catch up on previous episodes on BUGABOO.TV and iQIYI.",
       watch_platforms: [
         { name: "Ch7HD Live", url: "https://www.ch7.com/live.html" },
         { name: "TrueID Live",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},  
-        { name: "iQIYI Uncut",  url: "" }, 
-        { name: "BUGABOO.TV",       url: "" },
+        { name: "iQIYI Uncut",  url: "https://www.iq.com/album/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A-2026-28ki6pjn81t?lang=th_th" }, 
+        { name: "BUGABOO.TV",       url: "https://www.bugaboo.tv/en/search/?keyword=%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5" },
+      ],
+    },
+    {
+      category:    "mv",
+      title_th:    "กลับมาพบกัน",
+      title_en:    "Back Again",
+      badge_th:    "New MV",
+      badge_en:    "New MV",
+      premiere_th: "TBC",
+      premiere_en: "TBC",
+      air_date:    "",
+      youtube_id:  "Rp4G6THuFyw",
+      youtube_url: "https://youtu.be/Rp4G6THuFyw?si=JFHLZSaBimkOqc1m",
+      image:       "",
+      platform:    "YouTube",
+      role_th:     "น้ำหนึ่ง มิลิญ & เนย กานต์ธีรา",
+      role_en:     "Namneung Milin & Noey Kanteera",
+      listen_platforms: [
+      { name: "Spotify",      url: "https://open.spotify.com/track/6JbVIzHIdrCGuWFkn3YmDp?si=_Y0zdsaZTB-PP1z-wDfNiw&nd=1&dlsi=c4c58b5096634345" },
+      { name: "Apple Music",  url: "https://music.apple.com/th/album/ค-อเธอ-its-you-from-โซ-ร-กอ-คน-the-fire-4elements-บ/6783669451?l=th" },
+      { name: "JOOX",         url: "https://www.joox.com/th/single/hVo2TY51MpyZ6W258mWrCA==" },
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_kaXSPwNRYs50EP-eyMiT8AeS-djr-VbEM&si=4_-amMaf3LmONsCb" },
       ],
     },
     {
@@ -295,15 +335,57 @@ const SU = {
       { name: "Apple Music",  url: "https://music.apple.com/th/album/ค-อเธอ-its-you-from-โซ-ร-กอ-คน-the-fire-4elements-บ/6783669451?l=th" },
       { name: "JOOX",         url: "https://www.joox.com/th/single/hVo2TY51MpyZ6W258mWrCA==" },
       { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_kaXSPwNRYs50EP-eyMiT8AeS-djr-VbEM&si=4_-amMaf3LmONsCb" },
+      ],
+    }
   ],
-}
-  ],
+
+  // The Fire — Content Hub (ซ้อนอยู่ใต้ Works section)
+  thefire_hub: {
+    title_th: "โซ่รักอัคนี",
+    title_en: "The Fire ",
+    desc_th: "รวมคอนเทนต์ทั้งหมดของซีรีส์ โซ่รักอัคนี",
+    desc_en: "All content related to The Fire",
+
+    ost: [
+      { title_th: "คือเธอ", title_en: "It's You", youtube_url: "https://youtu.be/zaBXaI3aqSA?si=w9nprsQtImTDtO-u", spotify_url: "https://open.spotify.com/album/0HOYZzwzgQkSPabPZiC8Hz", image: "https://img.youtube.com/vi/zaBXaI3aqSA/maxresdefault.jpg" },
+      { title_th: "กลับมาพบกัน", title_en: "Back Again", youtube_url: "https://youtu.be/Rp4G6THuFyw?si=JFHLZSaBimkOqc1m", spotify_url: "https://open.spotify.com/track/656BjclLs8iqnaf4VWDcTL?si=FE9H6p9vQiKRHNWBOovftQ&utm_source=copy-link&context=spotify%3Asearch&nd=1&dlsi=bb1e22a5962f43a5", image: "https://img.youtube.com/vi/Rp4G6THuFyw/maxresdefault.jpg" },
+    ],
+
+    content: [
+      { title_th: "Official Overture", title_en: "OFFICIAL Overture", youtube_url: "https://youtu.be/erOZdx3WALk?si=jeSipACbeFvfngix", image: "https://img.youtube.com/vi/erOZdx3WALk/maxresdefault.jpg" },
+      { title_th: "Official Teaser", title_en: "Official Teaser", youtube_url: "https://youtu.be/7pqOPlfEjXo?si=e9kqeKm93S5VI4BI", image: "https://img.youtube.com/vi/7pqOPlfEjXo/maxresdefault.jpg"  },
+      { title_th: "Official Trailer", title_en: "Official Trailer", youtube_url: "https://youtu.be/U2ozG4r_HZw?si=xmOLbp7wSP-Sp4iE", image: "https://img.youtube.com/vi/U2ozG4r_HZw/maxresdefault.jpg"  },
+      { title_th: "รู้จักกับ 'ไฟ'", title_en: "Get to Know 'Fai'", youtube_url: "https://youtu.be/Ztxr6i55FVM?si=cmBBX3W7HWBeFC6e", image: "https://img.youtube.com/vi/Ztxr6i55FVM/maxresdefault.jpg"  },
+    ],
+
+    reactions: [
+      { title_th: "Overture Reaction", title_en: "Overture Reaction", youtube_url: "https://youtu.be/h8mcNILmtgM?si=pFzCEI9WzrYM6YYA", image: "https://img.youtube.com/vi/h8mcNILmtgM/maxresdefault.jpg" },
+      { title_th: "Teaser Reaction", title_en: "Teaser Reaction", youtube_url: "https://x.com/4elementsGL/status/2068997804346020134?s=20", image: "images/teaser1.jpg" },
+      { title_th: "Trailer Reaction", title_en: "Trailer Reaction", youtube_url: "https://x.com/4elementsGL/status/2068997804346020134?s=20", image: "images/trailer1.jpg" },
+      { title_th: "Trailer Reaction Sertist", title_en: "Trailer Reaction Sertist", youtube_url: "https://youtu.be/JbGzFsd-MTM?si=ZmK_Nkvbrpdew72B", image: "https://img.youtube.com/vi/JbGzFsd-MTM/maxresdefault.jpg" },
+
+    ],
+
+    spots: [
+      { title_th: "Spot EP.1", title_en: "Spot EP.1", youtube_url: "https://youtu.be/Omw2YrM99MM?si=MaEIQtmG67oshr1K", image: "https://img.youtube.com/vi/Omw2YrM99MM/maxresdefault.jpg" },
+    ],
+
+    posters: [
+      { title_th: "Official Poster 0", title_en: "Official Poster 0", image: "images/pos0.jpg" },
+      { title_th: "Official Poster 1", title_en: "Official Poster 1", image: "images/pos1.jpg" },
+      //{ title_th: "Poster Fai", title_en: "Poster Fai", image: "images/fai.jpg" },
+    ],
+
+    promo: [
+      // { title_th: "ออกรายการ X", title_en: "Guest on X", youtube_url: "", image: "" },
+    ],
+  },
 
   //  Collab (SERTIST) 
   collab: {
     friend_name_th: "แก้ว ปูเป้ โมบาย",
     friend_name_en: "Kaew Pupe Mobye",
-    desc_th: "Sertist - YouTube / คอนเทนต์ร่วมกับเพื่อน · ติดต่อแยกจากต้นสังกัด",
+    desc_th: "Sertist - YouTube / Content ร่วมกับเพื่อน · ติดต่อแยกจากต้นสังกัด",
     desc_en: "Sertist - YouTube / Content with friend · Separate from main agency",
     email: "sertist.office@gmail.com",
     tel:   "0661014622 (k.ploy)",
