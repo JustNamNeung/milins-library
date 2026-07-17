@@ -120,8 +120,8 @@ const SU = {
     // MV
     {
       category: "mv", title_th: "กลับมาพบกัน", title_en: "Back Again", year: 2026, date: "2026-07-11",
-      image: "https://img.youtube.com/vi/Rp4G6THuFyw/maxresdefault.jpg",
-      youtube_url: "https://youtu.be/Rp4G6THuFyw?si=GeHxZXcXQzeW_6Mh",
+      image: "https://img.youtube.com/vi/vyZCwAPMSlo/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/vyZCwAPMSlo?si=kFdKyS1tspXaQvk-",
       role: "singer",
       platforms: [
         { name: "Spotify", url: "https://open.spotify.com/track/656BjclLs8iqnaf4VWDcTL?si=45d4eaef70f846f7" },
@@ -131,8 +131,8 @@ const SU = {
     },
     { 
       category: "mv", title_th: "คือเธอ", title_en: "It's You", year: 2026, date: "2026-06-28",
-      image: "https://img.youtube.com/vi/zaBXaI3aqSA/maxresdefault.jpg",
-      youtube_url: "https://youtu.be/zaBXaI3aqSA?si=fxQ0M3fMls1zPL9L",
+      image: "https://img.youtube.com/vi/uYPWFkDaakI/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/uYPWFkDaakI?si=83r5A0curCIMiiB1",
       role: "singer",
       platforms: [
         { name: "Spotify", url: "https://open.spotify.com/track/6JbVIzHIdrCGuWFkn3YmDp?si=_Y0zdsaZTB-PP1z-wDfNiw&nd=1&dlsi=c4c58b5096634345" },
@@ -290,7 +290,7 @@ const SU = {
         { name: "Ch7HD Live", url: "https://www.ch7.com/live.html" },
         { name: "TrueID Live",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},  
         { name: "iQIYI Uncut",  url: "https://www.iq.com/album/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A-2026-28ki6pjn81t?lang=th_th" }, 
-        { name: "BUGABOO.TV",       url: "https://www.bugaboo.tv/en/search/?keyword=%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5" },
+        { name: "BUGABOO.TV",       url: "https://www.bugaboo.tv/en/series/thefire/" },
       ],
     },
     {
@@ -299,11 +299,11 @@ const SU = {
       title_en:    "Back Again",
       badge_th:    "New MV",
       badge_en:    "New MV",
-      premiere_th: "TBC",
-      premiere_en: "TBC",
-      air_date:    "",
-      youtube_id:  "Rp4G6THuFyw",
-      youtube_url: "https://youtu.be/Rp4G6THuFyw?si=JFHLZSaBimkOqc1m",
+      premiere_th: "16 July 2026",
+      premiere_en: "16 July 2026",
+      air_date:    "2026-07-16",
+      youtube_id:  "vyZCwAPMSlo",
+      youtube_url: "https://youtu.be/vyZCwAPMSlo?si=kFdKyS1tspXaQvk-",
       image:       "",
       platform:    "YouTube",
       role_th:     "น้ำหนึ่ง มิลิญ & เนย กานต์ธีรา",
@@ -321,11 +321,11 @@ const SU = {
       title_en:    "It’s you",
       badge_th:    "New MV",
       badge_en:    "New MV",
-      premiere_th: "11 July 2026",
-      premiere_en: "11 July 2026",
-      air_date:    "2026-07-11",
-      youtube_id:  "zaBXaI3aqSA",
-      youtube_url: "https://youtu.be/zaBXaI3aqSA?si=NSV2KLPCZP_vbFYP",
+      premiere_th: "14 July 2026",
+      premiere_en: "14 July 2026",
+      air_date:    "2026-07-14",
+      youtube_id:  "uYPWFkDaakI",
+      youtube_url: "https://youtu.be/uYPWFkDaakI?si=KFh4ceESzNJJHvb5",
       image:       "",
       platform:    "YouTube",
       role_th:     "น้ำหนึ่ง มิลิญ",
@@ -347,8 +347,8 @@ const SU = {
     desc_en: "All content related to The Fire",
 
     ost: [
-      { title_th: "คือเธอ", title_en: "It's You", youtube_url: "https://youtu.be/zaBXaI3aqSA?si=w9nprsQtImTDtO-u", spotify_url: "https://open.spotify.com/album/0HOYZzwzgQkSPabPZiC8Hz", image: "https://img.youtube.com/vi/zaBXaI3aqSA/maxresdefault.jpg" },
-      { title_th: "กลับมาพบกัน", title_en: "Back Again", youtube_url: "https://youtu.be/Rp4G6THuFyw?si=JFHLZSaBimkOqc1m", spotify_url: "https://open.spotify.com/track/656BjclLs8iqnaf4VWDcTL?si=FE9H6p9vQiKRHNWBOovftQ&utm_source=copy-link&context=spotify%3Asearch&nd=1&dlsi=bb1e22a5962f43a5", image: "https://img.youtube.com/vi/Rp4G6THuFyw/maxresdefault.jpg" },
+      { title_th: "คือเธอ", title_en: "It's You", youtube_url: "https://youtu.be/uYPWFkDaakI?si=83r5A0curCIMiiB1", spotify_url: "https://open.spotify.com/album/0HOYZzwzgQkSPabPZiC8Hz", image: "https://img.youtube.com/vi/uYPWFkDaakI/maxresdefault.jpg" },
+      { title_th: "กลับมาพบกัน", title_en: "Back Again", youtube_url: "https://youtu.be/vyZCwAPMSlo?si=kFdKyS1tspXaQvk-", spotify_url: "https://open.spotify.com/track/656BjclLs8iqnaf4VWDcTL?si=FE9H6p9vQiKRHNWBOovftQ&utm_source=copy-link&context=spotify%3Asearch&nd=1&dlsi=bb1e22a5962f43a5", image: "https://img.youtube.com/vi/vyZCwAPMSlo/maxresdefault.jpg" },
     ],
 
     content: [
@@ -368,16 +368,22 @@ const SU = {
 
     spots: [
       { title_th: "Spot EP.1", title_en: "Spot EP.1", youtube_url: "https://youtu.be/Omw2YrM99MM?si=MaEIQtmG67oshr1K", image: "https://img.youtube.com/vi/Omw2YrM99MM/maxresdefault.jpg" },
+      { title_th: "Spot EP.2", title_en: "Spot EP.2", youtube_url: "https://youtu.be/82cXI0GSD6c?si=nZWa0RF89aVmBfOC", image: "https://img.youtube.com/vi/82cXI0GSD6c/maxresdefault.jpg" },
+    //{ title_th: "Spot EP.3", title_en: "Spot EP.3", youtube_url: "https://youtu.be/Omw2YrM99MM?si=MaEIQtmG67oshr1K", image: "https://img.youtube.com/vi/Omw2YrM99MM/maxresdefault.jpg" },
+
     ],
 
     posters: [
       { title_th: "Official Poster 0", title_en: "Official Poster 0", image: "images/pos0.jpg" },
       { title_th: "Official Poster 1", title_en: "Official Poster 1", image: "images/pos1.jpg" },
-      //{ title_th: "Poster Fai", title_en: "Poster Fai", image: "images/fai.jpg" },
+      { title_th: "Poster Fai", title_en: "Poster Fai", image: "images/fai.jpg" },
     ],
 
     promo: [
-      // { title_th: "ออกรายการ X", title_en: "Guest on X", youtube_url: "", image: "" },
+      { title_th: "Maya TALK LIVE - โซ่รักอัคนี", title_en: "Maya TALK LIVE - The Fire", youtube_url: "https://youtu.be/CGGcM5SWBZI?si=hLtsMjm8cKky0CZI", image: "https://img.youtube.com/vi/CGGcM5SWBZI/maxresdefault.jpg" },
+      { title_th: "Ch7HD Drama Society (Live)", title_en: "Ch7HD Drama Society (Live)", youtube_url: "https://www.facebook.com/share/v/1ErZpPzKoW/", image: "images/pr.jpg" },
+      { title_th: "ออกรายการ เที่ยงบันเทิง Talk", title_en: "Guest on เที่ยงบันเทิง Talk", youtube_url: "https://www.youtube.com/live/xVNe6uZWXX4?si=QBAg8mlQVwTUbxaO", image: "https://img.youtube.com/vi/xVNe6uZWXX4/maxresdefault.jpg" },
+      { title_th: "ออกรายการ EFM Fandom Live", title_en: "Guest on EFM Fandom Live", youtube_url: "https://www.youtube.com/live/yPsW6abFQRE?si=NfsO8vyjSV5TDftU", image: "https://img.youtube.com/vi/yPsW6abFQRE/maxresdefault.jpg" },
     ],
   },
 
@@ -415,7 +421,7 @@ const SU = {
     desc_th: "ช่อง YouTube ที่น้ำหนึ่งทำร่วมกับเพื่อนๆ แก้ว ปูเป้ และโมบาย",
     desc_en: "A YouTube channel created together with friends Kaew, Pupe and Mobye",
     videos: [
-      { youtube_id: "h8mcNILmtgM", title_th: "[REACTION] Overture 4 Elements", title_en: "[REACTION] Overture 4 Elements", thumb: "https://img.youtube.com/vi/h8mcNILmtgM/hqdefault.jpg", playlist_url: "" },
+      { youtube_id: "JbGzFsd-MTM", title_th: "[REACTION] Official Trailer - โซ่รักอัคนี", title_en: "[REACTION] Official Trailer - The Fire ", thumb: "https://img.youtube.com/vi/JbGzFsd-MTM/maxresdefault.jpg", playlist_url: "" },
       { youtube_id: "38axki2otzI", title_th: "SERTIST Talk x Wee (vmoho)", title_en: "SERTIST Talk x Wee (vmoho)", thumb: "https://img.youtube.com/vi/38axki2otzI/hqdefault.jpg", playlist_url: "https://www.youtube.com/playlist?list=PL-ZdboqjeU5L1MaT0v0A8YsbT3AjlCe5m" },
       { youtube_id: "xag-_vQZlKs", title_th: "Phuket Vlog ep.1", title_en: "Phuket Vlog ep.1", thumb: "https://img.youtube.com/vi/xag-_vQZlKs/hqdefault.jpg", playlist_url: "" },
     ],

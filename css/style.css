@@ -41,7 +41,7 @@ img { max-width: 100%; display: block; }
 
 /* ── NAV ──────────────────────────────────────────────────── */
 .nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: static; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 32px; height: 60px;
   background: rgba(255,255,255,0.95);
@@ -91,7 +91,7 @@ img { max-width: 100%; display: block; }
 
 /* ── MOBILE MENU ──────────────────────────────────────────── */
 .mobile-menu {
-  display: none; position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
+  display: none; position: static; z-index: 99;
   background: white; border-bottom: 1px solid var(--gray-200);
   flex-direction: column; padding: 16px 32px; gap: 16px;
   box-shadow: var(--shadow);
@@ -102,12 +102,14 @@ img { max-width: 100%; display: block; }
 /* ── HERO — Full Poster ────────────────────────────────────── */
 .hero {
   min-height: 100vh;
+  max-height: 1080px;
+  aspect-ratio: 1920 / 1080;
   position: relative; overflow: hidden;
   display: flex; align-items: flex-end;
   background: #111;
 }
 @media (max-width: 768px) {
-  .hero { min-height: auto; aspect-ratio: 750/1334; }
+  .hero { min-height: auto; max-height: none; aspect-ratio: 1080/1920; }
 }
 
 /* พื้นหลัง — ใส่รูปจริงได้ที่นี่ */
@@ -439,8 +441,11 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 480px) {
   .facts-grid { grid-template-columns: 1fr; }
-  .work-grid  { grid-template-columns: 1fr; }
+  .work-grid  { grid-template-columns: 1fr 1fr; gap: 8px; }
   .about-grid { grid-template-columns: 1fr 1fr; }
+  .work-info  { padding: 8px 10px; }
+  .work-title { font-size: 12px; }
+  .work-year  { font-size: 10px; }
 }
 
 /* ── UPCOMING ─────────────────────────────────────────────── */
