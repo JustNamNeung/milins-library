@@ -47,6 +47,14 @@ const SU = {
     { icon: "ti-heart",        th: "คำว่า \"รัก\" ของน้ำหนึ่ง พิมพ์โดยกด Shift = ณํฏ",               en: "Namneung types the word \"love\" using Shift = ณํฏ" },
   ],
 
+  // ไฮไลท์ 
+  highlights: [
+    { title_th: "รำงานบวงสรวงพญาศรีสัตตนาคราช 2026", title_en: "Phaya Si Sattanakharat Worship Dance Ceremony 2026", platform: "tiktok", url: "https://www.tiktok.com/@fm90.25mhz/video/7661622891351608583?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/dance.jpg" },
+    { title_th: "โซ่รักอัคนี น้องลูกไฟ", title_en: "The Fire N'Lukfai", platform: "tiktok", url: "https://www.tiktok.com/@iqiyi_thailand/video/7660133368260054280?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/lukfai.jpg" },
+
+    // { title_th: "แฟนมีตติ้ง [ชื่องาน]", title_en: "[Event] Fan Meeting", platform: "facebook", url: "https://www.facebook.com/...", image: "images/highlight2.jpg" },
+  ],
+
   // ผลงาน
   works: [
 
@@ -241,6 +249,136 @@ const SU = {
       event_en: "BNK48 6th Single Senbatsu General Election",
       icon: "ti-trophy",
     },
+  ],
+
+  variety: [
+  
+    //16072026
+    { category: "variety", title_th: "EFM Fandom Live", title_en: "Guest on EFM Fandom Live", year: 2026, image: "https://img.youtube.com/vi/yPsW6abFQRE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/yPsW6abFQRE?si=NfsO8vyjSV5TDftU" },  
+
+    //16072026  
+    { category: "variety", title_th: "ออกรายการ เที่ยงบันเทิง Talk", title_en: "Guest on เที่ยงบันเทิง Talk", year: 2026, image: "https://img.youtube.com/vi/xVNe6uZWXX4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/xVNe6uZWXX4?si=QBAg8mlQVwTUbxaO" },
+
+    //21122025
+    { category: "variety", title_th: "KAZZTalKxNamneungNoey", title_en: "Guest on KAZZ Talk", year: 2025, image: "https://img.youtube.com/vi/9_3Gwrfe1Eo/maxresdefault.jpg", youtube_url: "https://youtu.be/9_3Gwrfe1Eo?si=0YkkO0Z5f8ywZYJh" },
+
+    //21102025  
+    { category: "variety", title_th: "O SEE YOU | EP.10 น้ำหนึ่ง มิลิญ", title_en: "Guest on O SEE YOU", year: 2025, image: "https://img.youtube.com/vi/DuM-lIrxCuw/maxresdefault.jpg", youtube_url: "https://youtu.be/DuM-lIrxCuw?si=g3XpuUfFThZ1dNh5" },
+
+    //20102025
+    { category: "variety", title_th: "In The 8ight", title_en: "Guest on In The 8ight", year: 2025, image: "https://img.youtube.com/vi/RZuNeizq11w/maxresdefault.jpg", youtube_url: "https://youtu.be/RZuNeizq11w?si=a5xil-CSjoJx0nkZ" },
+
+    //29092025
+    { category: "variety", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 29 กันยายน  ", title_en: "Guest on LINE MAN LIVE x NNN Sep 29", year: 2025, image: "https://img.youtube.com/vi/p-HtKfnUUUs/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/p-HtKfnUUUs?si=1Jps9SKEU0T-FHlB" },
+
+    //22092025
+    { category: "variety", title_th: "GOODBYE ตายไม่รู้ตัว", title_en: "Guest on GOODBYE", year: 2025, image: "https://img.youtube.com/vi/qPT3LAXllj4/maxresdefault.jpg", youtube_url: "https://youtu.be/qPT3LAXllj4?si=hdCccVKTDD-eEpjt" },
+
+    //20082025
+    { category: "variety", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 20 สิงหาคม", title_en: "Guest on LINE MAN LIVE x NNN Aug 20", year: 2025, image: "https://img.youtube.com/vi/YKSUJj6tkFE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/YKSUJj6tkFE?si=QDsemixIpHxK9lp3" },
+
+    //24072025
+    { category: "variety", title_th: "Conversation EP.52", title_en: "Conversation EP.52", year: 2025, image: "https://img.youtube.com/vi/wCbYtZckYbI/maxresdefault.jpg", youtube_url: "https://youtu.be/wCbYtZckYbI?si=nkpMENWXmKdOrs-5" },
+
+    //04072025
+    { category: "variety", title_th: "T-POP STAGE | Week 26/2025", title_en: "T-POP STAGE | Week 26/2025", year: 2025, image: "https://img.youtube.com/vi/DPNoXnQWCEE/maxresdefault.jpg", youtube_url: "https://youtu.be/DPNoXnQWCEE?si=FP6y37YAKawUkStV" },
+
+    //02072025
+    { category: "variety", title_th: "Popcycle Live EP.95", title_en: "Guest on Popcycle Live EP.95", year: 2025, image: "https://img.youtube.com/vi/YVWS895j-Tg/maxresdefault.jpg", youtube_url: "https://youtu.be/YVWS895j-Tg?si=IYGj0qe1i3Yc8gX5" },
+
+    //18062025
+    { category: "variety", title_th: "FACE OFF แฝดคนละฝา", title_en: "Guest on FACE OFF", year: 2025, image: "https://img.youtube.com/vi/cJxSPKyw4SU/maxresdefault.jpg", youtube_url: "https://youtu.be/cJxSPKyw4SU?si=mIBs-fcsjOn6R4mu" },
+
+    //14062025
+    { category: "variety", title_th: "บริษัทฮาไม่จำกัดจัดเต็ม | น้ำหนึ่ง มิลิญ", title_en: "Guest on HA MAI JAM KAT JAT TEM", year: 2025, image: "https://img.youtube.com/vi/F-DatUtE9OQ/maxresdefault.jpg", youtube_url: "https://youtu.be/F-DatUtE9OQ?si=OhhrYgG5v3kLELH7" },
+
+    //09062025
+    { category: "variety", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 9 มิถุนายน", title_en: "Guest on LINE MAN LIVE x NNN Jun 9", year: 2025, image: "https://img.youtube.com/vi/HClGEJ9hlPA/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/HClGEJ9hlPA?si=uCEor2YfUP2pgYuN" },
+
+    //13052025
+    { category: "variety", title_th: "ShopeeFood Live กับ น้ำหนึ่ง - เนย", title_en: "ShopeeFood Live with Namneung & Noey", year: 2025, image: "https://img.youtube.com/vi/b2ptdOm8NhU/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/b2ptdOm8NhU?si=WsmhRyDOrRH7AqGn" },
+
+    //26032025
+    { category: "variety", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 26 มีนาคม", title_en: "Guest on LINE MAN LIVE x NNN Mar 26", year: 2025, image: "https://img.youtube.com/vi/YKSUJj6tkFE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/YKSUJj6tkFE?si=QDsemixIpHxK9lp3" },
+
+    //12122024
+    { category: "variety", title_th: "TMC LIVE EP.32", title_en: "TMC LIVE EP.32", year: 2024, image: "https://img.youtube.com/vi/Igq_qf6bksg/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/Igq_qf6bksg?si=9HmNn-TMZyT5AIHB" },
+
+    //07082024
+    { category: "variety", title_th: "StarJourney by PopcycleTH EP.64", title_en: "Host on Star Journey by Popcycle EP.64", year: 2024, image: "https://img.youtube.com/vi/nzOckwFMmyE/maxresdefault.jpg", youtube_url: "https://youtu.be/nzOckwFMmyE?si=nT80C1jYq_m4RQRa" },
+
+    //31072024
+    { category: "variety", title_th: "StarJourney by PopcycleTH EP.61", title_en: "Host on Star Journey by Popcycle EP.61", year: 2024, image: "https://img.youtube.com/vi/JLM-Ie0Aga0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=JLM-Ie0Aga0" },
+
+    //31072024
+    { category: "variety", title_th: "StarJourney by PopcycleTH EP.60", title_en: "Host on Star Journey by Popcycle EP.60", year: 2024, image: "https://img.youtube.com/vi/b0JPE0D6rmM/maxresdefault.jpg", youtube_url: "https://youtu.be/b0JPE0D6rmM?si=2VjPCt6c77h0gQE6" },
+
+    //17072024
+    { category: "variety", title_th: "StarJourney by PoPCycleTH EP.55", title_en: "Host on Star Journey by Popcycle EP.55", year: 2024, image: "https://img.youtube.com/vi/Dg_SbgQhV0c/maxresdefault.jpg", youtube_url: "https://youtu.be/Dg_SbgQhV0c?si=TY6ZWcSGulq3tw9K" },
+
+    //
+    { category: "variety", title_th: "StarJourney by PopcycleTH EP.54", title_en: "Host on Star Journey by Popcycle EP.54", year: 2024, image: "https://img.youtube.com/vi/_oIhoM_qAFE/maxresdefault.jpg", youtube_url: "https://youtu.be/_oIhoM_qAFE?si=-Gy91NaVPk_JkPgx" },
+
+    //03072024
+    { category: "variety", title_th: "Star Journey by Popcycle EP.41", title_en: "Host on Star Journey by Popcycle EP.41", year: 2024, image: "https://img.youtube.com/vi/QZp-YAufJ20/maxresdefault.jpg", youtube_url: "https://youtu.be/QZp-YAufJ20?si=2iEFg24IODgiei6_" },
+
+    //20062024
+    { category: "variety", title_th: "StarJourney by PoPCycleTH EP.37", title_en: "Host on Star Journey by Popcycle EP.37", year: 2024, image: "https://img.youtube.com/vi/94LLRCFoPDM/maxresdefault.jpg", youtube_url: "https://youtu.be/94LLRCFoPDM?si=9lf4oyODWPS9bgp8" },
+
+    //14062024
+    { category: "variety", title_th: "Star Journey by Popcycle EP.33", title_en: "Host on Star Journey by Popcycle EP.33", year: 2024, image: "https://img.youtube.com/vi/4La3pgXGznE/maxresdefault.jpg", youtube_url: "https://youtu.be/4La3pgXGznE?si=Dmmc6GuMEJXddcPO" },
+
+    //14062024
+    { category: "variety", title_th: "Star Journey by Popcycle EP.32", title_en: "Host on Star Journey by Popcycle EP.32", year: 2024, image: "https://img.youtube.com/vi/TOt1D0zvZ4c/maxresdefault.jpg", youtube_url: "https://youtu.be/TOt1D0zvZ4c?si=xuroXMvR09AZI7GZ" },
+
+    //29052024
+    { category: "variety", title_th: "Star Journey by Popcycle EP.25", title_en: "Host on Star Journey by Popcycle EP.25", year: 2024, image: "https://img.youtube.com/vi/AiD4dN4iT6w/maxresdefault.jpg", youtube_url: "https://youtu.be/AiD4dN4iT6w?si=fYuo3NLFjIUKMB3W" },
+
+    //26052024
+    { category: "variety", title_th: "Star Journey by Popcycle EP.19", title_en: "Host on Star Journey by Popcycle EP.19", year: 2024, image: "https://img.youtube.com/vi/nfJ-67X2GkI/maxresdefault.jpg", youtube_url: "https://youtu.be/nfJ-67X2GkI?si=oB1Q7M4hRM52zO2S" },
+
+    //21042024
+    { category: "variety", title_th: "โต๊ะหมู่ชาบู EP.12", title_en: "Toh Mu Shabu EP.12", year: 2024, image: "https://img.youtube.com/vi/BwwmjZJZZk0/maxresdefault.jpg", youtube_url: "https://youtu.be/BwwmjZJZZk0?si=goLy_-d30A9cE4uU" },
+
+    //14042024
+    { category: "variety", title_th: "CAMPปลิ้น | EP.73", title_en: "CAMP Plin | EP.73", year: 2024, image: "https://img.youtube.com/vi/CLcUvEi3AaM/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=MoFt5kDC5uA" },
+
+    //02042024
+    { category: "variety", title_th: "หมีLIVEปะ? EP.160 ", title_en: "Mee LIVE Pa? EP.160", year: 2024, image: "https://img.youtube.com/vi/U8t3F18zb2s/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/U8t3F18zb2s?si=ZzVuUXEDdDzjOrkD" },
+
+    //16032024
+    { category: "variety", title_th: "The Big Kitchen EP.280", title_en: "Guest on The Big Kitchen EP.280", year: 2024, image: "https://img.youtube.com/vi/1jx_e1ILCSc/maxresdefault.jpg", youtube_url: "https://youtu.be/1jx_e1ILCSc?si=TFc8sQoDrYScaH6o" },
+
+    //09122023
+    { category: "variety", title_th: "Miyagi Recipe วงล้อลุ้นอร่อย EP.4", title_en: "Miyagi Recipe EP.4", year: 2023, image: "https://img.youtube.com/vi/cRzJSKtmTcM/maxresdefault.jpg", youtube_url: "https://youtu.be/cRzJSKtmTcM?si=LswuGgqW-Bn9jTZy" },
+
+    //03082023
+    { category: "variety", title_th: "GrabFood 1 DAY DATE with Namneung & Jennis", title_en: "GrabFood 1 DAY DATE with Namneung & Jennis", year: 2023, image: "https://img.youtube.com/vi/8wdJlGaoOgo/maxresdefault.jpg", youtube_url: "https://youtu.be/8wdJlGaoOgo?si=J5A-lsPYrl_GXFHG" },
+
+    //21042023
+    { category: "variety", title_th: "OneDayWithMatthew EP.52", title_en: "One Day With Matthew EP.52", year: 2023, image: "https://img.youtube.com/vi/KmQ-HYTbiHA/maxresdefault.jpg", youtube_url: "https://youtu.be/KmQ-HYTbiHA?si=KYy2WaeMtyPK4kFd" },
+
+    //16042023
+    { category: "variety", title_th: "ดาราล้อกันเล่นอะไรครับเนี่ย EP.15", title_en: "Da Ra Lor Gun Len EP.15", year: 2023, image: "https://img.youtube.com/vi/f7NKSD53CdM/maxresdefault.jpg", youtube_url: "https://youtu.be/f7NKSD53CdM?si=Xg33R2DLqieeK-Z6" },
+
+    //01042023
+    { category: "variety", title_th: "OKWEGO x SERTIST ", title_en: "OKWEGO x SERTIST", year: 2023, image: "https://img.youtube.com/vi/-O1xk3jeiTg/maxresdefault.jpg", youtube_url: "https://youtu.be/-O1xk3jeiTg?si=rtmd-wSni93DXZV1" },
+
+    //08032023
+    { category: "variety", title_th: "จานซ่อนแอบ EP.2 x SERTIST", title_en: "Zom marie x SERTIST", year: 2023, image: "https://img.youtube.com/vi/GtRAa4jheQ4/maxresdefault.jpg", youtube_url: "https://youtu.be/GtRAa4jheQ4?si=U3gUkXK0A4-xClsg" },
+
+    //07032023
+    { category: "variety", title_th: "หมีLIVEปะ? EP.107", title_en: "Mee LIVE Pa? EP.107", year: 2023, image: "https://img.youtube.com/vi/q7CO8liUYVo/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/q7CO8liUYVo?si=Vb28m7tUvkzoVMhg" },
+
+    //24022023
+    { category: "variety", title_th: "GrabFood ตะลุยกินกับน้ำหนึ่ง - เนย", title_en: "GrabFood with Namneung & Noey", year: 2023, image: "https://img.youtube.com/vi/XZ8jfl7oxT0/maxresdefault.jpg", youtube_url: "https://youtu.be/XZ8jfl7oxT0?si=pkUvWoavID9YEnlr" },
+
+    //11022023
+    { category: "variety", title_th: "ฮัลโหลซุปตาร์ ปั๊ว ปัง อลังเวอร์ | BNK48 ", title_en: "Hello Suptar | BNK48", year: 2023, image: "https://img.youtube.com/vi/sol7ZWGvIu8/maxresdefault.jpg", youtube_url: "https://youtu.be/sol7ZWGvIu8?si=dOHqBqhY7be4BjCc" },
+
+    //30012023
+    { category: "variety", title_th: "Mango Zero x SERTIST", title_en: "Special Interview with Sertist", year: 2023, image: "https://img.youtube.com/vi/PPR4B8mBriw/maxresdefault.jpg", youtube_url: "https://youtu.be/PPR4B8mBriw?si=jjIWiVk9Haf6HXnF" },
+  
   ],
 
   // ช่องทางโซเชียล 

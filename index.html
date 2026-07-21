@@ -16,6 +16,7 @@
   <nav class="nav" id="nav">
     <a href="#" class="logo">Milin's Library</a>
     <div class="nav-center">
+      <a href="#highlight" data-th="ไฮไลท์"    data-en="Highlight" class="nav-link i18n">ไฮไลท์</a>
       <a href="#upcoming" data-th="Upcoming"  data-en="Upcoming"  class="nav-link i18n">Upcoming</a>
       <a href="#about"    data-th="ประวัติ"   data-en="About"    class="nav-link i18n">ประวัติ</a>
       <a href="#social"   data-th="โซเชียล"   data-en="Social"   class="nav-link i18n">โซเชียล</a>
@@ -31,6 +32,7 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
+    <a href="#highlight" class="i18n" data-th="ไฮไลท์"     data-en="Highlight"  onclick="toggleMenu()">ไฮไลท์</a>
     <a href="#upcoming" class="i18n" data-th="Upcoming"   data-en="Upcoming"   onclick="toggleMenu()">Upcoming</a>
     <a href="#about"    class="i18n" data-th="ประวัติ"    data-en="About"      onclick="toggleMenu()">ประวัติ</a>
     <a href="#social"   class="i18n" data-th="โซเชียล"    data-en="Social"     onclick="toggleMenu()">โซเชียล</a>
@@ -57,6 +59,16 @@
     <a href="#upcoming" class="hero-scroll"><i class="ti ti-chevron-down"></i></a>
   </section>
 
+  <section class="section" id="highlight" style="display:none;">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-line"></div>
+        <h2 class="sec-title i18n" data-th="ไฮไลท์" data-en="Highlight">ไฮไลท์</h2>
+      </div>
+      <div class="highlight-track" id="highlightTrack"></div>
+    </div>
+  </section>
+
   <section class="section section-alt" id="upcoming">
     <div class="container">
       <div class="sec-head">
@@ -65,7 +77,10 @@
         <span class="upcoming-badge i18n" data-th="เร็วๆ นี้" data-en="Coming Soon">เร็วๆ นี้</span>
       </div>
       <div class="upcoming-filter" id="upcomingFilter"></div>
-      <div id="upcomingGrid"></div>
+      <div class="upcoming-carousel">
+        <div id="upcomingGrid"></div>
+      </div>
+      <div class="upcoming-nav" id="upcomingNav"></div>
     </div>
   </section>
 

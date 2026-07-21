@@ -19,6 +19,7 @@ function toggleLang() {
 
   // re-render dynamic sections
   renderHero();
+  renderHighlights();
   renderAbout();
   renderFacts();
   renderWorks(currentTab);
@@ -103,10 +104,11 @@ const workCategories = [
   { key: 'movie',  th: 'ภาพยนตร์',   en: 'Movies' },
   { key: 'mv',     th: 'MV',         en: 'MV' },
   { key: 'bnk48',  th: 'BNK48 Song', en: 'BNK48 Song' },
+  { key: 'variety', th: 'รายการ',    en: 'Variety' },
   { key: 'awards', th: 'รางวัล',      en: 'Awards' },
   { key: 'other',  th: 'อื่น ๆ',      en: 'Other' },
 ];
-const workIcons = { series:'ti-device-tv', movie:'ti-movie', mv:'ti-music', bnk48:'ti-music', other:'ti-photo' };
+const workIcons = { series:'ti-device-tv', movie:'ti-movie', mv:'ti-music', bnk48:'ti-music', variety:'ti-microphone-2', other:'ti-photo' };
 
 function renderWorkTabs() {
   el('workTabs').innerHTML = workCategories.map(c => `
@@ -122,15 +124,21 @@ function switchTab(key) {
   renderWorks(key);
 }
 
-function renderWorks(tab) {
-  renderWorkTabs();
-  const filtered = tab === 'all'
+function getFilteredWorks(tab) {
+  return tab === 'all'
     ? SU.works.slice().sort((a, b) => {
         const dateA = a.date ? new Date(a.date).getTime() : (parseInt(a.year) || 0);
         const dateB = b.date ? new Date(b.date).getTime() : (parseInt(b.year) || 0);
         return dateB - dateA;
       })
-    : SU.works.filter(w => w.category === tab);
+    : tab === 'variety'
+      ? (SU.variety || []).slice().sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0))
+      : SU.works.filter(w => w.category === tab);
+}
+
+function renderWorks(tab) {
+  renderWorkTabs();
+  const filtered = getFilteredWorks(tab);
   // awards tab
   if (tab === 'awards') {
     const paginationEl = el('workPagination');
@@ -359,6 +367,7 @@ function initFadeIn() {
 
 // INIT
 function init() {
+  renderHighlights();
   renderUpcoming();
   renderVlog();
   renderSertist();
@@ -376,6 +385,38 @@ function init() {
 
 document.addEventListener('DOMContentLoaded', init);
 
+// HIGHLIGHT — เลื่อนแนวนอน, ลิงก์ออกไปเปิดคลิปจริงที่ TikTok / Facebook
+function renderHighlights() {
+  const wrap = el('highlight');
+  const list = SU.highlights || [];
+  if (!wrap) return;
+
+  if (list.length === 0) {
+    wrap.style.display = 'none';
+    return;
+  }
+  wrap.style.display = '';
+
+  const platformIcon = { tiktok: 'ti-brand-tiktok', facebook: 'ti-brand-facebook' };
+  const platformLabel = { tiktok: 'TikTok', facebook: 'Facebook' };
+
+  el('highlightTrack').innerHTML = list.map(h => `
+    <a class="highlight-card fade-in" href="${h.url}" target="_blank" rel="noopener">
+      <div class="highlight-img">
+        ${h.image
+          ? `<img src="${h.image}" alt="${t(h.title_th, h.title_en)}" onerror="this.style.display='none'" />`
+          : `<i class="ti ti-player-play"></i>`}
+        <span class="highlight-badge">
+          <i class="ti ${platformIcon[h.platform] || 'ti-external-link'}"></i>
+          ${platformLabel[h.platform] || h.platform || ''}
+        </span>
+        <div class="highlight-title">${t(h.title_th, h.title_en)}</div>
+      </div>
+    </a>
+  `).join('');
+  initFadeIn();
+}
+
 // UPCOMING 
 const upcomingCategories = [
   { key: 'all',    th: 'ทั้งหมด',   en: 'All' },
@@ -385,6 +426,9 @@ const upcomingCategories = [
   { key: 'other',  th: 'อื่น ๆ',    en: 'Other' },
 ];
 let upcomingTab = 'all';
+let upcomingIndex = 0;
+let upcomingFiltered = [];
+let upcomingScrollBound = false;
 
 function renderUpcomingFilter() {
   const availableCats = new Set(['all', ...SU.upcoming.map(u => u.category)]);
@@ -400,6 +444,7 @@ function renderUpcomingFilter() {
 
 function switchUpcoming(key) {
   upcomingTab = key;
+  upcomingIndex = 0;
   renderUpcoming();
   renderVlog();
   renderSertist();
@@ -412,19 +457,23 @@ function renderUpcoming() {
 
   if (!SU.upcoming || SU.upcoming.length === 0) {
     el('upcomingGrid').innerHTML = `<div class="upcoming-empty">${t('ยังไม่มีงานที่กำลังจะมา', 'No upcoming projects yet')}</div>`;
+    if (el('upcomingNav')) el('upcomingNav').innerHTML = '';
     return;
   }
 
-  const filtered = upcomingTab === 'all'
+  upcomingFiltered = upcomingTab === 'all'
     ? SU.upcoming
     : SU.upcoming.filter(u => u.category === upcomingTab);
 
-  if (filtered.length === 0) {
+  if (upcomingFiltered.length === 0) {
     el('upcomingGrid').innerHTML = `<div class="upcoming-empty">${t('ไม่มีงานในหมวดนี้', 'No upcoming projects in this category')}</div>`;
+    if (el('upcomingNav')) el('upcomingNav').innerHTML = '';
     return;
   }
 
-  el('upcomingGrid').innerHTML = filtered.map((u, i) => {
+  if (upcomingIndex >= upcomingFiltered.length) upcomingIndex = 0;
+
+  el('upcomingGrid').innerHTML = upcomingFiltered.map((u, i) => {
     const _now2 = new Date();
     const _airDate2 = u.air_date ? new Date(u.air_date) : null;
     const isOnAir = !!(_airDate2 && _now2 >= _airDate2);
@@ -487,7 +536,15 @@ function renderUpcoming() {
       </div>
     `;
   }).join('');
+
+  renderUpcomingNav();
+  bindUpcomingScroll();
   initFadeIn();
+
+  const track = el('upcomingGrid');
+  requestAnimationFrame(() => {
+    track.scrollTo({ left: upcomingIndex * track.clientWidth, behavior: 'auto' });
+  });
 }
 
 // VLOG
@@ -641,7 +698,7 @@ function renderMVPlayer(idx) {
 }
 
 function goPage(page) {
-  const filtered = currentTab === 'all' ? SU.works : SU.works.filter(w => w.category === currentTab);
+  const filtered = getFilteredWorks(currentTab);
   const totalPages = Math.ceil(filtered.length / WORKS_PER_PAGE);
   if (page < 1 || page > totalPages) return;
   currentPage = page;
@@ -841,6 +898,52 @@ function rotatePoster(dir) {
     posterOrder.unshift(posterOrder.pop());
   }
   renderThefireHub();
+}
+
+function renderUpcomingNav() {
+  const navEl = el('upcomingNav');
+  if (!navEl) return;
+  if (upcomingFiltered.length <= 1) { navEl.innerHTML = ''; return; }
+  const dots = upcomingFiltered.map((_, i) =>
+    `<button class="updot ${i === upcomingIndex ? 'active' : ''}" aria-label="${t('ไปข้อที่ ', 'Go to ')}${i + 1}" onclick="upcomingGoTo(${i})"></button>`
+  ).join('');
+  navEl.innerHTML = `
+    <button class="upcoming-nav-btn" onclick="upcomingGo(-1)" ${upcomingIndex === 0 ? 'disabled' : ''} aria-label="${t('ก่อนหน้า', 'Previous')}"><i class="ti ti-chevron-left"></i></button>
+    <div class="upcoming-dots">${dots}</div>
+    <button class="upcoming-nav-btn" onclick="upcomingGo(1)" ${upcomingIndex === upcomingFiltered.length - 1 ? 'disabled' : ''} aria-label="${t('ถัดไป', 'Next')}"><i class="ti ti-chevron-right"></i></button>
+  `;
+}
+
+function upcomingGoTo(i) {
+  upcomingIndex = i;
+  const track = el('upcomingGrid');
+  track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+  renderUpcomingNav();
+}
+
+function upcomingGo(dir) {
+  const next = upcomingIndex + dir;
+  if (next < 0 || next >= upcomingFiltered.length) return;
+  upcomingGoTo(next);
+}
+
+function bindUpcomingScroll() {
+  if (upcomingScrollBound) return;
+  const track = el('upcomingGrid');
+  if (!track) return;
+  let scrollTimeout;
+  track.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      if (!track.clientWidth) return;
+      const idx = Math.round(track.scrollLeft / track.clientWidth);
+      if (idx !== upcomingIndex && idx >= 0 && idx < upcomingFiltered.length) {
+        upcomingIndex = idx;
+        renderUpcomingNav();
+      }
+    }, 100);
+  });
+  upcomingScrollBound = true;
 }
 
 function scrollToThefireHub() {
