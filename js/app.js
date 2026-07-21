@@ -415,6 +415,48 @@ function renderHighlights() {
     </a>
   `).join('');
   initFadeIn();
+
+  const prevBtn = document.querySelector('.highlight-nav-prev');
+  const nextBtn = document.querySelector('.highlight-nav-next');
+  const showNav = list.length > 1;
+  if (prevBtn) prevBtn.style.display = showNav ? '' : 'none';
+  if (nextBtn) nextBtn.style.display = showNav ? '' : 'none';
+
+  bindHighlightScroll();
+  requestAnimationFrame(updateHighlightNavState);
+}
+
+// เลื่อนแถบไฮไลท์ทีละ 1 การ์ดเมื่อกดลูกศร
+function highlightGo(dir) {
+  const track = el('highlightTrack');
+  if (!track) return;
+  const card = track.querySelector('.highlight-card');
+  const gapPx = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || '10') || 10;
+  const step = card ? card.getBoundingClientRect().width + gapPx : track.clientWidth * 0.5;
+  track.scrollBy({ left: dir * step, behavior: 'smooth' });
+}
+
+function updateHighlightNavState() {
+  const track = el('highlightTrack');
+  const prevBtn = document.querySelector('.highlight-nav-prev');
+  const nextBtn = document.querySelector('.highlight-nav-next');
+  if (!track || !prevBtn || !nextBtn) return;
+  const maxScroll = track.scrollWidth - track.clientWidth - 2;
+  prevBtn.disabled = track.scrollLeft <= 2;
+  nextBtn.disabled = track.scrollLeft >= maxScroll;
+}
+
+let highlightScrollBound = false;
+function bindHighlightScroll() {
+  if (highlightScrollBound) return;
+  const track = el('highlightTrack');
+  if (!track) return;
+  let scrollTimeout;
+  track.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(updateHighlightNavState, 80);
+  });
+  highlightScrollBound = true;
 }
 
 // UPCOMING 
@@ -747,7 +789,7 @@ function renderThefireHub() {
   if (showSection('reactions')) bodyHtml += renderHubSection('reactions', '🎬', t('รีแอคชั่น', 'Reactions'), false);
   if (showSection('spots'))     bodyHtml += renderHubSection('spots',     '📅', t('Spot รายตอน', 'Episode Spots'), false);
   if (showSection('posters'))   bodyHtml += renderPosterSection();
-  if (hasPromo && showSection('promo')) bodyHtml += renderHubSection('promo', '📢', t('โปรโมท', 'Promo'), false);
+  if (hasPromo && showSection('promo')) bodyHtml += renderHubSection('promo', '📢', t('โปรโมท', 'Promote'), false);
 
   wrap.innerHTML = `
     <div class="hub-head">

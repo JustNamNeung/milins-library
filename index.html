@@ -65,7 +65,11 @@
         <div class="sec-line"></div>
         <h2 class="sec-title i18n" data-th="ไฮไลท์" data-en="Highlight">ไฮไลท์</h2>
       </div>
-      <div class="highlight-track" id="highlightTrack"></div>
+      <div class="highlight-carousel">
+        <button class="highlight-nav-btn highlight-nav-prev" onclick="highlightGo(-1)" aria-label="Previous"><i class="ti ti-chevron-left"></i></button>
+        <div class="highlight-track" id="highlightTrack"></div>
+        <button class="highlight-nav-btn highlight-nav-next" onclick="highlightGo(1)" aria-label="Next"><i class="ti ti-chevron-right"></i></button>
+      </div>
     </div>
   </section>
 

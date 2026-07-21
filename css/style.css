@@ -582,21 +582,23 @@ img { max-width: 100%; display: block; }
 .updot.active { width: 16px; background: var(--red); }
 
 /* ── HIGHLIGHT ────────────────────────────────────────────── */
+.highlight-carousel { position: relative; }
 .highlight-track {
-  display: flex; gap: 12px; overflow-x: auto;
+  display: flex; gap: 10px; overflow-x: auto;
   scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
   padding-bottom: 6px; scrollbar-width: none;
 }
 .highlight-track::-webkit-scrollbar { display: none; }
 .highlight-card {
-  flex: 0 0 62%; scroll-snap-align: start;
-  border: 1px solid var(--gray-200); border-radius: var(--radius);
-  overflow: hidden; background: white; display: block; text-decoration: none; color: inherit;
+  flex: 0 0 46%; scroll-snap-align: start;
+  position: relative; aspect-ratio: 2/3;
+  border-radius: var(--radius); overflow: hidden;
+  display: block; text-decoration: none; color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .highlight-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .highlight-img {
-  position: relative; aspect-ratio: 9/13; background: var(--red-l); overflow: hidden;
+  position: absolute; inset: 0; background: var(--red-l); overflow: hidden;
 }
 .highlight-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .highlight-img > i {
@@ -618,9 +620,23 @@ img { max-width: 100%; display: block; }
   position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 1;
   color: white; font-size: 12px; font-weight: 500;
 }
+.highlight-nav-btn {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: rgba(255,255,255,0.95); border: 1px solid var(--gray-200);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  color: var(--gray-500); transition: all 0.2s;
+}
+.highlight-nav-btn:hover:not(:disabled) { color: var(--red); border-color: var(--red); }
+.highlight-nav-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.highlight-nav-prev { left: -4px; }
+.highlight-nav-next { right: -4px; }
 
 @media (max-width: 600px) {
-  .highlight-card { flex-basis: 68%; }
+  .highlight-card { flex-basis: 62%; }
+  .highlight-nav-btn { width: 26px; height: 26px; }
+  .highlight-nav-btn i { font-size: 13px; }
 }
 
 /* ── AWARDS ───────────────────────────────────────────────── */
