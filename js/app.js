@@ -23,6 +23,7 @@ function toggleLang() {
   renderAbout();
   renderFacts();
   renderWorks(currentTab);
+  renderVarietyHub();
   renderThefireHub();
   renderSocial();
   renderContact();
@@ -119,6 +120,10 @@ function renderWorkTabs() {
 }
 
 function switchTab(key) {
+  if (key === 'variety') {
+    scrollToVarietyHub();
+    return;
+  }
   currentTab = key;
   currentPage = 1;
   renderWorks(key);
@@ -226,6 +231,222 @@ function renderWorks(tab) {
 
       return `<div class="work-card fade-in">${cardInner}</div>`;
     }).join('');
+  initFadeIn();
+}
+
+// VARIETY HUB — "รายการ" tab opens this instead of filtering the main grid.
+// Shows an era picker first (collapsed / no cards), then an expanded hub
+// with featured clips + scrollable category tabs for the chosen era.
+let varietyEra = null; // 'bnk48' | 'actress' | null (null = picker state)
+let varietyTab = 'all';
+let varietyPage = 1;
+const VARIETY_PER_PAGE = 6;
+
+const varietyCategories = {
+    bnk48: [
+    { key: 'all',           th: 'ทั้งหมด',               en: 'All' },
+    { key: 'bnk48_live',    th: 'BNK48 Live',           en: 'BNK48 Live' },
+    { key: 'bnk48_show',    th: 'BNK48 Show',           en: 'BNK48 Show' },
+    { key: 'bnk48_victory', th: 'BNK48 Victory',        en: 'BNK48 Victory' },
+    { key: 'ii_ne_japan',   th: 'ii ne JAPAN',          en: 'ii ne JAPAN' },
+    { key: 'brand_live',    th: 'Brand Content / Live', en: 'Brand Content / Live' },
+    { key: 'game_show',     th: 'Game Show',            en: 'Game Show' },
+    { key: 'performance',   th: 'Performance',          en: 'Performance' },
+    { key: 'bnk_content',   th: 'BNK Content',          en: 'BNK Content' },
+    { key: 'bnk48_theska',  th: 'BNK48 x The Ska',      en: 'BNK48 x The Ska' },
+    { key: 'interview',     th: 'Interview',            en: 'Interview' },
+    { key: 'talk',          th: 'รายการพูดคุย',           en: 'Talk' },
+    { key: 'other',         th: 'อื่นๆ',                  en: 'Other' },
+  ],
+  actress: [
+    { key: 'all',          th: 'ทั้งหมด',                     en: 'All' },
+    { key: 'star_journey', th: 'Star Journey by Popcycle',    en: 'Star Journey by Popcycle' },
+    { key: 'interview',    th: 'สัมภาษณ์',                    en: 'Interview' },
+    { key: 'game_show',    th: 'เกมโชว์',                     en: 'Game Show' },
+    { key: 'talk',         th: 'รายการพูดคุย',                       en: 'Talk' },
+    { key: 'live',         th: 'ไลฟ์',                        en: 'Live' },
+    { key: 'brand_promo',  th: 'Brand Content / Live',        en: 'Brand Content / Live' },
+    { key: 'collab',       th: 'คอลแลป',                      en: 'Collab' },
+    { key: 'activity',     th: 'กิจกรรม',                     en: 'Activity' },
+  ],
+};
+
+const varietyHubText = {
+  bnk48: {
+    title_th: 'รายการช่วง BNK48',
+    title_en: 'Variety Appearances — BNK48 Period',
+    sub_th: '2017 - 2022',
+    sub_en: '2017 - 2022',
+    desc_th: 'ออกรายการในช่วงที่ยังเป็นสมาชิก BNK48',
+    desc_en: "Namneung's variety appearances during her time as a BNK48 member.",
+  },
+  actress: {
+    title_th: 'รายการช่วงนักแสดง',
+    title_en: 'Variety Appearances — Acting Period',
+    sub_th: '2023 – ปัจจุบัน',
+    sub_en: '2023 – Present',
+    desc_th: 'ออกรายการในช่วงการทำงานด้านการแสดง',
+    desc_en: "Namneung's variety appearances during her acting career.",
+  },
+};
+
+function isVarietyEra(era, year) {
+  const y = parseInt(year) || 0;
+  return era === 'bnk48' ? y < 2023 : y >= 2023;
+}
+
+function getVarietyEraItems(era) {
+  return (SU.variety || []).filter(v => isVarietyEra(era, v.year));
+}
+
+function getFilteredVariety(era, tab) {
+  const items = getVarietyEraItems(era).slice().sort((a, b) => (parseInt(b.year) || 0) - (parseInt(a.year) || 0));
+  return tab === 'all' ? items : items.filter(v => v.type === tab);
+}
+
+function scrollToVarietyHub() {
+  const wrap = el('varietyHubWrap');
+  if (wrap) wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function selectVarietyEra(era) {
+  varietyEra = era;
+  varietyTab = 'all';
+  varietyPage = 1;
+  renderVarietyHub();
+}
+
+function changeVarietyEra() {
+  varietyEra = null;
+  renderVarietyHub();
+}
+
+function switchVarietyTab(key) {
+  varietyTab = key;
+  varietyPage = 1;
+  renderVarietyHub();
+}
+
+function goVarietyPage(page) {
+  const filtered = getFilteredVariety(varietyEra, varietyTab);
+  const totalPages = Math.ceil(filtered.length / VARIETY_PER_PAGE);
+  if (page < 1 || page > totalPages) return;
+  varietyPage = page;
+  renderVarietyHub();
+}
+
+function varietyCardHtml(w) {
+  const imgHtml = w.image
+    ? `<img src="${w.image}" alt="${t(w.title_th, w.title_en)}" onerror="this.style.display='none'" />`
+    : `<i class="ti ti-microphone-2" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px;color:var(--red);opacity:0.35;"></i>`;
+  const playBtn = w.youtube_url
+    ? `<div class="work-play"><div class="work-play-btn"><i class="ti ti-player-play"></i></div></div>`
+    : '';
+  const featuredBadge = w.featured
+    ? `<span class="variety-featured-badge">${t('แนะนำ', 'Featured')}</span>`
+    : '';
+  const imgWrapper = w.youtube_url
+    ? `<a href="${w.youtube_url}" target="_blank" rel="noopener" style="display:block;"><div class="work-img">${imgHtml}${playBtn}${featuredBadge}</div></a>`
+    : `<div class="work-img">${imgHtml}${playBtn}${featuredBadge}</div>`;
+  return `<div class="work-card fade-in">
+    ${imgWrapper}
+    <div class="work-info">
+      <div class="work-title">${t(w.title_th, w.title_en)}</div>
+      <div class="work-year">${w.year}</div>
+    </div>
+  </div>`;
+}
+
+function varietyPickerHtml() {
+  return `
+    <div class="hub-head" style="margin-bottom:4px;"><span class="hub-title">${t('รายการ', 'Variety')}</span></div>
+    <div class="hub-desc" style="margin-bottom:14px;">${t('เลือกช่วงเวลาที่อยากดู', 'Choose which era to view')}</div>
+    <div class="variety-picker-btns">
+      <button class="variety-picker-btn" onclick="selectVarietyEra('bnk48')">
+        <i class="ti ti-music"></i>
+        <span>
+          <span class="wp-btn-main">${t('2017 - 2022', '2017 - 2022')}</span>
+          <span class="wp-btn-sub">${t('BNK48', 'BNK48')}</span>
+        </span>
+      </button>
+      <button class="variety-picker-btn" onclick="selectVarietyEra('actress')">
+        <i class="ti ti-movie"></i>
+        <span>
+          <span class="wp-btn-main">${t('2023 - ปัจจุบัน', '2023 - Present')}</span>
+          <span class="wp-btn-sub">${t('นักแสดง', 'Actress')}</span>
+        </span>
+      </button>
+    </div>`;
+}
+
+function renderVarietyHub() {
+  const wrap = el('varietyHubWrap');
+  if (!wrap) return;
+
+  if (!varietyEra) {
+    wrap.innerHTML = varietyPickerHtml();
+    return;
+  }
+
+  const eraItems = getVarietyEraItems(varietyEra);
+  const eraText = varietyHubText[varietyEra];
+
+  // featured strip — only shown if there's at least 1 featured clip in this era
+  const featured = eraItems.filter(v => v.featured);
+  const featuredHtml = featured.length ? `
+    <div class="variety-featured">
+      <div class="variety-featured-label"><i class="ti ti-star"></i> ${t('คลิปที่ไม่ควรพลาด', "Don't-miss Clips")}</div>
+      <div class="work-grid">${featured.map(varietyCardHtml).join('')}</div>
+    </div>` : '';
+
+  // category tabs — only show categories that actually have items for this era
+  const cats = varietyCategories[varietyEra].filter(c =>
+    c.key === 'all' || eraItems.some(v => v.type === c.key)
+  );
+  const tabsHtml = `<div class="variety-tabs">${cats.map(c => `
+    <button class="work-tab ${varietyTab === c.key ? 'active' : ''}" onclick="switchVarietyTab('${c.key}')">
+      ${t(c.th, c.en)}
+    </button>
+  `).join('')}</div>`;
+
+  const filtered = getFilteredVariety(varietyEra, varietyTab);
+  const totalPages = Math.ceil(filtered.length / VARIETY_PER_PAGE);
+  if (varietyPage > totalPages) varietyPage = 1;
+  const start = (varietyPage - 1) * VARIETY_PER_PAGE;
+  const paged = filtered.slice(start, start + VARIETY_PER_PAGE);
+
+  const gridHtml = paged.length === 0
+    ? `<p style="color:var(--gray-400);font-size:13px;grid-column:1/-1;">TBC</p>`
+    : paged.map(varietyCardHtml).join('');
+
+  let paginationHtml = '';
+  if (totalPages > 1) {
+    const dots = Array.from({length: totalPages}, (_, i) =>
+      `<span class="page-dot ${i+1 === varietyPage ? 'active' : ''}" onclick="goVarietyPage(${i+1})"></span>`
+    ).join('');
+    paginationHtml = `
+      <div class="work-pagination" style="display:flex;">
+        <span class="page-info">${start+1}–${Math.min(start+VARIETY_PER_PAGE, filtered.length)} ${t('จาก','of')} ${filtered.length} ${t('รายการ','clips')}</span>
+        <div class="page-controls">
+          <div class="page-dots">${dots}</div>
+          <button class="page-btn" onclick="goVarietyPage(${varietyPage-1})" ${varietyPage===1?'disabled':''}>‹</button>
+          <button class="page-btn" onclick="goVarietyPage(${varietyPage+1})" ${varietyPage===totalPages?'disabled':''}>›</button>
+        </div>
+      </div>`;
+  }
+
+  wrap.innerHTML = `
+    <div class="hub-head">
+      <span class="hub-title">${t(eraText.title_th, eraText.title_en)}</span>
+      <span class="hub-sub">${t(eraText.sub_th, eraText.sub_en)}</span>
+      <button class="hub-switch-btn" onclick="changeVarietyEra()"><i class="ti ti-arrows-exchange"></i> ${t('เปลี่ยนช่วงเวลา', 'Switch Period')}</button>
+    </div>
+    <div class="hub-desc">${t(eraText.desc_th, eraText.desc_en)}</div>
+    ${featuredHtml}
+    ${tabsHtml}
+    <div class="work-grid">${gridHtml}</div>
+    ${paginationHtml}
+  `;
   initFadeIn();
 }
 
@@ -376,6 +597,7 @@ function init() {
   renderAbout();
   renderFacts();
   renderWorks('all');
+  renderVarietyHub();
   renderThefireHub();
   renderSocial();
   renderContact();
@@ -745,14 +967,13 @@ function goPage(page) {
   if (page < 1 || page > totalPages) return;
   currentPage = page;
   renderWorks(currentTab);
-  document.getElementById('works').scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 
 // ──────────────────────────────────────────────
 // THE FIRE — CONTENT HUB
 // ──────────────────────────────────────────────
 const HUB_PER_PAGE = 3;
-const hubPage = { ost: 1, content: 1, reactions: 1, spots: 1, promo: 1 };
+const hubPage = { ost: 1, content: 1, reactions: 1, spots: 1, promo: 1, ratingads: 1 };
 let hubTab = 'all';
 
 function renderThefireHub() {
@@ -763,6 +984,7 @@ function renderThefireHub() {
   if (!wrap) return;
 
   const hasPromo = hub.promo && hub.promo.length > 0;
+  const hasRatingAds = hub.ratingads && hub.ratingads.length > 0;
 
   const hubCategories = [
     { key: 'all',       th: 'ทั้งหมด',      en: 'All' },
@@ -770,8 +992,9 @@ function renderThefireHub() {
     { key: 'content',   th: 'คอนเทนต์',     en: 'Content' },
     { key: 'reactions', th: 'รีแอคชั่น',    en: 'Reactions' },
     { key: 'spots',     th: 'Spot',         en: 'Spot' },
-    { key: 'posters',   th: 'โปสเตอร์',     en: 'Posters' },
     ...(hasPromo ? [{ key: 'promo', th: 'โปรโมท', en: 'Promo' }] : []),
+    { key: 'posters',   th: 'โปสเตอร์',     en: 'Posters' },
+    ...(hasRatingAds ? [{ key: 'ratingads', th: 'เรตติงและโฆษณา', en: 'Rating and Advertising' }] : []),
   ];
 
   const tabsHtml = hubCategories.map(c => `
@@ -788,8 +1011,9 @@ function renderThefireHub() {
   if (showSection('content'))   bodyHtml += renderHubSection('content',   '📝', t('คอนเทนต์', 'Content'), false);
   if (showSection('reactions')) bodyHtml += renderHubSection('reactions', '🎬', t('รีแอคชั่น', 'Reactions'), false);
   if (showSection('spots'))     bodyHtml += renderHubSection('spots',     '📅', t('Spot รายตอน', 'Episode Spots'), false);
-  if (showSection('posters'))   bodyHtml += renderPosterSection();
   if (hasPromo && showSection('promo')) bodyHtml += renderHubSection('promo', '📢', t('โปรโมท', 'Promote'), false);
+  if (showSection('posters'))   bodyHtml += renderPosterSection();
+  if (hasRatingAds && showSection('ratingads')) bodyHtml += renderRatingAdsSection();
 
   wrap.innerHTML = `
     <div class="hub-head">
@@ -940,6 +1164,55 @@ function rotatePoster(dir) {
     posterOrder.unshift(posterOrder.pop());
   }
   renderThefireHub();
+}
+
+function renderRatingAdsSection() {
+  const hub = SU.thefire_hub;
+  const items = hub.ratingads || [];
+  const key = 'ratingads';
+
+  if (items.length === 0) {
+    return `
+      <div class="hub-label">📊 ${t('เรตติงและโฆษณา', 'Rating and Advertising')}</div>
+      <div class="hub-grid3">
+        <div class="hub-card hub-card-empty"><div class="hub-card-title">TBC</div></div>
+        <div class="hub-card" style="visibility:hidden;"></div>
+        <div class="hub-card" style="visibility:hidden;"></div>
+      </div>`;
+  }
+
+  const totalPages = Math.ceil(items.length / HUB_PER_PAGE);
+  if (hubPage[key] > totalPages) hubPage[key] = 1;
+  const start = (hubPage[key] - 1) * HUB_PER_PAGE;
+  const paged = items.slice(start, start + HUB_PER_PAGE);
+
+  const fillers = Array.from({ length: HUB_PER_PAGE - paged.length }, () => `<div class="hub-card" style="visibility:hidden;"></div>`).join('');
+
+  const cardsHtml = paged.map(p => `
+    <div class="hub-card poster-card-item fade-in">
+      <div class="hub-thumb poster-thumb">
+        ${p.image
+          ? `<img src="${p.image}" alt="${t(p.title_th, p.title_en)}" onerror="this.style.display='none'" />`
+          : `<i class="ti ti-photo" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;color:var(--red);opacity:0.3;"></i>`}
+      </div>
+    </div>`).join('') + fillers;
+
+  const paginationHtml = totalPages > 1 ? `
+    <div class="hub-pagination">
+      <span class="page-info">${start + 1}–${Math.min(start + HUB_PER_PAGE, items.length)} ${t('จาก', 'of')} ${items.length}</span>
+      <div class="page-controls">
+        <div class="page-dots">${Array.from({length: totalPages}, (_, i) =>
+          `<span class="page-dot ${i+1 === hubPage[key] ? 'active' : ''}" onclick="goHubPage('${key}', ${i+1})"></span>`
+        ).join('')}</div>
+        <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]-1})" ${hubPage[key]===1?'disabled':''}>‹</button>
+        <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]+1})" ${hubPage[key]===totalPages?'disabled':''}>›</button>
+      </div>
+    </div>` : '';
+
+  return `
+    <div class="hub-label">📊 ${t('เรตติงและโฆษณา', 'Rating and Advertising')}</div>
+    <div class="hub-grid3">${cardsHtml}</div>
+    ${paginationHtml}`;
 }
 
 function renderUpcomingNav() {

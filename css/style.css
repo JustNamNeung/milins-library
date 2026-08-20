@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 .mobile-menu.open { display: flex; }
 .mobile-menu a { font-size: 15px; color: var(--gray-600); padding: 4px 0; }
 
-/* ── HERO — Full Poster ────────────────────────────────────── */
+/* ── HERO — Full Poster */
 .hero {
   min-height: 100vh;
   max-height: 1080px;
@@ -111,8 +111,17 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .hero { min-height: auto; max-height: none; aspect-ratio: 1080/1920; }
 }
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero-bg-desktop { display: none; }
+  .hero-bg-mobile { display: block; }
+  .hero { min-height: auto; max-height: none; aspect-ratio: 3/4; }
+}
+@media (min-width: 769px) and (max-width: 1366px) and (orientation: landscape) {
+  .hero-bg-desktop { display: block; }
+  .hero-bg-mobile { display: none; }
+  .hero { min-height: auto; max-height: none; aspect-ratio: 16/9; }
+}
 
-/* พื้นหลัง — ใส่รูปจริงได้ที่นี่ */
 .hero-bg-lines {
   position: absolute; inset: 0;
   background: transparent;
@@ -1045,6 +1054,44 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 8px; flex-wrap: wrap; gap: 8px;
 }
+
+/* ── VARIETY HUB (รายการ) ─────────────────────────────────── */
+.hub-switch-btn {
+  margin-left: auto; font-size: 11px; color: var(--red); background: none;
+  border: none; cursor: pointer; display: flex; align-items: center; gap: 3px;
+  padding: 4px 0;
+}
+.hub-switch-btn:hover { text-decoration: underline; }
+.hub-switch-btn i { font-size: 13px; }
+
+.variety-picker-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+.variety-picker-btn {
+  flex: 1 1 200px; display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px; border: 1px solid var(--gray-200); border-radius: var(--radius-sm);
+  background: white; cursor: pointer; text-align: left; transition: all 0.2s;
+}
+.variety-picker-btn:hover { border-color: var(--red); background: var(--red-l); }
+.variety-picker-btn i { font-size: 18px; color: var(--red); flex-shrink: 0; }
+.wp-btn-main { display: block; font-size: 12px; font-weight: 500; color: var(--gray-800); }
+.wp-btn-sub  { display: block; font-size: 10px; color: var(--gray-400); margin-top: 1px; }
+
+.variety-featured { margin-bottom: 18px; }
+.variety-featured-label {
+  display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500;
+  color: var(--red); margin-bottom: 8px;
+}
+.variety-featured-label i { font-size: 14px; }
+.variety-featured-badge {
+  position: absolute; top: 6px; left: 6px; background: var(--red); color: white;
+  font-size: 9px; padding: 2px 6px; border-radius: 99px; z-index: 1;
+}
+
+.variety-tabs {
+  display: flex; gap: 6px; flex-wrap: nowrap; overflow-x: auto;
+  margin-bottom: 14px; padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+.variety-tabs .work-tab { flex-shrink: 0; white-space: nowrap; }
 
 /* OST spotify chip inside hub card */
 .hub-card-info .work-extra-btn {
