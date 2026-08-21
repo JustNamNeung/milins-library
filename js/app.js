@@ -252,7 +252,7 @@ const varietyCategories = {
     { key: 'brand_live',    th: 'Brand Content / Live', en: 'Brand Content / Live' },
     { key: 'game_show',     th: 'Game Show',            en: 'Game Show' },
     { key: 'performance',   th: 'Performance',          en: 'Performance' },
-    { key: 'bnk_content',   th: 'BNK Content',          en: 'BNK Content' },
+    { key: 'bnk_content',   th: 'BNK48 Content',        en: 'BNK48 Content' },
     { key: 'bnk48_theska',  th: 'BNK48 x The Ska',      en: 'BNK48 x The Ska' },
     { key: 'interview',     th: 'Interview',            en: 'Interview' },
     { key: 'talk',          th: 'รายการพูดคุย',           en: 'Talk' },
