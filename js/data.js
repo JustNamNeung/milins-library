@@ -266,7 +266,7 @@ const SU = {
     { category: "variety", type: "interview", title_th: "GL On Air [Exclusive Interview]", title_en: "GL On Air [Exclusive Interview]", year: 2026, image: "https://img.youtube.com/vi/yBCSHA66iyg/maxresdefault.jpg", youtube_url: "https://youtu.be/yBCSHA66iyg?si=yhJ_1egcAyU6UlJ3" },
     
     //01082026
-    { category: "variety", type: "interview", title_th: "ออกรายการ นิยมคุย", title_en: "Guest on นิยมคุย", year: 2026, image: "images/niyom.jpg", youtube_url: "https://www.facebook.com/share/v/19QGSp6AVn/" },
+    { category: "variety", type: "interview", title_th: "ออกรายการ นิยมคุย", title_en: "Guest on นิยมคุย", year: 2026, image: "images/niyom.jpg", youtube_url: "https://www.facebook.com/share/v/1BL15EmZDZ/" },
   
     //31072026
     { category: "variety", type: "interview", title_th: "Maya TALK LIVE - น้ำหนึ่งเนย", title_en: "Maya TALK LIVE - NamneungNoey", year: 2026, image: "https://img.youtube.com/vi/vamgJZE1Ch8/maxresdefault.jpg", youtube_url: "https://youtu.be/vamgJZE1Ch8?si=44848wZmhYtlNwZ6" },
@@ -284,7 +284,7 @@ const SU = {
     { category: "variety", type: "live", title_th: "EFM Fandom Live", title_en: "Guest on EFM Fandom Live", year: 2026, image: "https://img.youtube.com/vi/yPsW6abFQRE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/yPsW6abFQRE?si=NfsO8vyjSV5TDftU" },
 
     //16072026
-    { category: "variety", type: "talk", title_th: "ออกรายการ เที่ยงบันเทิง Talk", title_en: "Guest on เที่ยงบันเทิง Talk", year: 2026, image: "https://img.youtube.com/vi/xVNe6uZWXX4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/xVNe6uZWXX4?si=QBAg8mlQVwTUbxaO" },
+    { category: "variety", type: "interview", title_th: "ออกรายการ เที่ยงบันเทิง Talk", title_en: "Guest on เที่ยงบันเทิง Talk", year: 2026, image: "https://img.youtube.com/vi/xVNe6uZWXX4/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/xVNe6uZWXX4?si=QBAg8mlQVwTUbxaO" },
 
     //21122025
     { category: "variety", type: "interview", title_th: "KAZZTalKxNamneungNoey", title_en: "Guest on KAZZ Talk", year: 2025, image: "https://img.youtube.com/vi/9_3Gwrfe1Eo/maxresdefault.jpg", youtube_url: "https://youtu.be/9_3Gwrfe1Eo?si=0YkkO0Z5f8ywZYJh" },
@@ -293,7 +293,7 @@ const SU = {
     { category: "variety", type: "interview", featured: true, title_th: "O SEE YOU | EP.10 น้ำหนึ่ง มิลิญ", title_en: "Guest on O SEE YOU", year: 2025, image: "https://img.youtube.com/vi/DuM-lIrxCuw/maxresdefault.jpg", youtube_url: "https://youtu.be/DuM-lIrxCuw?si=g3XpuUfFThZ1dNh5" },
 
     //20102025
-    { category: "variety", type: "talk", title_th: "In The 8ight", title_en: "Guest on In The 8ight", year: 2025, image: "https://img.youtube.com/vi/RZuNeizq11w/maxresdefault.jpg", youtube_url: "https://youtu.be/RZuNeizq11w?si=a5xil-CSjoJx0nkZ" },
+    { category: "variety", type: "interview", title_th: "In The 8ight", title_en: "Guest on In The 8ight", year: 2025, image: "https://img.youtube.com/vi/RZuNeizq11w/maxresdefault.jpg", youtube_url: "https://youtu.be/RZuNeizq11w?si=a5xil-CSjoJx0nkZ" },
 
     //29092025
     { category: "variety", type: "brand_promo", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 29 กันยายน", title_en: "Guest on LINE MAN LIVE x NNN Sep 29", year: 2025, image: "https://img.youtube.com/vi/p-HtKfnUUUs/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/p-HtKfnUUUs?si=1Jps9SKEU0T-FHlB" },
@@ -305,13 +305,13 @@ const SU = {
     { category: "variety", type: "brand_promo", title_th: "LINE MAN LIVE x น้ำหนึ่งเนย 20 สิงหาคม", title_en: "Guest on LINE MAN LIVE x NNN Aug 20", year: 2025, image: "https://img.youtube.com/vi/YKSUJj6tkFE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/YKSUJj6tkFE?si=QDsemixIpHxK9lp3" },
 
     //24072025
-    { category: "variety", type: "talk", title_th: "Conversation EP.52", title_en: "Conversation EP.52", year: 2025, image: "https://img.youtube.com/vi/wCbYtZckYbI/maxresdefault.jpg", youtube_url: "https://youtu.be/wCbYtZckYbI?si=nkpMENWXmKdOrs-5" },
+    { category: "variety", type: "interview", title_th: "Conversation EP.52", title_en: "Conversation EP.52", year: 2025, image: "https://img.youtube.com/vi/wCbYtZckYbI/maxresdefault.jpg", youtube_url: "https://youtu.be/wCbYtZckYbI?si=nkpMENWXmKdOrs-5" },
 
     //18072025
     { category: "variety", type: "interview", title_th: "PraewLivexGlowUpGlamUp", title_en: "PraewLivexGlowUpGlamUp", year: 2025, image: "https://img.youtube.com/vi/oB6-vt0QEx0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/oB6-vt0QEx0?si=pXMfxPqreuwJM0KB" },
 
     //04072025
-    { category: "variety", type: "talk", title_th: "T-POP STAGE | Week 26/2025", title_en: "T-POP STAGE | Week 26/2025", year: 2025, image: "https://img.youtube.com/vi/DPNoXnQWCEE/maxresdefault.jpg", youtube_url: "https://youtu.be/DPNoXnQWCEE?si=FP6y37YAKawUkStV" },
+    { category: "variety", type: "interview", title_th: "T-POP STAGE | Week 26/2025", title_en: "T-POP STAGE | Week 26/2025", year: 2025, image: "https://img.youtube.com/vi/DPNoXnQWCEE/maxresdefault.jpg", youtube_url: "https://youtu.be/DPNoXnQWCEE?si=FP6y37YAKawUkStV" },
 
     //02072025
     { category: "variety", type: "star_journey", title_th: "Popcycle Live EP.95", title_en: "Guest on Popcycle Live EP.95", year: 2025, image: "https://img.youtube.com/vi/YVWS895j-Tg/maxresdefault.jpg", youtube_url: "https://youtu.be/YVWS895j-Tg?si=IYGj0qe1i3Yc8gX5" },
@@ -371,7 +371,7 @@ const SU = {
     { category: "variety", type: "collab", title_th: "โต๊ะหมู่ชาบู EP.12", title_en: "Toh Mu Shabu EP.12", year: 2024, image: "https://img.youtube.com/vi/BwwmjZJZZk0/maxresdefault.jpg", youtube_url: "https://youtu.be/BwwmjZJZZk0?si=goLy_-d30A9cE4uU" },
 
     //14042024
-    { category: "variety", type: "talk", title_th: "CAMPปลิ้น | EP.73", title_en: "CAMP Plin | EP.73", year: 2024, image: "https://img.youtube.com/vi/CLcUvEi3AaM/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=MoFt5kDC5uA" },
+    { category: "variety", type: "interview", title_th: "CAMPปลิ้น | EP.73", title_en: "CAMP Plin | EP.73", year: 2024, image: "https://img.youtube.com/vi/CLcUvEi3AaM/maxresdefault.jpg", youtube_url: "https://www.youtube.com/watch?v=MoFt5kDC5uA" },
 
     //02042024
     { category: "variety", type: "live", title_th: "หมีLIVEปะ? EP.160 ", title_en: "Mee LIVE Pa? EP.160", year: 2024, image: "https://img.youtube.com/vi/U8t3F18zb2s/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/U8t3F18zb2s?si=ZzVuUXEDdDzjOrkD" },
@@ -389,7 +389,7 @@ const SU = {
     { category: "variety", type: "brand_promo", title_th: "GrabFood 1 DAY DATE with Namneung & Jennis", title_en: "GrabFood 1 DAY DATE with Namneung & Jennis", year: 2023, image: "https://img.youtube.com/vi/8wdJlGaoOgo/maxresdefault.jpg", youtube_url: "https://youtu.be/8wdJlGaoOgo?si=J5A-lsPYrl_GXFHG" },
 
     //21042023
-    { category: "variety", type: "talk", title_th: "OneDayWithMatthew EP.52", title_en: "One Day With Matthew EP.52", year: 2023, image: "https://img.youtube.com/vi/KmQ-HYTbiHA/maxresdefault.jpg", youtube_url: "https://youtu.be/KmQ-HYTbiHA?si=KYy2WaeMtyPK4kFd" },
+    { category: "variety", type: "interview", title_th: "OneDayWithMatthew EP.52", title_en: "One Day With Matthew EP.52", year: 2023, image: "https://img.youtube.com/vi/KmQ-HYTbiHA/maxresdefault.jpg", youtube_url: "https://youtu.be/KmQ-HYTbiHA?si=KYy2WaeMtyPK4kFd" },
 
     //16042023
     { category: "variety", type: "game_show", title_th: "ดาราล้อกันเล่นอะไรครับเนี่ย EP.15", title_en: "Da Ra Lor Gun Len EP.15", year: 2023, image: "https://img.youtube.com/vi/f7NKSD53CdM/maxresdefault.jpg", youtube_url: "https://youtu.be/f7NKSD53CdM?si=Xg33R2DLqieeK-Z6" },
@@ -413,10 +413,10 @@ const SU = {
     { category: "variety", type: "brand_promo", title_th: "GrabFood ตะลุยกินกับน้ำหนึ่ง - เนย", title_en: "GrabFood with Namneung & Noey", year: 2023, image: "https://img.youtube.com/vi/XZ8jfl7oxT0/maxresdefault.jpg", youtube_url: "https://youtu.be/XZ8jfl7oxT0?si=pkUvWoavID9YEnlr" },
 
     //11022023
-    { category: "variety", type: "talk", title_th: "ฮัลโหลซุปตาร์ ปั๊ว ปัง อลังเวอร์ | BNK48 ", title_en: "Hello Suptar | BNK48", year: 2023, image: "https://img.youtube.com/vi/sol7ZWGvIu8/maxresdefault.jpg", youtube_url: "https://youtu.be/sol7ZWGvIu8?si=dOHqBqhY7be4BjCc" },
+    { category: "variety", type: "interview", title_th: "ฮัลโหลซุปตาร์ ปั๊ว ปัง อลังเวอร์ | BNK48 ", title_en: "Hello Suptar | BNK48", year: 2023, image: "https://img.youtube.com/vi/sol7ZWGvIu8/maxresdefault.jpg", youtube_url: "https://youtu.be/sol7ZWGvIu8?si=dOHqBqhY7be4BjCc" },
 
     //30012023
-    { category: "variety", type: "talk", title_th: "Mango Zero x SERTIST", title_en: "Special Interview with Sertist", year: 2023, image: "https://img.youtube.com/vi/PPR4B8mBriw/maxresdefault.jpg", youtube_url: "https://youtu.be/PPR4B8mBriw?si=jjIWiVk9Haf6HXnF" },
+    { category: "variety", type: "interview", title_th: "Mango Zero x SERTIST", title_en: "Special Interview with Sertist", year: 2023, image: "https://img.youtube.com/vi/PPR4B8mBriw/maxresdefault.jpg", youtube_url: "https://youtu.be/PPR4B8mBriw?si=jjIWiVk9Haf6HXnF" },
 
     //12122022
     { category: "variety", type: "brand_live", title_th: "น้ำหนึ่ง-เนย | ปี้เปิดเป๋า", title_en: "Namneung-Noey Bag Guessing", year: 2022, image: "https://img.youtube.com/vi/s3NmQeunUF0/maxresdefault.jpg", youtube_url: "https://youtu.be/s3NmQeunUF0?si=4vUYFOpMqF4xAgRI" },
@@ -527,13 +527,13 @@ const SU = {
     { category: "variety", type: "bnk48_live", title_th: "ผ้าผีบอก Special | BNK48 DIGITAL LIVE STUDIO", title_en: "Pha Phi Bok Special | BNK48 DIGITAL LIVE STUDIO", year: 2022, image: "https://img.youtube.com/vi/7J7_dIJvJcE/maxresdefault.jpg", youtube_url: "https://youtu.be/7J7_dIJvJcE?si=RF4XMLB0VO87QTx6" },
 
     //05062022
-    { category: "variety", type: "game_show", title_th: "หกฉากครับจารย์ | EP.140", title_en: "Hok Chak Krap Jarn | EP.140", year: 2022, image: "images/hok140.jpg", youtube_url: "https://www.facebook.com/share/v/1BsZmANRCw/" },
+    { category: "variety", type: "game_show", title_th: "หกฉากครับจารย์ | EP.140", title_en: "Hok Chak Krap Jarn | EP.140", year: 2022, image: "images/hok140.jpg", youtube_url: "https://www.facebook.com/share/v/19JjwxebDu/" },
 
     //01062022
     { category: "variety", type: "bnk48_live", title_th: "รับน้องหรรษา~ | BNK48 DIGITAL LIVE STUDIO", title_en: "Fun Welcoming Ceremony~ | BNK48 DIGITAL LIVE STUDIO", year: 2022, image: "https://img.youtube.com/vi/vzsr1Iq_jBw/maxresdefault.jpg", youtube_url: "https://youtu.be/vzsr1Iq_jBw?si=SfOT85ZOYrTwmMrA" },
 
     //18052022
-    { category: "variety", type: "game_show", title_th: "หกฉากครับจารย์ | EP.138", title_en: "Hok Chak Krap Jarn | EP.138", year: 2022, image: "images/hok138.jpg", youtube_url: "https://www.facebook.com/share/v/1CxRdYje6u/" },
+    { category: "variety", type: "game_show", title_th: "หกฉากครับจารย์ | EP.138", title_en: "Hok Chak Krap Jarn | EP.138", year: 2022, image: "images/hok138.jpg", youtube_url: "https://www.facebook.com/share/v/1EtWK3ELDM/" },
 
     //1505202
     { category: "variety", type: "game_show", title_th: "หกฉากครับจารย์ | EP.137", title_en: "Hok Chak Krap Jarn | EP.137", year: 2022, image: "https://img.youtube.com/vi/bc-MqQk5Sl8/maxresdefault.jpg", youtube_url: "https://youtu.be/bc-MqQk5Sl8?si=tt_pLkxflfFG_8IU" },
@@ -776,7 +776,7 @@ const SU = {
     { category: "variety", type: "brand_live", title_th: "GrabFood ซ่า ฟิน กิน x2", title_en: "GrabFood Live | 03 Nov 2020", year: 2020, image: "https://img.youtube.com/vi/vFqkgwlSzjI/maxresdefault.jpg", youtube_url: "https://youtu.be/vFqkgwlSzjI?si=6xNOjI-NFL7iN9MO" },
 
     //13082020
-    { category: "variety", type: "talk", title_th: "โมบายล์ - น้ำหนึ่ง BNK48 | ซี้กันจริงปะ?", title_en: "Mobile - Namneung BNK48 | Best Friends Challenge?", year: 2020, image: "https://img.youtube.com/vi/-Fef7jvxC6A/maxresdefault.jpg", youtube_url: "https://youtu.be/-Fef7jvxC6A?si=n4WmR787b6qx_nPS" },
+    { category: "variety", type: "interview", title_th: "โมบายล์ - น้ำหนึ่ง BNK48 | ซี้กันจริงปะ?", title_en: "Mobile - Namneung BNK48 | Best Friends Challenge?", year: 2020, image: "https://img.youtube.com/vi/-Fef7jvxC6A/maxresdefault.jpg", youtube_url: "https://youtu.be/-Fef7jvxC6A?si=n4WmR787b6qx_nPS" },
 
     //04082020
     { category: "variety", type: "interview", title_th: "PraewLiveXHeavy Rotation", title_en: "PraewLiveXHeavy Rotation", year: 2020, image: "https://img.youtube.com/vi/1v-PZaLWRH4/maxresdefault.jpg", youtube_url: "https://youtu.be/1v-PZaLWRH4?si=x6c4yyg32oBSurhF" },
@@ -857,7 +857,7 @@ const SU = {
     { category: "variety", type: "interview", title_th: "จันทร์ Shock โลก ยังไงซิ 29 ก.ค.62", title_en: "Jan Shock Lok | 29 Jul 2019", year: 2019, image: "https://img.youtube.com/vi/Kofdbcg2ZGs/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/Kofdbcg2ZGs?si=KO2lyaQF5Io4bC7J" },
 
     //19072019
-    { category: "variety", type: "talk", title_th: "ปูเป้ - น้ำหนึ่ง BNK48 | ซี้กันจริงปะ?", title_en: "Pupe - Namneung BNK48 | Best Friends Challenge?", year: 2019, image: "https://img.youtube.com/vi/JLabde-VlNk/maxresdefault.jpg", youtube_url: "https://youtu.be/JLabde-VlNk?si=X3mE76rfLJcdqBij" },
+    { category: "variety", type: "interview", title_th: "ปูเป้ - น้ำหนึ่ง BNK48 | ซี้กันจริงปะ?", title_en: "Pupe - Namneung BNK48 | Best Friends Challenge?", year: 2019, image: "https://img.youtube.com/vi/JLabde-VlNk/maxresdefault.jpg", youtube_url: "https://youtu.be/JLabde-VlNk?si=X3mE76rfLJcdqBij" },
 
     //19072019
     { category: "variety", type: "interview", title_th: "Where We Belong | Dek-D Live", title_en: "Where We Belong | Dek-D Live", year: 2019, image: "https://img.youtube.com/vi/F9nRae6ulR0/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/F9nRae6ulR0?si=t4FrSwEMLNlS0ZzR" },
@@ -869,7 +869,7 @@ const SU = {
     { category: "variety", type: "interview", title_th: "Jabaja BNK48 | Dek-D Live", title_en: "Jabaja BNK48 | Dek-D Live", year: 2019, image: "https://img.youtube.com/vi/tg6cg_wzedI/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/tg6cg_wzedI?si=ujfyxL1UYeGDDlQd" },
 
     //16062019
-    { category: "variety", type: "talk", title_th: "ยุทธการขยับเหงือก 5.0 EP.2", title_en: "Yuttakar Khayab Ngueak 5.0 | EP.2", year: 2019, image: "https://img.youtube.com/vi/CpBR_LAj6zE/maxresdefault.jpg", youtube_url: "https://youtu.be/CpBR_LAj6zE?si=5ToCK396fT3PSfaO" },
+    { category: "variety", type: "interview", title_th: "ยุทธการขยับเหงือก 5.0 EP.2", title_en: "Yuttakar Khayab Ngueak 5.0 | EP.2", year: 2019, image: "https://img.youtube.com/vi/CpBR_LAj6zE/maxresdefault.jpg", youtube_url: "https://youtu.be/CpBR_LAj6zE?si=5ToCK396fT3PSfaO" },
     
     //14052019
     { category: "variety", type: "ii_ne_japan", title_th: "「ii ne JAPAN」BNK48 : EP.12", title_en: "ii ne JAPAN BNK48 : EP.12", year: 2019, image: "https://img.youtube.com/vi/Pr-nrRkoiiY/maxresdefault.jpg", youtube_url: "https://youtu.be/Pr-nrRkoiiY?si=Dn2x0H-20S3agYNG" },
@@ -911,7 +911,7 @@ const SU = {
     { category: "variety", type: "ii_ne_japan", featured: true, title_th: "「ii ne JAPAN」BNK48 : EP.1", title_en: "ii ne JAPAN BNK48 : EP.1", year: 2019, image: "https://img.youtube.com/vi/TReDsNfQpbo/maxresdefault.jpg", youtube_url: "https://youtu.be/TReDsNfQpbo?si=YnDP4dRfn-3xr7Ju" },
 
     //01012019
-    { category: "variety", type: "talk", title_th: "คนดีที่ไหน : EP.8", title_en: "Khon Dee Thee Nai | EP.8", year: 2019, image: "https://img.youtube.com/vi/LxlCqYCwJ_A/maxresdefault.jpg", youtube_url: "https://youtu.be/LxlCqYCwJ_A?si=5umOgqXj6qLoAyFu" },
+    { category: "variety", type: "interview", title_th: "คนดีที่ไหน : EP.8", title_en: "Khon Dee Thee Nai | EP.8", year: 2019, image: "https://img.youtube.com/vi/LxlCqYCwJ_A/maxresdefault.jpg", youtube_url: "https://youtu.be/LxlCqYCwJ_A?si=5umOgqXj6qLoAyFu" },
 
     //เพิ่มเติม 2019
     { category: "variety", type: "other", title_th: "จับฉลากแบ่งทีม “เทศกาลกีฬาบางกอก๔๘”", title_en: "Team Drawing: \"Bangkok48 Sports Festival\"", year: 2019, image: "https://img.youtube.com/vi/IPrBCME2iUc/maxresdefault.jpg", youtube_url: "https://youtu.be/IPrBCME2iUc?si=Pbp7eJ8gTDB1jm4G" },
@@ -959,10 +959,10 @@ const SU = {
     { category: "variety", type: "other", title_th: "ตีสิบเดย์ : BNK48", title_en: "At Ten Day | 14 Apr 2018", year: 2018, image: "https://img.youtube.com/vi/N-bx3v3LIzE/maxresdefault.jpg", youtube_url: "https://youtu.be/N-bx3v3LIzE?si=HYKObEEzg8Bk5VuA" },
 
     //31032018
-    { category: "variety", type: "talk", title_th: "นี่เพื่อนเอง ซีซั่น 2 | BNK48", title_en: "Nee Pueran Aeng Season 2 | BNK48", year: 2018, image: "https://img.youtube.com/vi/Mlz4VZN-8Pc/maxresdefault.jpg", youtube_url: "https://youtu.be/Mlz4VZN-8Pc?si=Bsxl6alHW0QuHOQG" },
+    { category: "variety", type: "interview", title_th: "นี่เพื่อนเอง ซีซั่น 2 | BNK48", title_en: "Nee Pueran Aeng Season 2 | BNK48", year: 2018, image: "https://img.youtube.com/vi/Mlz4VZN-8Pc/maxresdefault.jpg", youtube_url: "https://youtu.be/Mlz4VZN-8Pc?si=Bsxl6alHW0QuHOQG" },
 
     //04032018
-    { category: "variety", type: "talk", title_th: "สามแยกปากหวาน 2018 EP.5 ", title_en: "Sam Yaek Pak Waan 2018 EP.5", year: 2018, image: "https://img.youtube.com/vi/WGblw591NdI/maxresdefault.jpg", youtube_url: "https://youtu.be/WGblw591NdI?si=ieMKrvpNeoWY2nfH" },
+    { category: "variety", type: "interview", title_th: "สามแยกปากหวาน 2018 EP.5 ", title_en: "Sam Yaek Pak Waan 2018 EP.5", year: 2018, image: "https://img.youtube.com/vi/WGblw591NdI/maxresdefault.jpg", youtube_url: "https://youtu.be/WGblw591NdI?si=ieMKrvpNeoWY2nfH" },
 
     //20012018
     { category: "variety", type: "other", title_th: "เจ๋อกันวันเสาร์ EP.11", title_en: "Juer Gun Wan Sao EP.11", year: 2018, image: "https://img.youtube.com/vi/Nhzu5SS-JhM/maxresdefault.jpg", youtube_url: "https://youtu.be/Nhzu5SS-JhM?si=WDM-RlV7d-5yHfUP" },
@@ -1146,14 +1146,14 @@ const SU = {
 
     promo: [
       { title_th: "Maya TALK LIVE - โซ่รักอัคนี", title_en: "Maya TALK LIVE - The Fire", youtube_url: "https://youtu.be/CGGcM5SWBZI?si=hLtsMjm8cKky0CZI", image: "https://img.youtube.com/vi/CGGcM5SWBZI/maxresdefault.jpg" },
-      { title_th: "Ch7HD Drama Society (Live)", title_en: "Ch7HD Drama Society (Live)", youtube_url: "https://www.facebook.com/share/v/1ErZpPzKoW/", image: "images/pr.jpg" },
+      { title_th: "Ch7HD Drama Society (Live)", title_en: "Ch7HD Drama Society (Live)", youtube_url: "https://youtu.be/voeGicCyEm8?si=XXRR0Nt11-XmBmLM", image: "https://img.youtube.com/vi/voeGicCyEm8/maxresdefault.jpg" },
       { title_th: "ออกรายการ เที่ยงบันเทิง Talk", title_en: "Guest on เที่ยงบันเทิง Talk", youtube_url: "https://www.youtube.com/live/xVNe6uZWXX4?si=QBAg8mlQVwTUbxaO", image: "https://img.youtube.com/vi/xVNe6uZWXX4/maxresdefault.jpg" },
       { title_th: "ออกรายการ EFM Fandom Live", title_en: "Guest on EFM Fandom Live", youtube_url: "https://www.youtube.com/live/yPsW6abFQRE?si=NfsO8vyjSV5TDftU", image: "https://img.youtube.com/vi/yPsW6abFQRE/maxresdefault.jpg" },
       { title_th: "Blooming Day - น้ำหนึ่งเนย", title_en: "Blooming Day - NamneungNoey", youtube_url: "https://youtu.be/Py1CfNN43KM?si=B0XS-nsl-admIGWg", image: "https://img.youtube.com/vi/Py1CfNN43KM/maxresdefault.jpg" },
       { title_th: "น้ำหนึ่ง-เนย ไปทำเทียน", title_en: "Namneung and Noey Making Candles", youtube_url: "https://youtu.be/ysXsu4PHUz0?si=nfrfAL_cDI64Crmo", image: "https://img.youtube.com/vi/ysXsu4PHUz0/maxresdefault.jpg" },
       { title_th: "Exclusive Interview น้ำหนึ่งเนย", title_en: "Exclusive Interview NamneungNoey", youtube_url: "https://youtu.be/Ca2i47Mj6gc?si=SneW-szfLL5uiaoB", image: "https://img.youtube.com/vi/Ca2i47Mj6gc/maxresdefault.jpg" },
       { title_th: "Maya TALK LIVE - น้ำหนึ่งเนย", title_en: "Maya TALK LIVE - NamneungNoey", youtube_url: "https://youtu.be/vamgJZE1Ch8?si=44848wZmhYtlNwZ6", image: "https://img.youtube.com/vi/vamgJZE1Ch8/maxresdefault.jpg" },
-      { title_th: "ออกรายการ นิยมคุย", title_en: "Guest on นิยมคุย", youtube_url: "https://www.facebook.com/share/v/19QGSp6AVn/", image: "images/niyom.jpg" },
+      { title_th: "ออกรายการ นิยมคุย", title_en: "Guest on นิยมคุย", youtube_url: "https://www.facebook.com/share/v/19YDPFy2oB/", image: "images/niyom.jpg" },
       { title_th: "Yriety Exclusive Interview", title_en: "Yriety Exclusive Interview", youtube_url: "https://youtu.be/OfP2ra2Bjc4?si=pwgUorxa2CuJeAtu", image: "https://img.youtube.com/vi/OfP2ra2Bjc4/maxresdefault.jpg" },      
       { title_th: "ออกรายการ TALK TO U", title_en: "Guest on  TALK TO U", youtube_url: "https://youtu.be/mWVe8VMt2rI?si=BP-n_vKsLjBMo2Rx", image: "https://img.youtube.com/vi/mWVe8VMt2rI/maxresdefault.jpg" },
       { title_th: "GL On Air [Exclusive Interview]", title_en: "GL On Air [Exclusive Interview]", youtube_url: "https://youtu.be/yBCSHA66iyg?si=yhJ_1egcAyU6UlJ3", image: "https://img.youtube.com/vi/yBCSHA66iyg/maxresdefault.jpg" },
@@ -1170,6 +1170,8 @@ const SU = {
       { title_th: "โฆษณา EP.4 ", title_en: "Ad EP.4", image: "images/ad4.jpg" },
       { title_th: "โฆษณา EP.5 ", title_en: "Ad EP.5", image: "images/ad5.jpg" },
       { title_th: "โฆษณา EP.6 ", title_en: "Ad EP.6", image: "images/ad6.jpg" },
+      { title_th: "โฆษณา EP.7 ", title_en: "Ad EP.7", image: "images/ad7.jpg" },
+      //{ title_th: "โฆษณา EP.8 ", title_en: "Ad EP.8", image: "images/ad8.jpg" },
     ],
   },
 

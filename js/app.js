@@ -254,8 +254,7 @@ const varietyCategories = {
     { key: 'performance',   th: 'Performance',          en: 'Performance' },
     { key: 'bnk_content',   th: 'BNK48 Content',        en: 'BNK48 Content' },
     { key: 'bnk48_theska',  th: 'BNK48 x The Ska',      en: 'BNK48 x The Ska' },
-    { key: 'interview',     th: 'Interview',            en: 'Interview' },
-    { key: 'talk',          th: 'รายการพูดคุย',           en: 'Talk' },
+    { key: 'interview',     th: 'สัมภาษณ์',              en: 'Interview' },
     { key: 'other',         th: 'อื่นๆ',                  en: 'Other' },
   ],
   actress: [
@@ -263,7 +262,6 @@ const varietyCategories = {
     { key: 'star_journey', th: 'Star Journey by Popcycle',    en: 'Star Journey by Popcycle' },
     { key: 'interview',    th: 'สัมภาษณ์',                    en: 'Interview' },
     { key: 'game_show',    th: 'เกมโชว์',                     en: 'Game Show' },
-    { key: 'talk',         th: 'รายการพูดคุย',                       en: 'Talk' },
     { key: 'live',         th: 'ไลฟ์',                        en: 'Live' },
     { key: 'brand_promo',  th: 'Brand Content / Live',        en: 'Brand Content / Live' },
     { key: 'collab',       th: 'คอลแลป',                      en: 'Collab' },
