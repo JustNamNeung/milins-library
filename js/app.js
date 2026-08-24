@@ -95,6 +95,26 @@ function renderFacts() {
   initFadeIn();
 }
 
+// Shared pagination dots — windowed so it never overflows on mobile.
+// Always shows first page, last page, and up to 1 page on each side of the
+// current page; everything else collapses into a "…" marker.
+function renderPageDots(current, total, makeOnClick) {
+  if (total <= 1) return '';
+  const delta = 1;
+  const items = [];
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) items.push(i);
+  }
+  let html = '';
+  let prev = 0;
+  items.forEach(i => {
+    if (prev && i - prev > 1) html += `<span class="page-dot-ellipsis">···</span>`;
+    html += `<span class="page-dot ${i === current ? 'active' : ''}" onclick="${makeOnClick(i)}"></span>`;
+    prev = i;
+  });
+  return html;
+}
+
 // WORKS 
 let currentTab = 'all';
 let currentPage = 1;
@@ -177,9 +197,7 @@ function renderWorks(tab) {
   const paginationEl = document.getElementById('workPagination');
   if (paginationEl) {
     if (totalPages > 1) {
-      const dots = Array.from({length: totalPages}, (_, i) =>
-        `<span class="page-dot ${i+1 === currentPage ? 'active' : ''}" onclick="goPage(${i+1})"></span>`
-      ).join('');
+      const dots = renderPageDots(currentPage, totalPages, i => `goPage(${i})`);
       paginationEl.innerHTML = `
         <span class="page-info">${start+1}–${Math.min(start+WORKS_PER_PAGE, filtered.length)} ${t('จาก','of')} ${filtered.length} ${t('ผลงาน','works')}</span>
         <div class="page-controls">
@@ -419,9 +437,7 @@ function renderVarietyHub() {
 
   let paginationHtml = '';
   if (totalPages > 1) {
-    const dots = Array.from({length: totalPages}, (_, i) =>
-      `<span class="page-dot ${i+1 === varietyPage ? 'active' : ''}" onclick="goVarietyPage(${i+1})"></span>`
-    ).join('');
+    const dots = renderPageDots(varietyPage, totalPages, i => `goVarietyPage(${i})`);
     paginationHtml = `
       <div class="work-pagination" style="display:flex;">
         <span class="page-info">${start+1}–${Math.min(start+VARIETY_PER_PAGE, filtered.length)} ${t('จาก','of')} ${filtered.length} ${t('รายการ','clips')}</span>
@@ -1087,9 +1103,7 @@ function renderHubSection(key, emoji, label, showSpotify) {
     <div class="hub-pagination">
       <span class="page-info">${start + 1}–${Math.min(start + HUB_PER_PAGE, items.length)} ${t('จาก', 'of')} ${items.length}</span>
       <div class="page-controls">
-        <div class="page-dots">${Array.from({length: totalPages}, (_, i) =>
-          `<span class="page-dot ${i+1 === hubPage[key] ? 'active' : ''}" onclick="goHubPage('${key}', ${i+1})"></span>`
-        ).join('')}</div>
+        <div class="page-dots">${renderPageDots(hubPage[key], totalPages, i => `goHubPage('${key}', ${i})`)}</div>
         <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]-1})" ${hubPage[key]===1?'disabled':''}>‹</button>
         <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]+1})" ${hubPage[key]===totalPages?'disabled':''}>›</button>
       </div>
@@ -1199,9 +1213,7 @@ function renderRatingAdsSection() {
     <div class="hub-pagination">
       <span class="page-info">${start + 1}–${Math.min(start + HUB_PER_PAGE, items.length)} ${t('จาก', 'of')} ${items.length}</span>
       <div class="page-controls">
-        <div class="page-dots">${Array.from({length: totalPages}, (_, i) =>
-          `<span class="page-dot ${i+1 === hubPage[key] ? 'active' : ''}" onclick="goHubPage('${key}', ${i+1})"></span>`
-        ).join('')}</div>
+        <div class="page-dots">${renderPageDots(hubPage[key], totalPages, i => `goHubPage('${key}', ${i})`)}</div>
         <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]-1})" ${hubPage[key]===1?'disabled':''}>‹</button>
         <button class="page-btn" onclick="goHubPage('${key}', ${hubPage[key]+1})" ${hubPage[key]===totalPages?'disabled':''}>›</button>
       </div>
