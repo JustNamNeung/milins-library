@@ -235,6 +235,11 @@ function renderWorks(tab) {
           <i class="ti ${p.name.toLowerCase().includes('netflix') ? 'ti-brand-netflix' : 'ti-player-play'}" style="font-size:10px;"></i> ${p.name}
         </a>`).join('');
       const extraRow = (spinBtns || platformBtns) ? `<div class="work-extra-btns">${spinBtns}${platformBtns}</div>` : '';
+      const hubToggleBtn = w.hub_link ? `
+        <button class="work-hub-toggle ${thefireHubOpen ? 'open' : ''}" onclick="event.stopPropagation(); toggleThefireHub();">
+          <i class="ti ti-chevron-right"></i>
+          <span class="hub-toggle-label">${thefireHubOpen ? t('ซ่อนคอนเทนต์', 'Hide content') : t('ดูเนื้อหาทั้งหมด', 'View all content for this title')}</span>
+        </button>` : '';
 
       const imgWrapper = w.youtube_url
         ? `<a href="${w.youtube_url}" target="_blank" rel="noopener" style="display:block;"><div class="work-img">${imgHtml}${playBtn}${badgeHtml}</div></a>`
@@ -245,6 +250,7 @@ function renderWorks(tab) {
           <div class="work-title">${t(w.title_th, w.title_en)}</div>
           <div class="work-year">${w.year}</div>
           ${extraRow}
+          ${hubToggleBtn}
         </div>`;
 
       return `<div class="work-card fade-in">${cardInner}</div>`;
@@ -695,13 +701,14 @@ function bindHighlightScroll() {
   highlightScrollBound = true;
 }
 
-// UPCOMING 
+// แนะนำ (เดิมชื่อ Upcoming)
 const upcomingCategories = [
-  { key: 'all',    th: 'ทั้งหมด',   en: 'All' },
-  { key: 'series', th: 'ซีรีส์ / ละคร', en: 'Series' },
-  { key: 'mv',     th: 'MV / เพลง', en: 'MV / Music' },
-  { key: 'movie',  th: 'ภาพยนตร์',  en: 'Movie' },
-  { key: 'other',  th: 'อื่น ๆ',    en: 'Other' },
+  { key: 'all',     th: 'ทั้งหมด',       en: 'All' },
+  { key: 'series',  th: 'ซีรีส์ / ละคร', en: 'Series' },
+  { key: 'mv',      th: 'MV / เพลง',     en: 'MV / Music' },
+  { key: 'content', th: 'คอนเทนต์',     en: 'Content' },
+  { key: 'event',   th: 'กิจกรรม',      en: 'Event' },
+  { key: 'other',   th: 'อื่น ๆ',        en: 'Other' },
 ];
 let upcomingTab = 'all';
 let upcomingIndex = 0;
@@ -730,7 +737,7 @@ function switchUpcoming(key) {
 }
 
 function renderUpcoming() {
-  el('upcomingTitle').textContent = 'Upcoming';
+  el('upcomingTitle').textContent = t('แนะนำ', 'Recommended');
   renderUpcomingFilter();
 
   if (!SU.upcoming || SU.upcoming.length === 0) {
@@ -752,6 +759,59 @@ function renderUpcoming() {
   if (upcomingIndex >= upcomingFiltered.length) upcomingIndex = 0;
 
   el('upcomingGrid').innerHTML = upcomingFiltered.map((u, i) => {
+    if (u.type === 'product') {
+      return `
+        <div class="upcoming-card fade-in">
+          <div class="ucard-topbar">
+            <div class="ucard-dot-label">
+              <div class="ucard-dot"></div>
+              ${t(u.badge_th, u.badge_en)}
+            </div>
+            <div class="ucard-premiere">${t(u.premiere_th, u.premiere_en)}</div>
+          </div>
+          <div class="ucard-video">
+            <div class="ucard-thumb" style="background-image:url('${u.image}');background-size:cover;background-position:center;"></div>
+          </div>
+          <div class="ucard-info">
+            <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
+            <div class="ucard-meta">
+              <span>${u.price || ''}</span>
+              <span class="ucard-meta-dot">·</span>
+              <span>${u.platform || ''}</span>
+            </div>
+            ${u.desc_th ? `<p class="ucard-desc">${t(u.desc_th, u.desc_en)}</p>` : ''}
+            <div class="ucard-btn-row">
+              ${u.buy_url ? `<a class="ucard-btn" href="${u.buy_url}" target="_blank" rel="noopener">
+                <i class="ti ti-shopping-cart"></i>
+                ${t('สั่งซื้อทาง LINE SHOP', 'Order via LINE SHOP')}
+              </a>` : ''}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    if (u.type === 'placeholder') {
+      return `
+        <div class="upcoming-card fade-in">
+          <div class="ucard-topbar">
+            <div class="ucard-dot-label">
+              <div class="ucard-dot"></div>
+              ${t(u.badge_th, u.badge_en)}
+            </div>
+          </div>
+          <div class="ucard-video">
+            <div class="ucard-thumb">
+              <div class="ucard-thumb-label">${t(u.desc_th, u.desc_en)}</div>
+            </div>
+          </div>
+          <div class="ucard-info">
+            <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
+          </div>
+        </div>
+      `;
+    }
+
     const _now2 = new Date();
     const _airDate2 = u.air_date ? new Date(u.air_date) : null;
     const isOnAir = !!(_airDate2 && _now2 >= _airDate2);
@@ -989,6 +1049,25 @@ function goPage(page) {
 const HUB_PER_PAGE = 3;
 const hubPage = { ost: 1, content: 1, reactions: 1, spots: 1, promo: 1, ratingads: 1 };
 let hubTab = 'all';
+let thefireHubOpen = false;
+
+// ซีรีย์จบแล้ว — ไม่โชว์ hub อัตโนมัติ ต้องกดปุ่มที่การ์ดผลงานก่อน
+function toggleThefireHub(forceOpen) {
+  const wrap = el('thefireHubWrap');
+  if (!wrap) return;
+  thefireHubOpen = typeof forceOpen === 'boolean' ? forceOpen : !thefireHubOpen;
+  wrap.classList.toggle('open', thefireHubOpen);
+  document.querySelectorAll('.work-hub-toggle').forEach(btn => {
+    btn.classList.toggle('open', thefireHubOpen);
+    const label = btn.querySelector('.hub-toggle-label');
+    if (label) label.textContent = thefireHubOpen
+      ? t('ซ่อนคอนเทนต์', 'Hide content')
+      : t('ดูคอนเทนต์ดีเทลทั้งหมดเกี่ยวกับซีรีย์', 'View all content for this title');
+  });
+  if (thefireHubOpen) {
+    requestAnimationFrame(() => wrap.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  }
+}
 
 function renderThefireHub() {
   const hub = SU.thefire_hub;
@@ -1272,6 +1351,5 @@ function bindUpcomingScroll() {
 }
 
 function scrollToThefireHub() {
-  const target = el('thefireHub');
-  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  toggleThefireHub(true);
 }

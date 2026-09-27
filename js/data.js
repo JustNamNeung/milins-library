@@ -64,6 +64,7 @@ const SU = {
       image: "https://img.youtube.com/vi/U2ozG4r_HZw/maxresdefault.jpg",
       youtube_url: "https://youtu.be/U2ozG4r_HZw?si=bFq3PftqnWdBkQdP",
       platforms: [{ name: "iQIYI", url: "https://www.iq.com/album/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A-2026-28ki6pjn81t?lang=th_th" }],
+      hub_link: true,
     },
     {
       category: "series", title_th: "เสน่หาวาโย", title_en: "The Air", year: 2026,
@@ -252,6 +253,21 @@ const SU = {
   ],
 
   variety: [
+
+    //26092026
+    { category: "variety", type: "game_show", title_th: "รู้หน้า ไม่รู้ใคร EP.179", title_en: "WhosThat EP.179", year: 2026, image: "https://img.youtube.com/vi/DvXpUfkPlFw/maxresdefault.jpg", youtube_url: "https://youtu.be/DvXpUfkPlFw?si=eu6KNOGOANS9HsGl" },
+
+    //02092026
+    { category: "variety", type: "interview", title_th: "ฟังเสียงหัวใจไปด้วยกัน กับซีรีส์ คลินิก Fix ใจ", title_en: "Listening to Our Hearts Together with the Fix My Heart Clinic", year: 2026, image: "https://img.youtube.com/vi/C4T4lalSD_A/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/C4T4lalSD_A?si=GVv3DLYSQBgrHfK6"},
+
+    //01092026
+    { category: "variety", type: "interview", title_th: "THE FIRE | Exclusive interview", title_en: "THE FIRE | Exclusive interview", year: 2026, image: "https://img.youtube.com/vi/t4liiHNDl-I/maxresdefault.jpg", youtube_url: "https://youtu.be/t4liiHNDl-I?si=1KpPqaa8AZhfbuax" },
+    
+    //29082026
+    { category: "variety", type: "interview", title_th: "INTERVIEWED NAMNUENGNOEY", title_en: "INTERVIEWED NAMNUENGNOEY", year: 2026, image: "https://img.youtube.com/vi/G5LR_0TeSuI/maxresdefault.jpg", youtube_url: "https://youtu.be/G5LR_0TeSuI?si=MFHMxsKp8HEIL6ns" },
+    
+    //20082026
+    { category: "variety", type: "interview", title_th: "Namneung - Entertainment Dailynews", title_en: "Namneung - Entertainment Dailynews", year: 2026, image: "https://img.youtube.com/vi/5X4XM6YNgPA/maxresdefault.jpg", youtube_url: "https://youtu.be/5X4XM6YNgPA?si=EbRrTIkQg5YPXGDy" },
 
     //16082026
     { category: "variety", type: "star_journey", featured: true, title_th: "Popcycle Live EP.294", title_en: "Popcycle Live EP.294", year: 2026, image: "https://img.youtube.com/vi/_qAcoxJf2KE/maxresdefault.jpg", youtube_url: "https://www.youtube.com/live/_qAcoxJf2KE?si=ARQk3UvQVsjEMpF1" },
@@ -1028,76 +1044,50 @@ const SU = {
     agency_x:  { handle: "@incent2015",    url: "https://x.com/incent2015" },
   },
 
-  // Upcoming
+  // แนะนำ (เดิมชื่อ Upcoming)
   upcoming: [
     {
-      category:    "series",
-      title_th:    "โซ่รักอัคนี",
-      title_en:    "The Fire",
-      hub_link:    true,
-      badge_th:    "Official Trailer",
-      badge_en:    "Official Trailer",
-      premiere_th: "ตอนแรก 11 ก.ค. 2569",
-      premiere_en: "First Episode 11 July 2026",
-      role_th:     "ไฟ อัจจิมา วาทินวณิช",
-      role_en:     "Fai Atchima Watinwanit",
-      platform:    "Ch7HD / iQIYI",
-      youtube_id:  "U2ozG4r_HZw",
-      youtube_url: "https://youtu.be/U2ozG4r_HZw?si=DcPWKygK4E_lOuTF",
-      air_date: "2026-07-11",
-      desc_th: "รับชมสดทางช่อง 7HD กด 35 ผ่านเว็บไซต์ Ch7HD หรือ TrueID และรับชมย้อนหลังได้ทาง BUGABOO.TV และ iQIYI",
-      desc_en: "Watch live on Channel 7HD (Channel 35) via their official website or TrueID, and catch up on previous episodes on BUGABOO.TV and iQIYI.",
-      watch_platforms: [
-        { name: "Ch7HD Live", url: "https://www.ch7.com/live.html" },
-        { name: "TrueID Live",           url: "https://tv.trueid.net/th-th/live/ch7-hd"},  
-        { name: "iQIYI Uncut",  url: "https://www.iq.com/album/%E0%B9%82%E0%B8%8B%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B8%B1%E0%B8%84%E0%B8%99%E0%B8%B5-%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A-2026-28ki6pjn81t?lang=th_th" }, 
-        { name: "BUGABOO.TV",       url: "https://www.bugaboo.tv/en/series/thefire/" },
-      ],
+      type:        "product",
+      category:    "other",
+      title_th:    "Namneung's Baseball Jersey - Chapter 30 Edition",
+      title_en:    "Namneung's Baseball Jersey - Chapter 30 Edition",
+      badge_th:    "พรีออเดอร์",
+      badge_en:    "Pre-order",
+      premiere_th: "พรีออเดอร์ถึง 14 ต.ค. 2569",
+      premiere_en: "Pre-order until 14 Oct 2026",
+      price:       "฿790 – ฿890",
+      platform:    "LINE SHOP",
+      image:       "images/jersey.jpg",
+      desc_th:     "เสื้อ Baseball Jersey ปี 2026 ออกแบบโดยน้ำหนึ่ง พร้อม Photo Card (สุ่ม 1 จาก 3 แบบ) และสติกเกอร์ MILINLAND ปี 2026",
+      desc_en:     "2026 Baseball Jersey designed by Namneung, with a random photo card (1 of 3) and a MILINLAND 2026 sticker.",
+      buy_url:     "https://shop.line.me/@mimi.official/product/1008363827",
     },
     {
-      category:    "mv",
-      title_th:    "กลับมาพบกัน",
-      title_en:    "Back Again",
-      badge_th:    "New MV",
-      badge_en:    "New MV",
-      premiere_th: "16 July 2026",
-      premiere_en: "16 July 2026",
-      air_date:    "2026-07-16",
-      youtube_id:  "vyZCwAPMSlo",
-      youtube_url: "https://youtu.be/vyZCwAPMSlo?si=kFdKyS1tspXaQvk-",
-      image:       "",
-      platform:    "YouTube",
-      role_th:     "น้ำหนึ่ง มิลิญ & เนย กานต์ธีรา",
-      role_en:     "Namneung Milin & Noey Kanteera",
-      listen_platforms: [
-      { name: "Spotify",      url: "https://open.spotify.com/track/6JbVIzHIdrCGuWFkn3YmDp?si=_Y0zdsaZTB-PP1z-wDfNiw&nd=1&dlsi=c4c58b5096634345" },
-      { name: "Apple Music",  url: "https://music.apple.com/th/album/ค-อเธอ-its-you-from-โซ-ร-กอ-คน-the-fire-4elements-บ/6783669451?l=th" },
-      { name: "JOOX",         url: "https://www.joox.com/th/single/hVo2TY51MpyZ6W258mWrCA==" },
-      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_kaXSPwNRYs50EP-eyMiT8AeS-djr-VbEM&si=4_-amMaf3LmONsCb" },
-      ],
-    },
-    {
-      category:    "mv",
-      title_th:    "คือเธอ",
-      title_en:    "It’s you",
-      badge_th:    "New MV",
-      badge_en:    "New MV",
-      premiere_th: "14 July 2026",
-      premiere_en: "14 July 2026",
-      air_date:    "2026-07-14",
-      youtube_id:  "uYPWFkDaakI",
-      youtube_url: "https://youtu.be/uYPWFkDaakI?si=KFh4ceESzNJJHvb5",
-      image:       "",
-      platform:    "YouTube",
-      role_th:     "น้ำหนึ่ง มิลิญ",
+      type:        "video",
+      category:    "content",
+      title_th:    "The Fire Final Episode Vlog",
+      title_en:    "The Fire Final Episode Vlog",
+      badge_th:    "อัปเดตล่าสุด",
+      badge_en:    "Latest Update",
+      premiere_th: "27 กันยายน 2569",
+      premiere_en: "27 September 2026",
+      role_th:     "น้ำหนึ่ง มิลิน",
       role_en:     "Namneung Milin",
-      listen_platforms: [
-      { name: "Spotify",      url: "https://open.spotify.com/track/6JbVIzHIdrCGuWFkn3YmDp?si=_Y0zdsaZTB-PP1z-wDfNiw&nd=1&dlsi=c4c58b5096634345" },
-      { name: "Apple Music",  url: "https://music.apple.com/th/album/ค-อเธอ-its-you-from-โซ-ร-กอ-คน-the-fire-4elements-บ/6783669451?l=th" },
-      { name: "JOOX",         url: "https://www.joox.com/th/single/hVo2TY51MpyZ6W258mWrCA==" },
-      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_kaXSPwNRYs50EP-eyMiT8AeS-djr-VbEM&si=4_-amMaf3LmONsCb" },
-      ],
-    }
+      platform:    "YouTube",
+      youtube_id:  "7ozh_l1kM_k",
+      youtube_url: "https://youtu.be/7ozh_l1kM_k?si=DKcG_dpluAlPXoTq",
+    },
+    // ซ่อนไว้ก่อน รอประกาศแฟนมีตติ้งอย่างเป็นทางการ
+    // {
+    //   type:      "placeholder",
+    //   category:  "event",
+    //   title_th:  "แฟนมีตติ้ง",
+    //   title_en:  "Fan Meeting",
+    //   badge_th:  "รอประกาศ",
+    //   badge_en:  "Announcement Coming Soon",
+    //   desc_th:   "รายละเอียดจะประกาศเร็วๆ นี้",
+    //   desc_en:   "Details to be announced soon.",
+    // },
   ],
 
   // The Fire — Content Hub (ซ้อนอยู่ใต้ Works section)
@@ -1117,6 +1107,10 @@ const SU = {
       { title_th: "Official Teaser", title_en: "Official Teaser", youtube_url: "https://youtu.be/7pqOPlfEjXo?si=e9kqeKm93S5VI4BI", image: "https://img.youtube.com/vi/7pqOPlfEjXo/maxresdefault.jpg"  },
       { title_th: "Official Trailer", title_en: "Official Trailer", youtube_url: "https://youtu.be/U2ozG4r_HZw?si=xmOLbp7wSP-Sp4iE", image: "https://img.youtube.com/vi/U2ozG4r_HZw/maxresdefault.jpg"  },
       { title_th: "รู้จักกับ 'ไฟ'", title_en: "Get to Know 'Fai'", youtube_url: "https://youtu.be/Ztxr6i55FVM?si=cmBBX3W7HWBeFC6e", image: "https://img.youtube.com/vi/Ztxr6i55FVM/maxresdefault.jpg"  },
+      { title_th: "The Fire First Episode Premiere", title_en: "The Fire First Episode Premiere", youtube_url: "https://youtu.be/DiTyrLLm5kU?si=x5O6rjnolRhTE7ZA", image: "https://img.youtube.com/vi/DiTyrLLm5kU/maxresdefault.jpg"  },
+      { title_th: "4 ELEMENTS - INFINITE BONDS FAN MEETING", title_en: "4 ELEMENTS - INFINITE BONDS FAN MEETING", youtube_url: "https://youtu.be/0yn5jS5Byvk?si=Hdv68-drpA-z631B", image: "https://img.youtube.com/vi/0yn5jS5Byvk/maxresdefault.jpg"  },
+      { title_th: "The Fire Final Episode Vlog", title_en: "The Fire Final Episode Vlog", youtube_url: "https://youtu.be/7ozh_l1kM_k?si=JQSHQuwJYETEAiku", image: "https://img.youtube.com/vi/7ozh_l1kM_k/maxresdefault.jpg"  },
+
     ],
 
     reactions: [
@@ -1135,7 +1129,7 @@ const SU = {
       { title_th: "Spot EP.5", title_en: "Spot EP.5", youtube_url: "https://youtu.be/2tHd42JJ4GU?si=nO9j5amQcWrTjk5f", image: "https://img.youtube.com/vi/2tHd42JJ4GU/maxresdefault.jpg" },
       { title_th: "Spot EP.6", title_en: "Spot EP.6", youtube_url: "https://youtu.be/41CPkupBOR8?si=6G7sGPizRrZOyoHr", image: "https://img.youtube.com/vi/41CPkupBOR8/maxresdefault.jpg" },
       { title_th: "Spot EP.7", title_en: "Spot EP.7", youtube_url: "https://youtu.be/kW27cnbz-7g?si=Oj51dmh6JuCn1Ejd", image: "https://img.youtube.com/vi/kW27cnbz-7g/maxresdefault.jpg" },
-      //{ title_th: "Spot EP.8", title_en: "Spot EP.8", youtube_url: "https://youtu.be/Omw2YrM99MM?si=MaEIQtmG67oshr1K", image: "https://img.youtube.com/vi/Omw2YrM99MM/maxresdefault.jpg" },
+      { title_th: "Spot EP.8", title_en: "Spot EP.8", youtube_url: "https://youtu.be/vkHiBWaiXC8?si=GukPQ_eERawaHpXm", image: "https://img.youtube.com/vi/vkHiBWaiXC8/maxresdefault.jpg" },
     ],
 
     posters: [
@@ -1158,6 +1152,9 @@ const SU = {
       { title_th: "ออกรายการ TALK TO U", title_en: "Guest on  TALK TO U", youtube_url: "https://youtu.be/mWVe8VMt2rI?si=BP-n_vKsLjBMo2Rx", image: "https://img.youtube.com/vi/mWVe8VMt2rI/maxresdefault.jpg" },
       { title_th: "GL On Air [Exclusive Interview]", title_en: "GL On Air [Exclusive Interview]", youtube_url: "https://youtu.be/yBCSHA66iyg?si=yhJ_1egcAyU6UlJ3", image: "https://img.youtube.com/vi/yBCSHA66iyg/maxresdefault.jpg" },
       { title_th: "Popcycle Live EP.294", title_en: "Popcycle Live EP.294", youtube_url: "https://www.youtube.com/live/_qAcoxJf2KE?si=ARQk3UvQVsjEMpF1", image: "https://img.youtube.com/vi/_qAcoxJf2KE/maxresdefault.jpg" },
+      { title_th: "Namneung - Entertainment Dailynews", title_en: "Namneung - Entertainment Dailynews", youtube_url: "https://youtu.be/5X4XM6YNgPA?si=EbRrTIkQg5YPXGDy", image: "https://img.youtube.com/vi/5X4XM6YNgPA/maxresdefault.jpg" },
+      { title_th: "INTERVIEWED NAMNUENGNOEY", title_en: "INTERVIEWED NAMNUENGNOEY", youtube_url: "https://youtu.be/G5LR_0TeSuI?si=MFHMxsKp8HEIL6ns", image: "https://img.youtube.com/vi/G5LR_0TeSuI/maxresdefault.jpg" },
+      { title_th: "THE FIRE | Exclusive interview", title_en: "THE FIRE | Exclusive interview", youtube_url: "https://youtu.be/t4liiHNDl-I?si=1KpPqaa8AZhfbuax", image: "https://img.youtube.com/vi/t4liiHNDl-I/maxresdefault.jpg" },
       
     ],
 
@@ -1171,7 +1168,7 @@ const SU = {
       { title_th: "โฆษณา EP.5 ", title_en: "Ad EP.5", image: "images/ad5.jpg" },
       { title_th: "โฆษณา EP.6 ", title_en: "Ad EP.6", image: "images/ad6.jpg" },
       { title_th: "โฆษณา EP.7 ", title_en: "Ad EP.7", image: "images/ad7.jpg" },
-      //{ title_th: "โฆษณา EP.8 ", title_en: "Ad EP.8", image: "images/ad8.jpg" },
+      { title_th: "โฆษณา EP.8 ", title_en: "Ad EP.8", image: "images/ad8.jpg" },
     ],
   },
 
@@ -1196,9 +1193,9 @@ const SU = {
     channel_name: "Milin D. Channel",
     channel_url: "https://www.youtube.com/@Milind.channel",
     videos: [
+      { youtube_id: "c5mSKr4bcqo", title_th: "The Fire Final Episode Vlog", title_en: "The Fire Final Episode Vlog", thumb: "https://img.youtube.com/vi/7ozh_l1kM_k/hqdefault.jpg" },
       { youtube_id: "7sQu7HL1lwM", title_th: "เบื้องหลัง | Time Flies Cover", title_en: "Behind The Scenes | Time Flies Cover", thumb: "https://img.youtube.com/vi/7sQu7HL1lwM/hqdefault.jpg" },
       { youtube_id: "DdB2-kI1y3E", title_th: "Ep.19", title_en: "Ep.19", thumb: "https://img.youtube.com/vi/DdB2-kI1y3E/hqdefault.jpg" },
-      { youtube_id: "c5mSKr4bcqo", title_th: "EP.18", title_en: "EP.18", thumb: "https://img.youtube.com/vi/c5mSKr4bcqo/hqdefault.jpg" },
     ],
   },
 
@@ -1209,9 +1206,9 @@ const SU = {
     desc_th: "ช่อง YouTube ที่น้ำหนึ่งทำร่วมกับเพื่อนๆ แก้ว ปูเป้ และโมบาย",
     desc_en: "A YouTube channel created together with friends Kaew, Pupe and Mobye",
     videos: [
-      { youtube_id: "JbGzFsd-MTM", title_th: "[REACTION] Official Trailer - โซ่รักอัคนี", title_en: "[REACTION] Official Trailer - The Fire ", thumb: "https://img.youtube.com/vi/JbGzFsd-MTM/maxresdefault.jpg", playlist_url: "" },
+      { youtube_id: "jbI0aWG65PA", title_th: "Chiang Mai Vlog ep.1", title_en: "Chiang Mai Vlog ep.1", thumb: "https://img.youtube.com/vi/jbI0aWG65PA/hqdefault.jpg", playlist_url: "" },
       { youtube_id: "38axki2otzI", title_th: "SERTIST Talk x Miusic", title_en: "SERTIST Talk x Miusic", thumb: "https://img.youtube.com/vi/UWhIoItGSkc/hqdefault.jpg", playlist_url: "https://youtu.be/UWhIoItGSkc?si=lJLHrqmzx_rzw4mm" },
-      { youtube_id: "xag-_vQZlKs", title_th: "Phuket Vlog ep.1", title_en: "Phuket Vlog ep.1", thumb: "https://img.youtube.com/vi/xag-_vQZlKs/hqdefault.jpg", playlist_url: "" },
+      { youtube_id: "JbGzFsd-MTM", title_th: "[REACTION] Official Trailer - โซ่รักอัคนี", title_en: "[REACTION] Official Trailer - The Fire ", thumb: "https://img.youtube.com/vi/JbGzFsd-MTM/maxresdefault.jpg", playlist_url: "" },
     ],
   },
 
