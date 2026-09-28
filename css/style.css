@@ -781,6 +781,8 @@ img { max-width: 100%; display: block; }
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
   background: linear-gradient(160deg, #1a0a2d, #3a1060);
 }
+.iam-photo-zoom { cursor: pointer; }
+.iam-photo-zoom:hover img { opacity: 0.85; }
 .iam-video {
   aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden;
   background: #111; position: relative;
@@ -1124,6 +1126,38 @@ img { max-width: 100%; display: block; }
 /* ── POSTER ROTATION ──────────────────────────────────────── */
 .poster-row { display: flex; align-items: center; gap: 8px; }
 .poster-card-item .hub-thumb { aspect-ratio: 3/4; }
+.hub-thumb.poster-thumb { cursor: pointer; }
+.hub-thumb.poster-thumb:hover img { opacity: 0.85; }
+
+/* ── Lightbox (image click-to-enlarge) ───────────────────── */
+.img-lightbox {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(10,6,6,0.92);
+  align-items: center; justify-content: center;
+  padding: 40px 20px; cursor: zoom-out;
+}
+.img-lightbox.open { display: flex; }
+.img-lightbox img {
+  max-width: 100%; max-height: 85vh; object-fit: contain;
+  border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  cursor: default; animation: lightboxIn 0.2s ease;
+}
+@keyframes lightboxIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.img-lightbox-caption {
+  position: absolute; bottom: 24px; left: 0; right: 0;
+  text-align: center; color: rgba(255,255,255,0.8); font-size: 13px;
+}
+.img-lightbox-close {
+  position: absolute; top: 18px; right: 20px;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 18px; transition: background .15s;
+}
+.img-lightbox-close:hover { background: rgba(255,255,255,0.2); }
 .arrow-btn {
   width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
   border: 1px solid var(--gray-200); background: white;

@@ -988,7 +988,7 @@ function renderMVPlayer(idx) {
 
   const iam = b.iam48;
   const iamPhotos = iam.images.map(img => `
-    <div class="iam-photo">
+    <div class="iam-photo ${img.src ? 'iam-photo-zoom' : ''}" ${img.src ? `onclick="openLightbox('${img.src}', '${(img.alt || '').replace(/'/g, "\\'")}')"` : ''}>
       ${img.src
         ? `<img src="${img.src}" alt="${img.alt}">`
         : `<div class="iam-photo-placeholder"><i class="ti ti-photo" style="font-size:28px;color:rgba(255,255,255,0.1);"></i></div>`}
@@ -1225,7 +1225,7 @@ function renderPosterSection() {
 
   const cardsHtml = ordered.map(p => `
     <div class="hub-card poster-card-item fade-in">
-      <div class="hub-thumb poster-thumb">
+      <div class="hub-thumb poster-thumb" ${p.image ? `onclick="openLightbox('${p.image}', '${(t(p.title_th, p.title_en) || '').replace(/'/g, "\\'")}')"` : ''}>
         ${p.image
           ? `<img src="${p.image}" alt="${t(p.title_th, p.title_en)}" onerror="this.style.display='none'" />`
           : `<i class="ti ti-photo" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;color:var(--red);opacity:0.3;"></i>`}
@@ -1281,7 +1281,7 @@ function renderRatingAdsSection() {
 
   const cardsHtml = paged.map(p => `
     <div class="hub-card poster-card-item fade-in">
-      <div class="hub-thumb poster-thumb">
+      <div class="hub-thumb poster-thumb" ${p.image ? `onclick="openLightbox('${p.image}', '${(t(p.title_th, p.title_en) || '').replace(/'/g, "\\'")}')"` : ''}>
         ${p.image
           ? `<img src="${p.image}" alt="${t(p.title_th, p.title_en)}" onerror="this.style.display='none'" />`
           : `<i class="ti ti-photo" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;color:var(--red);opacity:0.3;"></i>`}
@@ -1353,3 +1353,35 @@ function bindUpcomingScroll() {
 function scrollToThefireHub() {
   toggleThefireHub(true);
 }
+
+// ── Lightbox (คลิกรูปเพื่อดูขยาย — ใช้กับโปสเตอร์ / เรตติ้งและโฆษณา) ──
+function openLightbox(src, caption) {
+  let box = el('imgLightbox');
+  if (!box) {
+    box = document.createElement('div');
+    box.id = 'imgLightbox';
+    box.className = 'img-lightbox';
+    box.innerHTML = `
+      <button class="img-lightbox-close" onclick="closeLightbox()" aria-label="Close"><i class="ti ti-x"></i></button>
+      <img id="imgLightboxImg" src="" alt="" />
+      <div class="img-lightbox-caption" id="imgLightboxCaption"></div>
+    `;
+    box.addEventListener('click', (e) => { if (e.target === box) closeLightbox(); });
+    document.body.appendChild(box);
+  }
+  el('imgLightboxImg').src = src;
+  el('imgLightboxCaption').textContent = caption || '';
+  box.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const box = el('imgLightbox');
+  if (!box) return;
+  box.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
