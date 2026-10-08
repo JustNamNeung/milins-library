@@ -1099,17 +1099,17 @@ const SU = {
     {
       type:        "video",
       category:    "content",
-      title_th:    "The Fire Final Episode Vlog",
-      title_en:    "The Fire Final Episode Vlog",
+      title_th:    "Milin Vlog! Vlog! Ep.21",
+      title_en:    "Milin Vlog! Vlog! Ep.21",
       badge_th:    "อัปเดตล่าสุด",
       badge_en:    "Latest Update",
-      premiere_th: "27 กันยายน 2569",
-      premiere_en: "27 September 2026",
+      premiere_th: "04 ตุลาคม 2569",
+      premiere_en: "04 October 2026",
       role_th:     "น้ำหนึ่ง มิลิน",
       role_en:     "Namneung Milin",
       platform:    "YouTube",
-      youtube_id:  "7ozh_l1kM_k",
-      youtube_url: "https://youtu.be/7ozh_l1kM_k?si=DKcG_dpluAlPXoTq",
+      youtube_id:  "_sNRIIuVGB4",
+      youtube_url: "https://youtu.be/_sNRIIuVGB4?si=2NpyKk02qvFXM-Aa",
     },
     // ซ่อนไว้ก่อน รอประกาศแฟนมีตติ้งอย่างเป็นทางการ
     // {
