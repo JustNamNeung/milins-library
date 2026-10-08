@@ -791,6 +791,42 @@ function renderUpcoming() {
       `;
     }
 
+    if (u.type === 'event') {
+      const rows = [
+        u.premiere_th ? ['ti-calendar-event', t(u.premiere_th, u.premiere_en)] : null,
+        u.venue_th ? ['ti-map-pin', t(u.venue_th, u.venue_en)] : null,
+        u.ticket_sale_th ? ['ti-ticket', t(u.ticket_sale_th, u.ticket_sale_en)] : null,
+        u.price ? ['ti-coin', u.price] : null,
+      ].filter(Boolean).map(([ic, tx]) => `
+        <div class="ucard-event-row"><i class="ti ${ic}"></i><span>${tx}</span></div>`).join('');
+      const ticketBtns = (u.ticket_urls || []).filter(x => x.url && x.url.startsWith('http')).map(x => `
+        <a class="ucard-btn" href="${x.url}" target="_blank" rel="noopener">
+          <i class="ti ti-ticket"></i> ${t('ซื้อบัตร', 'Buy tickets')} · ${x.name}
+        </a>`).join('');
+      return `
+        <div class="upcoming-card fade-in">
+          <div class="ucard-topbar">
+            <div class="ucard-dot-label">
+              <div class="ucard-dot"></div>
+              ${t(u.badge_th, u.badge_en)}
+            </div>
+            ${u.platform ? `<div class="ucard-premiere">${u.platform}</div>` : ''}
+          </div>
+          <div class="ucard-video">
+            <div class="ucard-thumb" ${u.image ? `style="background-image:url('${u.image}');background-size:contain;background-repeat:no-repeat;background-position:center;background-color:#3d1015;"` : ''}>
+              ${u.image ? '' : `<i class="ti ti-calendar-event" style="font-size:36px;color:rgba(255,255,255,0.35);"></i>`}
+            </div>
+          </div>
+          <div class="ucard-info">
+            <div class="ucard-title">${t(u.title_th, u.title_en)}</div>
+            <div class="ucard-event-rows">${rows}</div>
+            ${u.desc_th ? `<p class="ucard-desc">${t(u.desc_th, u.desc_en)}</p>` : ''}
+            ${ticketBtns ? `<div class="ucard-btn-row">${ticketBtns}</div>` : ''}
+          </div>
+        </div>
+      `;
+    }
+
     if (u.type === 'placeholder') {
       return `
         <div class="upcoming-card fade-in">

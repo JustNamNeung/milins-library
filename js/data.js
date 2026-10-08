@@ -39,12 +39,17 @@ const SU = {
 
   // Fun Facts 
   facts: [
+    {icon: "ti-star", th: "ชื่อ “น้ำหนึ่ง” มาจากการเกิดวันที่ 11 เดือน 11 เป็นลูกคนแรกของพ่อกับแม่ เป็นหลานคนแรกของปู่กับย่า และเป็นหลานสาวคนแรกของยาย ก่อนจะได้แรงบันดาลใจจากตัวละคร “เพชรน้ำหนึ่ง”",
+      en: "The name “Namneung” comes from being born on November 11. She was the first child of her parents, the first grandchild of her paternal grandparents, and the first granddaughter of her maternal grandmother. The name was later inspired by the character “Phet Namneung”."},
     { icon: "ti-book",         th: "สำเร็จการศึกษาด้านวิทยาศาสตร์สิ่งแวดล้อมจากมหาวิทยาลัยธรรมศาสตร์", en: "Bachelor of Science in Environmental Science, Thammasat University" },
     { icon: "ti-mood-smile",   th: "เป็นคนค่อนข้างอินโทรเวิร์ตและชอบใช้เวลาเงียบ ๆ กับตัวเอง",         en: "An introvert who enjoys quiet time and personal space" },
-    { icon: "ti-library",      th: "รักธรรมชาติ ชอบเข้าวัดทำบุญ และใช้เวลาว่างไปกับการอ่านหนังสือ",                                en: "Loves nature, making merit, and reading books." },
+    { icon: "ti-library",      th: "รักธรรมชาติ ชอบเข้าวัดทำบุญ และใช้เวลาว่างไปกับการอ่านหนังสือ",    en: "Loves nature, making merit, and reading books." },
     { icon: "ti-leaf",         th: "ไม่ทานเนื้อสัตว์ใหญ่ เช่น หมูและเนื้อวัว",                        en: "Avoids eating red meat, such as pork and beef." },
+    { icon: "ti-book",        th: "เคยเข้ารับการฝึกนักศึกษาวิชาทหาร (รด.)", en: "Completed the Reserve Officers' Training Corps (ROTC) program" },
+    { icon: "ti-palette",       th: "สีที่ชอบคือสีแดงมารูน", en: "Her favorite color is maroon red" },
     { icon: "ti-paw",          th: "มีสุนัขชื่อ \"ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล วาทินธนะกิจ\"", en: "Owns a dog named \"Chawee Akkhara Singburi Decho Chotechuangchatchawan Watinthanakit." },
     { icon: "ti-heart",        th: "คำว่า \"รัก\" ของน้ำหนึ่ง พิมพ์โดยกด Shift = ณํฏ",               en: "Namneung types the word \"love\" using Shift = ณํฏ" },
+    
   ],
 
   // ไฮไลท์ 
@@ -52,7 +57,7 @@ const SU = {
     { title_th: "รำงานบวงสรวงพญาศรีสัตตนาคราช 2026", title_en: "Phaya Si Sattanakharat Worship Dance Ceremony 2026", platform: "tiktok", url: "https://www.tiktok.com/@fm90.25mhz/video/7661622891351608583?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/dance.jpg" },
     { title_th: "โซ่รักอัคนี น้องลูกไฟ", title_en: "The Fire N'Lukfai", platform: "tiktok", url: "https://www.tiktok.com/@iqiyi_thailand/video/7660133368260054280?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/lukfai.jpg" },
 
-    // { title_th: "แฟนมีตติ้ง [ชื่องาน]", title_en: "[Event] Fan Meeting", platform: "facebook", url: "https://www.facebook.com/...", image: "images/highlight2.jpg" },
+    //{ title_th: "แฟนมีตติ้ง [ชื่องาน]", title_en: "[Event] Fan Meeting", platform: "facebook", url: "https://www.facebook.com/...", image: "images/highlight2.jpg" },
   ],
 
   // ผลงาน
@@ -1025,7 +1030,7 @@ const SU = {
     instagram_main:  { handle: "@milinnn.d",       url: "https://www.instagram.com/milinnn.d/" },
     instagram_daily: { handle: "@with.namneung",   url: "https://www.instagram.com/with.namneung/" },
     facebook:        { handle: "Namneung Milin",   url: "https://www.facebook.com/bnk48official.namneung" },
-    youtube:         { handle: "Milin D. Channel", url: "https://www.youtube.com/@Milind.channel" },
+    youtube:         { handle: "Milin Area",       url: "https://www.youtube.com/@Milinarea.channel" },
     x:               { handle: "@Milinyahhhh",     url: "https://x.com/Milinyahhhh" },
     tiktok:          { handle: "@namneung.ml",     url: "https://www.tiktok.com/@namneung.ml" },
   },
@@ -1046,6 +1051,35 @@ const SU = {
 
   // แนะนำ (เดิมชื่อ Upcoming)
   upcoming: [
+    {
+      type:        "event",
+      category:    "event",
+      title_th:    "Namneung Fan Meeting THE FEELING OF US: Written With You, Chapter 30",
+      title_en:    "Namneung Fan Meeting THE FEELING OF US: Written With You, Chapter 30",
+      badge_th:    "15 พ.ย. 2569",
+      badge_en:    "15 Nov 2026",
+      premiere_th: "วันอาทิตย์ที่ 15 พฤศจิกายน 2569 เวลา 16:00 น.",
+      premiere_en: "Sunday, November 15, 2026 at 4:00 PM",
+      venue_th:    "NT AUDITORIUM, อาคาร 9 ชั้น 2 บมจ. NT สำนักงานใหญ่ แจ้งวัฒนะ (TOT เดิม)",
+      venue_en:    "NT AUDITORIUM, 2nd Floor, Building 9, NT PCL Headquarter Chaengwattana (formerly TOT PCL HQ)",
+      price:       "฿4,800 / ฿3,500 / ฿2,800 / ฿2,000 / ฿1,500",
+      platform:    "Ticketmelon / Trip",
+      ticket_sale_th: "เปิดจำหน่ายบัตรวันเสาร์ที่ 10 ตุลาคม 2569 เวลา 12:00 น.",
+      ticket_sale_en: "Tickets available from Saturday, October 10, 2026 at 12:00 PM",
+      ticket_urls: [
+        {
+          name: "Ticketmelon",
+          url: "https://www.ticketmelon.com/th/grandstarconnext/namneung-chapter30",
+        },
+        {
+          name: "Trip",
+          url: "https://th.trip.com/travel-guide/trip-events/157014345?curr=THB&locale=th-TH&disableAnimation=YES",
+        },
+      ],
+      desc_th:     "ทุกความทรงจำ ทุกช่วงเวลา และทุกการเปลี่ยนแปลงตลอดเส้นทางที่ผ่านมา ทุกความรู้สึกค่อย ๆ หลอมรวมจนกลายเป็น “ความรู้สึกของเรา” ที่ยังคงดำเนินต่อไป พร้อมกับเรื่องราวบทใหม่ที่กำลังจะเริ่มต้นขึ้น ครั้งนี้ น้ำหนึ่งพร้อมพาทุกคนมาสัมผัสทุกความรู้สึกที่เคยเกิดขึ้น และร่วมกันเขียนความทรงจำบทใหม่นี้ไปด้วยกัน...กับเรื่องราวแห่งความรู้สึก ในบทที่ 30",
+      desc_en:     "Everything we’ve experienced along this unforgettable journey has come together into “the feeling of us”, a feeling that continues to bloom as a beautiful new chapter begins. This time, Namneung is ready to take everyone back through the moments we’ve shared while we create new ones together as we write the next chapter of our story… Chapter 30.",
+      image:       "images/fanmeet.jpg",
+    },
     {
       type:        "product",
       category:    "other",
@@ -1190,12 +1224,12 @@ const SU = {
 
   // Milin Vlog! Vlog! 
   vlog: {
-    channel_name: "Milin D. Channel",
-    channel_url: "https://www.youtube.com/@Milind.channel",
+    channel_name: "Milin Area",
+    channel_url: "https://www.youtube.com/@Milinarea.channel",
     videos: [
+      { youtube_id: "_sNRIIuVGB4", title_th: "Milin Vlog! Vlog! Ep.21", title_en: "Milin Vlog! Vlog! Ep.21", thumb: "https://img.youtube.com/vi/_sNRIIuVGB4/hqdefault.jpg" },
       { youtube_id: "c5mSKr4bcqo", title_th: "The Fire Final Episode Vlog", title_en: "The Fire Final Episode Vlog", thumb: "https://img.youtube.com/vi/7ozh_l1kM_k/hqdefault.jpg" },
       { youtube_id: "7sQu7HL1lwM", title_th: "เบื้องหลัง | Time Flies Cover", title_en: "Behind The Scenes | Time Flies Cover", thumb: "https://img.youtube.com/vi/7sQu7HL1lwM/hqdefault.jpg" },
-      { youtube_id: "DdB2-kI1y3E", title_th: "Ep.19", title_en: "Ep.19", thumb: "https://img.youtube.com/vi/DdB2-kI1y3E/hqdefault.jpg" },
     ],
   },
 
