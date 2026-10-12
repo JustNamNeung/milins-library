@@ -54,9 +54,10 @@ const SU = {
 
   // ไฮไลท์ 
   highlights: [
+    { title_th: "สมดุลรัก (Balance) - Namneung Milin", title_en: "สมดุลรัก (Balance) - Namneung Milin", platform: "tiktok", url: "https://www.tiktok.com/@namneung.ml/video/7695742517655915783?is_from_webapp=1&sender_device=pc&web_id=7695753295365965333", image: "images/lives.jpg" },    
     { title_th: "รำงานบวงสรวงพญาศรีสัตตนาคราช 2026", title_en: "Phaya Si Sattanakharat Worship Dance Ceremony 2026", platform: "tiktok", url: "https://www.tiktok.com/@fm90.25mhz/video/7661622891351608583?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/dance.jpg" },
     { title_th: "โซ่รักอัคนี น้องลูกไฟ", title_en: "The Fire N'Lukfai", platform: "tiktok", url: "https://www.tiktok.com/@iqiyi_thailand/video/7660133368260054280?is_from_webapp=1&sender_device=pc&web_id=7533220185022907905", image: "images/lukfai.jpg" },
-
+  
     //{ title_th: "แฟนมีตติ้ง [ชื่องาน]", title_en: "[Event] Fan Meeting", platform: "facebook", url: "https://www.facebook.com/...", image: "images/highlight2.jpg" },
   ],
 
@@ -133,6 +134,12 @@ const SU = {
   
     // MV
     {
+      category: "mv", title_th: "[Live Session] สมดุลรัก (balance) - Namneung Milin", title_en: "[Live Session] สมดุลรัก (balance) - Namneung Milin", year: 2026 , date: "2026-10-12" ,
+      image: "https://img.youtube.com/vi/QEJVvTitzIg/maxresdefault.jpg",
+      youtube_url: "https://youtu.be/QEJVvTitzIg?si=sr1n4GDPKXJkHl57",
+      role: "singer",
+    },
+    {
       category: "mv", title_th: "กลับมาพบกัน", title_en: "Back Again", year: 2026, date: "2026-07-11",
       image: "https://img.youtube.com/vi/vyZCwAPMSlo/maxresdefault.jpg",
       youtube_url: "https://youtu.be/vyZCwAPMSlo?si=kFdKyS1tspXaQvk-",
@@ -155,7 +162,7 @@ const SU = {
       ],
     },
     {
-      category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025,
+      category: "mv", title_th: "Time Flies Cover by NAMNEUNG MILIN", title_en: "Time Flies Cover by NAMNEUNG MILIN", year: 2025, date: "2025-11-11",
       image: "https://img.youtube.com/vi/KljbGGdfc_s/maxresdefault.jpg",
       youtube_url: "https://www.youtube.com/watch?v=KljbGGdfc_s",
       role: "singer",
@@ -1051,6 +1058,21 @@ const SU = {
 
   // แนะนำ (เดิมชื่อ Upcoming)
   upcoming: [
+     {
+      category:    "mv",
+      title_th:    "สมดุลรัก (Balance) - Namneung Milin",
+      title_en:    "สมดุลรัก (Balance) - Namneung Milin",
+      badge_th:    "New Live session",
+      badge_en:    "New Live session",
+      premiere_th: "12 ตุลาคม 2026",
+      premiere_en: "12 October 2026",
+      youtube_id:  "QEJVvTitzIg",
+      youtube_url: "https://youtu.be/QEJVvTitzIg?si=iSLFjLpZGY_eniqL",
+      image:       "",
+      platform:    "YouTube",
+      role_th:     "น้ำหนึ่ง มิลิญ",
+      role_en:     "Namneung Milin",
+    },
     {
       type:        "event",
       category:    "event",
