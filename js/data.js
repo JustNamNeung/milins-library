@@ -1264,7 +1264,7 @@ const SU = {
     videos: [
       { youtube_id: "jbI0aWG65PA", title_th: "Chiang Mai Vlog ep.1", title_en: "Chiang Mai Vlog ep.1", thumb: "https://img.youtube.com/vi/jbI0aWG65PA/hqdefault.jpg", playlist_url: "" },
       { youtube_id: "38axki2otzI", title_th: "SERTIST Talk x Miusic", title_en: "SERTIST Talk x Miusic", thumb: "https://img.youtube.com/vi/UWhIoItGSkc/hqdefault.jpg", playlist_url: "https://youtu.be/UWhIoItGSkc?si=lJLHrqmzx_rzw4mm" },
-      { youtube_id: "JbGzFsd-MTM", title_th: "[REACTION] Official Trailer - โซ่รักอัคนี", title_en: "[REACTION] Official Trailer - The Fire ", thumb: "https://img.youtube.com/vi/JbGzFsd-MTM/maxresdefault.jpg", playlist_url: "" },
+      { youtube_id: "nqq5QJIGMGE", title_th: "ตามใจเพื่อน EP.2 | หน้าวัดสุทัศน์มีเสาชิงช้า พาเพื่อนสวดมนต์ทำวัตรเย็น", title_en: "Tam Jai Phuean EP.2 | Taking My Friend to Evening Prayers at Wat Suthat ", thumb: "https://img.youtube.com/vi/nqq5QJIGMGE/maxresdefault.jpg", playlist_url: "" },
     ],
   },
 
